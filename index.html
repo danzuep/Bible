@@ -76,6 +76,16 @@
     background: #2980b9;
     outline: none;
   }
+
+  /* Radio label styling */
+  label {
+    cursor: pointer;
+    user-select: none;
+  }
+  label + label {
+    margin-top: 0.25rem;
+    display: block;
+  }
 </style>
 </head>
 <body>
@@ -85,18 +95,16 @@
 <!-- Languages Section -->
 <details open>
   <summary>Languages</summary>
-  <div class="section-content">
-    <label><input type="radio" name="language" value="english" checked /> English</label><br />
+  <div class="section-content" id="languages-container">
+    <!-- Radios inserted dynamically -->
   </div>
 </details>
 
 <!-- Translations Section -->
 <details open>
   <summary>Translations</summary>
-  <div class="section-content">
-    <label><input type="radio" name="translation" value="webpb" checked /> WEBPB (World English Bible British Edition)</label><br />
-    <label><input type="radio" name="translation" value="webu" /> WEBU (World English Bible Updated)</label><br />
-    <label><input type="radio" name="translation" value="web" checked /> WEB (World English Bible)</label><br />
+  <div class="section-content" id="translations-container">
+    <!-- Radios inserted dynamically -->
   </div>
 </details>
 
@@ -105,217 +113,107 @@
   <summary>Bible Books</summary>
   <div class="section-content">
     <div class="books-list" id="books-list">
-      <!-- Dynamic book links will be inserted here -->
+      <!-- Book links inserted dynamically -->
     </div>
   </div>
 </details>
 
 <script>
-  // Bible books two-letter codes and names (Protestant canon, 66 books)
-  const books = [
-    { code: "GE", name: "Genesis" },
-    { code: "EX", name: "Exodus" },
-    { code: "LE", name: "Leviticus" },
-    { code: "NU", name: "Numbers" },
-    { code: "DE", name: "Deuteronomy" },
-    { code: "JO", name: "Joshua" },
-    { code: "JU", name: "Judges" },
-    { code: "RI", name: "Ruth" },
-    { code: "1S", name: "1 Samuel" },
-    { code: "2S", name: "2 Samuel" },
-    { code: "1K", name: "1 Kings" },
-    { code: "2K", name: "2 Kings" },
-    { code: "1C", name: "1 Chronicles" },
-    { code: "2C", name: "2 Chronicles" },
-    { code: "EZ", name: "Ezra" },
-    { code: "NE", name: "Nehemiah" },
-    { code: "ES", name: "Esther" },
-    { code: "JO", name: "Job" },
-    { code: "PS", name: "Psalms" },
-    { code: "PR", name: "Proverbs" },
-    { code: "EC", name: "Ecclesiastes" },
-    { code: "SO", name: "Song of Solomon" },
-    { code: "IS", name: "Isaiah" },
-    { code: "JE", name: "Jeremiah" },
-    { code: "LA", name: "Lamentations" },
-    { code: "EZ", name: "Ezekiel" },
-    { code: "DA", name: "Daniel" },
-    { code: "HO", name: "Hosea" },
-    { code: "JO", name: "Joel" },
-    { code: "AM", name: "Amos" },
-    { code: "OB", name: "Obadiah" },
-    { code: "JON", name: "Jonah" },
-    { code: "MI", name: "Micah" },
-    { code: "NA", name: "Nahum" },
-    { code: "HA", name: "Habakkuk" },
-    { code: "ZP", name: "Zephaniah" },
-    { code: "HG", name: "Haggai" },
-    { code: "ZC", name: "Zechariah" },
-    { code: "ML", name: "Malachi" },
-    { code: "MT", name: "Matthew" },
-    { code: "MK", name: "Mark" },
-    { code: "LK", name: "Luke" },
-    { code: "JN", name: "John" },
-    { code: "AC", name: "Acts" },
-    { code: "RO", name: "Romans" },
-    { code: "1C", name: "1 Corinthians" },
-    { code: "2C", name: "2 Corinthians" },
-    { code: "GA", name: "Galatians" },
-    { code: "EP", name: "Ephesians" },
-    { code: "PH", name: "Philippians" },
-    { code: "CO", name: "Colossians" },
-    { code: "1T", name: "1 Timothy" },
-    { code: "2T", name: "2 Timothy" },
-    { code: "TI", name: "Titus" },
-    { code: "PH", name: "Philemon" },
-    { code: "HE", name: "Hebrews" },
-    { code: "JA", name: "James" },
-    { code: "1P", name: "1 Peter" },
-    { code: "2P", name: "2 Peter" },
-    { code: "1J", name: "1 John" },
-    { code: "2J", name: "2 John" },
-    { code: "3J", name: "3 John" },
-    { code: "JU", name: "Jude" },
-    { code: "RE", name: "Revelation" }
-  ];
+  (async () => {
+    try {
+      const response = await fetch('data.json');
+      if (!response.ok) throw new Error('Failed to load data.json');
+      const data = await response.json();
 
-  // Fix duplicate codes by making sure two-letter codes are unique or extend to 3 letters for some
-  // We'll do a simple fix for duplicates here:
-  // JO = Joshua, JU = Judges, JO = Job (conflict), JO = Joel (conflict)
-  // We'll use 3-letter codes for these conflicting cases:
-  const fixedBooks = [
-    { code: "GEN", name: "Genesis" },
-    { code: "EXO", name: "Exodus" },
-    { code: "LEV", name: "Leviticus" },
-    { code: "NUM", name: "Numbers" },
-    { code: "DEU", name: "Deuteronomy" },
-    { code: "JOS", name: "Joshua" },
-    { code: "JDG", name: "Judges" },
-    { code: "RUT", name: "Ruth" },
-    { code: "1SA", name: "1 Samuel" },
-    { code: "2SA", name: "2 Samuel" },
-    { code: "1KI", name: "1 Kings" },
-    { code: "2KI", name: "2 Kings" },
-    { code: "1CH", name: "1 Chronicles" },
-    { code: "2CH", name: "2 Chronicles" },
-    { code: "EZR", name: "Ezra" },
-    { code: "NEH", name: "Nehemiah" },
-    { code: "EST", name: "Esther" },
-    { code: "JOB", name: "Job" },
-    { code: "PSA", name: "Psalms" },
-    { code: "PRO", name: "Proverbs" },
-    { code: "ECC", name: "Ecclesiastes" },
-    { code: "SNG", name: "Song of Solomon" },
-    { code: "ISA", name: "Isaiah" },
-    { code: "JER", name: "Jeremiah" },
-    { code: "LAM", name: "Lamentations" },
-    { code: "EZK", name: "Ezekiel" },
-    { code: "DAN", name: "Daniel" },
-    { code: "HOS", name: "Hosea" },
-    { code: "JOL", name: "Joel" },
-    { code: "AMO", name: "Amos" },
-    { code: "OBA", name: "Obadiah" },
-    { code: "JON", name: "Jonah" },
-    { code: "MIC", name: "Micah" },
-    { code: "NAH", name: "Nahum" },
-    { code: "HAB", name: "Habakkuk" },
-    { code: "ZEP", name: "Zephaniah" },
-    { code: "HAG", name: "Haggai" },
-    { code: "ZEC", name: "Zechariah" },
-    { code: "MAL", name: "Malachi" },
-    { code: "MAT", name: "Matthew" },
-    { code: "MRK", name: "Mark" },
-    { code: "LUK", name: "Luke" },
-    { code: "JHN", name: "John" },
-    { code: "ACT", name: "Acts" },
-    { code: "ROM", name: "Romans" },
-    { code: "1CO", name: "1 Corinthians" },
-    { code: "2CO", name: "2 Corinthians" },
-    { code: "GAL", name: "Galatians" },
-    { code: "EPH", name: "Ephesians" },
-    { code: "PHP", name: "Philippians" },
-    { code: "COL", name: "Colossians" },
-    { code: "1TI", name: "1 Timothy" },
-    { code: "2TI", name: "2 Timothy" },
-    { code: "TIT", name: "Titus" },
-    { code: "PHM", name: "Philemon" },
-    { code: "HEB", name: "Hebrews" },
-    { code: "JAS", name: "James" },
-    { code: "1PE", name: "1 Peter" },
-    { code: "2PE", name: "2 Peter" },
-    { code: "1JN", name: "1 John" },
-    { code: "2JN", name: "2 John" },
-    { code: "3JN", name: "3 John" },
-    { code: "JUD", name: "Jude" },
-    { code: "REV", name: "Revelation" }
-  ];
+      const languagesContainer = document.getElementById('languages-container');
+      const translationsContainer = document.getElementById('translations-container');
+      const booksList = document.getElementById('books-list');
 
-  // We'll map language and translation values to folder names
-  const languageMap = {
-    english: "eng"
-  };
-  const translationMap = {
-    erv: "erv",
-    gw: "gw",
-    net: "net",
-    nasb: "nasb",
-    amplified: "amplified",
-    webp: "webp",
-    webc: "webc",
-    webpb: "webpb",
-    webbe: "webbe",
-    webu: "webu",
-    web: "-web"
-  };
+      // State
+      let currentLanguage = data.languages[0]?.code ?? '';
+      let currentTranslation = data.translations[0]?.code ?? '';
 
-  // We'll default to english and web
-  let currentLanguage = "english";
-  let currentTranslation = "webpb";
+      // Utility to create radio input with unique ID and label
+      function createRadio(name, value, labelText, checked, index) {
+        const id = `${name}-${value}`;
 
-  // Elements
-  const booksListEl = document.getElementById("books-list");
-  const languageRadios = document.querySelectorAll('input[name="language"]');
-  const translationRadios = document.querySelectorAll('input[name="translation"]');
+        const input = document.createElement('input');
+        input.type = 'radio';
+        input.name = name;
+        input.value = value;
+        input.id = id;
+        if (checked) input.checked = true;
 
-  // Render books links based on current language and translation
-  function renderBooks() {
-    booksListEl.innerHTML = "";
-    const langFolder = languageMap[currentLanguage] || "eng";
-    const transFolder = translationMap[currentTranslation] || "webpb";
+        const label = document.createElement('label');
+        label.htmlFor = id;
+        label.textContent = labelText;
 
-    fixedBooks.forEach(({ code, name }) => {
-      const url = `https://ebible.org/${langFolder}${transFolder}/${code}01.htm`;
+        const wrapper = document.createElement('div');
+        wrapper.appendChild(input);
+        wrapper.appendChild(label);
 
-      const a = document.createElement("a");
-      a.href = url;
-      a.target = "_blank";
-      a.rel = "noopener noreferrer";
-      a.title = name;
-      a.textContent = code;
-      booksListEl.appendChild(a);
-    });
-  }
-
-  // Update current language and translation on change and rerender links
-  languageRadios.forEach(radio => {
-    radio.addEventListener("change", e => {
-      if (e.target.checked) {
-        currentLanguage = e.target.value;
-        renderBooks();
+        return wrapper;
       }
-    });
-  });
-  translationRadios.forEach(radio => {
-    radio.addEventListener("change", e => {
-      if (e.target.checked) {
-        currentTranslation = e.target.value;
-        renderBooks();
-      }
-    });
-  });
 
-  // Initial render
-  renderBooks();
+      // Render Languages radios
+      data.languages.forEach((lang, i) => {
+        const radioWrapper = createRadio('language', lang.code, lang.name, i === 0, i);
+        languagesContainer.appendChild(radioWrapper);
+      });
+
+      // Render Translations radios
+      data.translations.forEach((trans, i) => {
+        const radioWrapper = createRadio('translation', trans.code, trans.name, i === 0, i);
+        translationsContainer.appendChild(radioWrapper);
+      });
+
+      // Maps from JSON
+      const languageMap = data.languageMap;
+      const translationMap = data.translationMap;
+
+      // Render book links function
+      function renderBooks() {
+        booksList.innerHTML = '';
+        const langFolder = languageMap[currentLanguage] || 'eng';
+        const transFolder = translationMap[currentTranslation] || 'webpb';
+
+        data.books.forEach(({ code, name }) => {
+          const url = `https://ebible.org/${langFolder}${transFolder}/${code}01.htm`;
+          const a = document.createElement('a');
+          a.href = url;
+          a.target = '_blank';
+          a.rel = 'noopener noreferrer';
+          a.title = name;
+          a.textContent = code;
+          booksList.appendChild(a);
+        });
+      }
+
+      // Event listeners for radios
+      languagesContainer.querySelectorAll('input[name="language"]').forEach(input => {
+        input.addEventListener('change', e => {
+          if (e.target.checked) {
+            currentLanguage = e.target.value;
+            renderBooks();
+          }
+        });
+      });
+      translationsContainer.querySelectorAll('input[name="translation"]').forEach(input => {
+        input.addEventListener('change', e => {
+          if (e.target.checked) {
+            currentTranslation = e.target.value;
+            renderBooks();
+          }
+        });
+      });
+
+      // Initial render
+      renderBooks();
+    } catch (error) {
+      document.body.innerHTML = `<p style="color:red;">${error.message}</p>`;
+      console.error(error);
+    }
+  })();
 </script>
 
 </body>
