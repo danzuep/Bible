@@ -175,10 +175,13 @@
       function renderBooks() {
         booksList.innerHTML = '';
         const langFolder = languageMap[currentLanguage] || 'eng';
-        const transFolder = translationMap[currentTranslation] || 'webpb';
+        const transFolder = translationMap[currentTranslation] || 'WEBBE';
 
         data.books.forEach(({ code, name }) => {
-          const url = `https://ebible.org/${langFolder}${transFolder}/${code}01.htm`;
+          // const url = `https://ebible.org/${langFolder}${transFolder}/${code}01.htm`;
+          // https://github.com/danzuep/Bible/blob/main/texts/eng/WEBBE/1CH.html
+          // https://danzuep.github.io/Bible/texts/eng/WEBBE/1CH.html
+          const url = `https://danzuep.github.io/Bible/texts/${langFolder}/${transFolder}/${code}.html`;
           const a = document.createElement('a');
           a.href = url;
           a.target = '_blank';

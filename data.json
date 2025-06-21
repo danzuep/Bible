@@ -3,17 +3,13 @@
     "english": "eng"
   },
   "translationMap": {
-    "webpb": "webpb",
-    "webu": "webu",
-    "web": "-web"
+    "webbe": "WEBBE"
   },
   "languages": [
     {"code": "english", "name": "English"}
   ],
   "translations": [
-    {"code": "webpb", "name": "WEBPB (World English Bible British Edition)"},
-    {"code": "webu", "name": "WEBU (World English Bible Updated)"},
-    {"code": "web", "name": "WEB (World English Bible)"}
+    {"code": "webbe", "name": "WEBBE (World English Bible British Edition)"}
   ],
   "books": [
     {"code": "GEN", "name": "Genesis"},
