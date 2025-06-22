@@ -1,23 +1,18 @@
 {
   "languages": [
     {"id": "eng", "iso-639-3": "eng", "iso-15924": "Latn", "name": "English"},
-    {"id": "ara", "iso-639-3": "ara", "iso-15924": "Arab", "name": "Arabic", "nativeName": "العربية"},
-    {"id": "fra", "iso-639-3": "fra", "iso-15924": "Latn", "name": "French", "nativeName": "français"},
-    {"id": "hin", "iso-639-3": "hin", "iso-15924": "Deva", "name": "Hindi", "nativeName": "हिन्दी"},
-    {"id": "jpn", "iso-639-3": "jpn", "iso-15924": "Jpan", "name": "Japanese", "nativeName": "日本語"},
-    {"id": "kor", "iso-639-3": "kor", "iso-15924": "Hang", "name": "Korean", "nativeName": "한국어"},
-    {"id": "por", "iso-639-3": "por", "iso-15924": "Latn", "name": "Portuguese", "nativeName": "português"},
-    {"id": "rus", "iso-639-3": "rus", "iso-15924": "Cyrl", "name": "Russian", "nativeName": "русский язык"},
-    {"id": "spa", "iso-639-3": "spa", "iso-15924": "Latn", "name": "Spanish", "nativeName": "español"},
     {"id": "tha", "iso-639-3": "tha", "iso-15924": "Thai", "name": "Thai", "nativeName": "ไทย"},
     {"id": "zho-Hans", "iso-639-3": "zho", "iso-15924": "Hans", "name": "Chinese (Simplified)", "nativeName": "中文（简体）"},
     {"id": "zho-Hant", "iso-639-3": "zho", "iso-15924": "Hant", "name": "Chinese (Traditional)", "nativeName": "中文（繁體）"}
   ],
   "versions": {
     "eng": [
-      {"id": "9879dbb7cfe39e4d", "abbreviation": "WEB"},
-      {"id": "7142879509583d59", "abbreviation": "WEBBE"},
+      {"id": "9879dbb7cfe39e4d", "abbreviation": "WEBU"},
+      {"id": "7142879509583d59", "abbreviation": "WEBPB"},
       {"id": "66c22495370cdfc0", "abbreviation": "T4T"}
+    ],
+    "tha": [
+      {"id": "2eb94132ad61ae75", "abbreviation": "KJV"}
     ],
     "zho-Hans": [
       {"id": "7ea794434e9ea7ee", "abbreviation": "OCCB"}
@@ -27,10 +22,11 @@
     ]
   },
   "metadata": {
-    "9879dbb7cfe39e4d": {"path": "eng-WEB", "name": "World English Bible (American Edition)", "scope": "Bible with Deuterocanon", "revision": 139, "completed": "2020-01-01", "updated": "2025-06-20T20:50:26.073131"},
-    "7142879509583d59": {"path": "eng-WEBBE", "name": "World English Bible British Edition", "scope": "Bible with Deuterocanon", "revision": 149, "updated": "2025-06-20T20:59:03.288428"},
-    "66c22495370cdfc0": {"path": "eng-T4T", "name": "Translation for Translators (ENG-USA)", "scope": "Bible", "revision": 15, "updated": "2023-07-04T06:15:03.771759"},
-    "7ea794434e9ea7ee": {"path": "zho-Hans-OCCB", "name": "Open Chinese Contemporary Bible (Simplified)", "scope": "Bible", "revision": 3, "completed": "2023-01-01", "updated": "2024-04-29T21:47:16.627434", "rights": "版权所有©1979, 2005, 2007, 2011, 2022 Biblica, Inc."},
-    "a6e06d2c5b90ad89": {"path": "zho-Hant-OCCB", "name": "Open Chinese Contemporary Bible (Traditional)", "scope": "Bible", "revision": 5, "completed": "2023-05-01", "updated": "2024-04-29T21:49:11.726438", "rights": "版權所有©1979, 2005, 2007, 2012, 2023 Biblica, Inc."}
+    "9879dbb7cfe39e4d": {"path": "eng-WEBU", "name": "World English Bible USA", "scope": "Bible", "revision": 139, "licenseId": 4019, "completed": "2020-01-01", "updated": "2025-06-20T20:50:26.073131", "rights": "Public Domain. \"World English Bible\" is trademark of eBible.org."},
+    "7142879509583d59": {"path": "eng-WEBPB", "name": "World English Bible Protestant British Edition", "scope": "Bible", "revision": 149, "licenseId": 6232, "completed": "2020-01-01", "updated": "2025-06-20T20:59:03.288428", "rights": "Public Domain. \"World English Bible\" is trademark of eBible.org."},
+    "66c22495370cdfc0": {"path": "eng-T4T", "name": "Translation for Translators (ENG-USA)", "scope": "Bible", "revision": 15, "licenseId": 11152, "completed": "2008-01-01", "updated": "2023-07-04T06:15:03.771759", "rights": "Copyright © 2008-2017 Ellis W. Deibler. Released under the Creative Commons Attribution Share-Alike license 4.0."},
+    "2eb94132ad61ae75": {"path": "tha-KJV", "name": "Thai King James Version", "scope": "Bible", "revision": 3, "licenseId": 4021, "completed": "2003-01-01", "updated": "2022-04-16T01:47:21.874702", "rights": "Copyright © 2003 Philip Pope CC BY-NC-ND"},
+    "7ea794434e9ea7ee": {"path": "zho-Hans-OCCB", "name": "Open Chinese Contemporary Bible 2022 (Simplified)", "scope": "Bible", "revision": 3, "licenseId": 42445, "completed": "2022-01-01", "updated": "2024-04-29T21:47:16.627434", "rights": "版权所有©1979, 2005, 2007, 2011, 2022 Biblica, Inc."},
+    "a6e06d2c5b90ad89": {"path": "zho-Hant-OCCB", "name": "Open Chinese Contemporary Bible 2023 (Traditional)", "scope": "Bible", "revision": 5, "licenseId": 42446, "completed": "2023-05-01", "updated": "2024-04-29T21:49:11.726438", "rights": "版權所有©1979, 2005, 2007, 2012, 2023 Biblica, Inc."}
   }
 }
