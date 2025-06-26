@@ -1,35 +1,125 @@
-<style>
-  /* Remove the default blue underline from URLs */
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bible</title>
+    <style>
+      /* Remove the default blue underline from URLs */
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+      /* Style for hidden text */
+      .usx-id {
+        display: none;
+      }
+      .usx-ide {
+        display: none;
+      }
+      /* Style for a subtitle below a heading */
+      .usx-toc1 {
+          font-size: 0.9em;
+          color: gray;
+          margin-top: 0.2em;
+          font-weight: normal;
+      }
 
-  /* Style for words of Jesus */
-  .words-of-jesus {
-    color: #b22222; /* Firebrick red */
-    font-weight: bold;
-  }
-</style>
+      /* Style for words of Jesus */
+      .usx-wj {
+        color: #b22222; /* Firebrick red */
+        font-weight: bold;
+      }
 
-<a href="#腓利门书-h"><h2 id="h-腓利门书">腓利门书</h2></a>
-<a href="#腓利门书-c-1"><h3 id="腓利门书-c-1">1</h3></a>
-<p>
-    <sup>1</sup>我是为了传扬基督耶稣而被囚禁的保罗，与提摩太弟兄写信给我们亲爱的同工腓利门、 <sup>2</sup>亚腓亚姊妹和我们的战友亚基布，以及在你家聚会的弟兄姊妹。</p><p>
-    <sup>3</sup>愿我们的父上帝和主耶稣基督赐给你们恩典和平安！</p><p>称赞腓利门</p><p>
-    <sup>4</sup>
-    腓利门弟兄，我每次为你们祷告时都会感谢我的上帝， <sup>5</sup>因为我听说了你对众圣徒的爱心和对主耶稣的信心。 <sup>6</sup>我求上帝使你因着有份于信仰而明白我们在基督里所拥有的一切福分。 <sup>7</sup>弟兄啊，你的爱心给我带来极大的喜乐和安慰，因为你使众圣徒感到欣慰。</p><p>凭爱心求情</p><p>
-    <sup>8</sup>因此，我尽管可以靠着基督吩咐你去做当做的事， <sup>9</sup>然而我这上了年纪又为基督耶稣的缘故被囚禁的保罗宁愿凭爱心求你， <sup>10</sup>就是替阿尼西谋<sup><a href="#footnote-0" id="ref-0">†</a></sup>求你。他是我在狱中带领归主的属灵儿子， <sup>11</sup>他过去对你没有什么益处，但现在对你对我都有益处。</p><p>
-    <sup>12</sup>我现在派我深爱的阿尼西谋回你那里。 <sup>13</sup>我本想把他留在身边，让他在我为传福音而坐牢期间替你服侍我。 <sup>14</sup>不过，未经你同意，我不愿这样做，免得你的善行是出于勉强，而非自愿。 <sup>15</sup>也许他暂时离开你是为了让你以后永远得到他。 <sup>16</sup>你得到的不再是一个奴隶，而是一位远超过奴隶的亲爱弟兄。对我而言，的确如此；从人的角度和主内关系而言，他更是你亲爱的弟兄。</p><p>
-    <sup>17</sup>你若当我是同伴，就请你像接纳我一样接纳他。 <sup>18</sup>如果他得罪你，或亏欠你什么，都记在我的账上吧。 <sup>19</sup>我保罗在此亲笔保证，我必偿还。其实我不说你也知道，你欠我的是你整个人。</p><p>
-    <sup>20</sup>弟兄啊，看在主的份上，让我从你那里得益处，在基督里心得安慰吧！ <sup>21</sup>我写信给你，深信你一定会照办，甚至超过我的要求。 <sup>22</sup>同时，也请你为我预备住处，因为我盼望借着你们的祷告，我可以蒙恩到你们那里。</p><p>问候</p><p>
-    <sup>23</sup>为了基督耶稣的缘故和我一同坐牢的以巴弗问候你。 <sup>24</sup>此外，我的同工马可、亚里达古、底马和路加都问候你。</p><p>
-    <sup>25</sup>愿我们主耶稣基督的恩典与你们的灵同在。阿们！</p><a href="#腓利门书-h">^</a> <a href="#腓利门书-c-1">[1]</a>
+      /* Style for Strong's number hover notes */
+      .usx-w {
+        position: relative;
+      }
+      .usx-w::after {
+        content: attr(link-data);
+        position: absolute;
+        left: 50%;
+        bottom: 120%;
+        transform: translateX(-50%);
+        background: #333;
+        color: #fff;
+        padding: 3px 6px;
+        border-radius: 4px;
+        white-space: nowrap;
+        font-size: 0.8em;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+        z-index: 10;
+      }
+      .usx-w:hover::after {
+        opacity: 1;
+      }
+    </style>
+  </head>
+
+  <body>
+<a href="#PHM">#</a> <a href="#PHM.1">[1]</a>
+<h1 id="id-PHM" class="usx-id">- Biblica&#174; Open Chinese Contemporary Bible 2022 (Simplified)</h1>
+<a href="#PHM"><h2 id="PHM" class="usx-h">腓利门书</h2></a>
+<p id="toc1-PHM" class="usx-toc1" hidden>腓利门书</p>
+<p id="toc2-PHM" class="usx-toc2" hidden>腓利门书</p>
+<p id="toc3-PHM" class="usx-toc3" hidden>门</p>
+<p id="mt1-PHM" class="usx-mt1" hidden>腓利门书</p>
+<a href="#PHM.1"><h3 id="PHM.1" class="usx-c">1</h3></a>
+<p id="p-PHM.1" class="usx-p" >
+    <a href="#PHM.1.1"><sup id="PHM.1.1" class="usx-v">1</sup></a>
+我是为了传扬基督耶稣而被囚禁的<span id="pn-PHM.1.1" class="usx-pn" link-data="https://www.blueletterbible.org/lexicon/">保罗</span>，与<span id="pn-PHM.1.1" class="usx-pn" link-data="https://www.blueletterbible.org/lexicon/">提摩太</span>弟兄写信给我们亲爱的同工<span id="pn-PHM.1.1" class="usx-pn" link-data="https://www.blueletterbible.org/lexicon/">腓利门</span>、 <a href="#PHM.1.2"><sup id="PHM.1.2" class="usx-v">2</sup></a>
+<span id="pn-PHM.1.2" class="usx-pn" link-data="https://www.blueletterbible.org/lexicon/">亚腓亚</span>姊妹和我们的战友<span id="pn-PHM.1.2" class="usx-pn" link-data="https://www.blueletterbible.org/lexicon/">亚基布</span>，以及在你家聚会的弟兄姊妹。</p>
+<p id="p-PHM.1.2" class="usx-p" >
+    <a href="#PHM.1.3"><sup id="PHM.1.3" class="usx-v">3</sup></a>
+愿我们的父上帝和主耶稣基督赐给你们恩典和平安！</p>
+<p id="s1-PHM.1.3" class="usx-s1" >称赞腓利门</p>
+<p id="p-PHM.1.3" class="usx-p" >
+    <a href="#PHM.1.4"><sup id="PHM.1.4" class="usx-v">4</sup></a>
+
+    <span id="pn-PHM.1.4" class="usx-pn" link-data="https://www.blueletterbible.org/lexicon/">腓利门</span>弟兄，我每次为你们祷告时都会感谢我的上帝， <a href="#PHM.1.5"><sup id="PHM.1.5" class="usx-v">5</sup></a>
+因为我听说了你对众圣徒的爱心和对主耶稣的信心。 <a href="#PHM.1.6"><sup id="PHM.1.6" class="usx-v">6</sup></a>
+我求上帝使你因着有份于信仰而明白我们在基督里所拥有的一切福分。 <a href="#PHM.1.7"><sup id="PHM.1.7" class="usx-v">7</sup></a>
+弟兄啊，你的爱心给我带来极大的喜乐和安慰，因为你使众圣徒感到欣慰。</p>
+<p id="s1-PHM.1.7" class="usx-s1" >凭爱心求情</p>
+<p id="p-PHM.1.7" class="usx-p" >
+    <a href="#PHM.1.8"><sup id="PHM.1.8" class="usx-v">8</sup></a>
+因此，我尽管可以靠着基督吩咐你去做当做的事， <a href="#PHM.1.9"><sup id="PHM.1.9" class="usx-v">9</sup></a>
+然而我这上了年纪又为基督耶稣的缘故被囚禁的<span id="pn-PHM.1.9" class="usx-pn" link-data="https://www.blueletterbible.org/lexicon/">保罗</span>宁愿凭爱心求你， <a href="#PHM.1.10"><sup id="PHM.1.10" class="usx-v">10</sup></a>
+就是替<span id="pn-PHM.1.10" class="usx-pn" link-data="https://www.blueletterbible.org/lexicon/">阿尼西谋</span><sup id="note-0"><a class="usx-note" title="f+" href="#footnote-0">†</a></sup>求你。他是我在狱中带领归主的属灵儿子， <a href="#PHM.1.11"><sup id="PHM.1.11" class="usx-v">11</sup></a>
+他过去对你没有什么益处，但现在对你对我都有益处。</p>
+<p id="p-PHM.1.11" class="usx-p" >
+    <a href="#PHM.1.12"><sup id="PHM.1.12" class="usx-v">12</sup></a>
+我现在派我深爱的<span id="pn-PHM.1.12" class="usx-pn" link-data="https://www.blueletterbible.org/lexicon/">阿尼西谋</span>回你那里。 <a href="#PHM.1.13"><sup id="PHM.1.13" class="usx-v">13</sup></a>
+我本想把他留在身边，让他在我为传福音而坐牢期间替你服侍我。 <a href="#PHM.1.14"><sup id="PHM.1.14" class="usx-v">14</sup></a>
+不过，未经你同意，我不愿这样做，免得你的善行是出于勉强，而非自愿。 <a href="#PHM.1.15"><sup id="PHM.1.15" class="usx-v">15</sup></a>
+也许他暂时离开你是为了让你以后永远得到他。 <a href="#PHM.1.16"><sup id="PHM.1.16" class="usx-v">16</sup></a>
+你得到的不再是一个奴隶，而是一位远超过奴隶的亲爱弟兄。对我而言，的确如此；从人的角度和主内关系而言，他更是你亲爱的弟兄。</p>
+<p id="p-PHM.1.16" class="usx-p" >
+    <a href="#PHM.1.17"><sup id="PHM.1.17" class="usx-v">17</sup></a>
+你若当我是同伴，就请你像接纳我一样接纳他。 <a href="#PHM.1.18"><sup id="PHM.1.18" class="usx-v">18</sup></a>
+如果他得罪你，或亏欠你什么，都记在我的账上吧。 <a href="#PHM.1.19"><sup id="PHM.1.19" class="usx-v">19</sup></a>
+我<span id="pn-PHM.1.19" class="usx-pn" link-data="https://www.blueletterbible.org/lexicon/">保罗</span>在此亲笔保证，我必偿还。其实我不说你也知道，你欠我的是你整个人。</p>
+<p id="p-PHM.1.19" class="usx-p" >
+    <a href="#PHM.1.20"><sup id="PHM.1.20" class="usx-v">20</sup></a>
+弟兄啊，看在主的份上，让我从你那里得益处，在基督里心得安慰吧！ <a href="#PHM.1.21"><sup id="PHM.1.21" class="usx-v">21</sup></a>
+我写信给你，深信你一定会照办，甚至超过我的要求。 <a href="#PHM.1.22"><sup id="PHM.1.22" class="usx-v">22</sup></a>
+同时，也请你为我预备住处，因为我盼望借着你们的祷告，我可以蒙恩到你们那里。</p>
+<p id="s1-PHM.1.22" class="usx-s1" >问候</p>
+<p id="p-PHM.1.22" class="usx-p" >
+    <a href="#PHM.1.23"><sup id="PHM.1.23" class="usx-v">23</sup></a>
+为了基督耶稣的缘故和我一同坐牢的<span id="pn-PHM.1.23" class="usx-pn" link-data="https://www.blueletterbible.org/lexicon/">以巴弗</span>问候你。 <a href="#PHM.1.24"><sup id="PHM.1.24" class="usx-v">24</sup></a>
+此外，我的同工<span id="pn-PHM.1.24" class="usx-pn" link-data="https://www.blueletterbible.org/lexicon/">马可</span>、<span id="pn-PHM.1.24" class="usx-pn" link-data="https://www.blueletterbible.org/lexicon/">亚里达古</span>、<span id="pn-PHM.1.24" class="usx-pn" link-data="https://www.blueletterbible.org/lexicon/">底马</span>和<span id="pn-PHM.1.24" class="usx-pn" link-data="https://www.blueletterbible.org/lexicon/">路加</span>都问候你。</p>
+<p id="p-PHM.1.24" class="usx-p" >
+    <a href="#PHM.1.25"><sup id="PHM.1.25" class="usx-v">25</sup></a>
+愿我们主耶稣基督的恩典与你们的灵同在。阿们！</p>
 <section id="footnotes">
 <details>
 <summary>†</summary>
 <ol>
-<li id="footnote-0"><a href="#ref-0" title="Back to reference ↩">1:10 </a>“阿尼西谋”这个名字意思是有用、有益处。</li>
-</ol>
+<li id="footnote-0"><a href="#note-0" title="Back to reference ↩">1:10 </a>“阿尼西谋”这个名字意思是有用、有益处。</li></ol>
 </details>
 </section>
+
+
+  </body>
+</html>

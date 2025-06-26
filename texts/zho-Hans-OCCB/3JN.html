@@ -1,24 +1,104 @@
-<style>
-  /* Remove the default blue underline from URLs */
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bible</title>
+    <style>
+      /* Remove the default blue underline from URLs */
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+      /* Style for hidden text */
+      .usx-id {
+        display: none;
+      }
+      .usx-ide {
+        display: none;
+      }
+      /* Style for a subtitle below a heading */
+      .usx-toc1 {
+          font-size: 0.9em;
+          color: gray;
+          margin-top: 0.2em;
+          font-weight: normal;
+      }
 
-  /* Style for words of Jesus */
-  .words-of-jesus {
-    color: #b22222; /* Firebrick red */
-    font-weight: bold;
-  }
-</style>
+      /* Style for words of Jesus */
+      .usx-wj {
+        color: #b22222; /* Firebrick red */
+        font-weight: bold;
+      }
 
-<a href="#约翰三书-h"><h2 id="h-约翰三书">约翰三书</h2></a>
-<a href="#约翰三书-c-1"><h3 id="约翰三书-c-1">1</h3></a>
-<p>
-    <sup>1</sup>我这做长老的写信给亲爱的该犹，你是我本着真理所爱的人。 <sup>2</sup>亲爱的弟兄，我愿你凡事顺利，身体像灵魂一样健康。</p><p>该犹的好品行</p><p>
-    <sup>3</sup>一些弟兄来为你做见证，说你忠心地遵行真理，这使我非常欢喜。 <sup>4</sup>没有比听见自己的孩子遵行真理更使我欢喜了。</p><p>
-    <sup>5</sup>亲爱的弟兄，你常常忠心地照顾素不相识的弟兄， <sup>6</sup>他们把你的爱心告诉了教会。愿你照着上帝喜悦的方式继续帮助他们出行， <sup>7</sup>因为他们为了主的名四处传道，不接受非信徒的任何帮助。 <sup>8</sup>我们理当接待这样的人，好成为他们传扬真理的同工。</p><p>丢特腓的恶行</p><p>
-    <sup>9</sup>我曾写信给你那里的教会，但爱当头领的丢特腓不接待我们。 <sup>10</sup>因此，我若去你们那里，必揭露他的所作所为，他怎样恶言中伤我们。不仅如此，他还拒绝接待弟兄，并且禁止别人接待，甚至将接待的人赶出教会。</p><p>抑恶扬善</p><p>
-    <sup>11</sup>亲爱的弟兄，不要效法罪恶，要效法美善。行善的人属于上帝，行恶的人不认识上帝。 <sup>12</sup>低米丢得到了众人的好评，真理也为他做见证，我们也为他做见证。你知道我们的见证是真实的。</p><p>结语</p><p>
-    <sup>13</sup>我还有许多事要告诉你，但不想借助笔墨， <sup>14</sup>只希望很快见到你，跟你当面畅谈。</p><p>
-    <sup>15</sup>愿你平安！这里的朋友们都问候你，请代我一一问候你那边的朋友。</p><a href="#约翰三书-h">^</a> <a href="#约翰三书-c-1">[1]</a>
+      /* Style for Strong's number hover notes */
+      .usx-w {
+        position: relative;
+      }
+      .usx-w::after {
+        content: attr(link-data);
+        position: absolute;
+        left: 50%;
+        bottom: 120%;
+        transform: translateX(-50%);
+        background: #333;
+        color: #fff;
+        padding: 3px 6px;
+        border-radius: 4px;
+        white-space: nowrap;
+        font-size: 0.8em;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+        z-index: 10;
+      }
+      .usx-w:hover::after {
+        opacity: 1;
+      }
+    </style>
+  </head>
+
+  <body>
+<a href="#3JN">#</a> <a href="#3JN.1">[1]</a>
+<h1 id="id-3JN" class="usx-id">- Biblica&#174; Open Chinese Contemporary Bible 2022 (Simplified)</h1>
+<a href="#3JN"><h2 id="3JN" class="usx-h">约翰三书</h2></a>
+<p id="toc1-3JN" class="usx-toc1" hidden>约翰三书</p>
+<p id="toc2-3JN" class="usx-toc2" hidden>约翰三书</p>
+<p id="toc3-3JN" class="usx-toc3" hidden>约叁</p>
+<p id="mt1-3JN" class="usx-mt1" hidden>约翰三书</p>
+<a href="#3JN.1"><h3 id="3JN.1" class="usx-c">1</h3></a>
+<p id="p-3JN.1" class="usx-p" >
+    <a href="#3JN.1.1"><sup id="3JN.1.1" class="usx-v">1</sup></a>
+我这做长老的写信给亲爱的<span id="pn-3JN.1.1" class="usx-pn" link-data="https://www.blueletterbible.org/lexicon/">该犹</span>，你是我本着真理所爱的人。 <a href="#3JN.1.2"><sup id="3JN.1.2" class="usx-v">2</sup></a>
+亲爱的弟兄，我愿你凡事顺利，身体像灵魂一样健康。</p>
+<p id="s1-3JN.1.2" class="usx-s1" >该犹的好品行</p>
+<p id="p-3JN.1.2" class="usx-p" >
+    <a href="#3JN.1.3"><sup id="3JN.1.3" class="usx-v">3</sup></a>
+一些弟兄来为你做见证，说你忠心地遵行真理，这使我非常欢喜。 <a href="#3JN.1.4"><sup id="3JN.1.4" class="usx-v">4</sup></a>
+没有比听见自己的孩子遵行真理更使我欢喜了。</p>
+<p id="p-3JN.1.4" class="usx-p" >
+    <a href="#3JN.1.5"><sup id="3JN.1.5" class="usx-v">5</sup></a>
+亲爱的弟兄，你常常忠心地照顾素不相识的弟兄， <a href="#3JN.1.6"><sup id="3JN.1.6" class="usx-v">6</sup></a>
+他们把你的爱心告诉了教会。愿你照着上帝喜悦的方式继续帮助他们出行， <a href="#3JN.1.7"><sup id="3JN.1.7" class="usx-v">7</sup></a>
+因为他们为了主的名四处传道，不接受非信徒的任何帮助。 <a href="#3JN.1.8"><sup id="3JN.1.8" class="usx-v">8</sup></a>
+我们理当接待这样的人，好成为他们传扬真理的同工。</p>
+<p id="s1-3JN.1.8" class="usx-s1" >丢特腓的恶行</p>
+<p id="p-3JN.1.8" class="usx-p" >
+    <a href="#3JN.1.9"><sup id="3JN.1.9" class="usx-v">9</sup></a>
+我曾写信给你那里的教会，但爱当头领的<span id="pn-3JN.1.9" class="usx-pn" link-data="https://www.blueletterbible.org/lexicon/">丢特腓</span>不接待我们。 <a href="#3JN.1.10"><sup id="3JN.1.10" class="usx-v">10</sup></a>
+因此，我若去你们那里，必揭露他的所作所为，他怎样恶言中伤我们。不仅如此，他还拒绝接待弟兄，并且禁止别人接待，甚至将接待的人赶出教会。</p>
+<p id="s1-3JN.1.10" class="usx-s1" >抑恶扬善</p>
+<p id="p-3JN.1.10" class="usx-p" >
+    <a href="#3JN.1.11"><sup id="3JN.1.11" class="usx-v">11</sup></a>
+亲爱的弟兄，不要效法罪恶，要效法美善。行善的人属于上帝，行恶的人不认识上帝。 <a href="#3JN.1.12"><sup id="3JN.1.12" class="usx-v">12</sup></a>
+<span id="pn-3JN.1.12" class="usx-pn" link-data="https://www.blueletterbible.org/lexicon/">低米丢</span>得到了众人的好评，真理也为他做见证，我们也为他做见证。你知道我们的见证是真实的。</p>
+<p id="s1-3JN.1.12" class="usx-s1" >结语</p>
+<p id="p-3JN.1.12" class="usx-p" >
+    <a href="#3JN.1.13"><sup id="3JN.1.13" class="usx-v">13</sup></a>
+我还有许多事要告诉你，但不想借助笔墨， <a href="#3JN.1.14"><sup id="3JN.1.14" class="usx-v">14</sup></a>
+只希望很快见到你，跟你当面畅谈。</p>
+<p id="p-3JN.1.14" class="usx-p" >
+    <a href="#3JN.1.15"><sup id="3JN.1.15" class="usx-v">15</sup></a>
+愿你平安！这里的朋友们都问候你，请代我一一问候你那边的朋友。</p>
+
+
+  </body>
+</html>
