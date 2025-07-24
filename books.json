@@ -50,6 +50,8 @@
   {"code": "EPH", "name": "Ephesians"},
   {"code": "PHP", "name": "Philippians"},
   {"code": "COL", "name": "Colossians"},
+  {"code": "1TH", "name": "1 Thessalonians"},
+  {"code": "2TH", "name": "2 Thessalonians"},
   {"code": "1TI", "name": "1 Timothy"},
   {"code": "2TI", "name": "2 Timothy"},
   {"code": "TIT", "name": "Titus"},

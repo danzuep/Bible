@@ -8,7 +8,7 @@
   "versions": {
     "eng": [
       {"id": "9879dbb7cfe39e4d", "abbreviation": "WEBU"},
-      {"id": "7142879509583d59", "abbreviation": "WEBPB"},
+      {"id": "7142879509583d59", "abbreviation": "WEBBE"},
       {"id": "66c22495370cdfc0", "abbreviation": "T4T"}
     ],
     "tha": [
@@ -23,7 +23,7 @@
   },
   "metadata": {
     "9879dbb7cfe39e4d": {"path": "eng-WEBU", "name": "World English Bible USA", "scope": "Bible", "revision": 139, "licenseId": 4019, "completed": "2020-01-01", "updated": "2025-06-20T20:50:26.073131", "rights": "Public Domain. \"World English Bible\" is trademark of eBible.org."},
-    "7142879509583d59": {"path": "eng-WEBPB", "name": "World English Bible Protestant British Edition", "scope": "Bible", "revision": 149, "licenseId": 6232, "completed": "2020-01-01", "updated": "2025-06-20T20:59:03.288428", "rights": "Public Domain. \"World English Bible\" is trademark of eBible.org."},
+    "7142879509583d59": {"path": "eng-WEBBE", "name": "World English Bible British Edition", "scope": "Bible", "revision": 149, "licenseId": 6232, "completed": "2020-01-01", "updated": "2025-06-20T20:59:03.288428", "rights": "Public Domain. \"World English Bible\" is trademark of eBible.org."},
     "66c22495370cdfc0": {"path": "eng-T4T", "name": "Translation for Translators (ENG-USA)", "scope": "Bible", "revision": 15, "licenseId": 11152, "completed": "2008-01-01", "updated": "2023-07-04T06:15:03.771759", "rights": "Copyright © 2008-2017 Ellis W. Deibler. Released under the Creative Commons Attribution Share-Alike license 4.0."},
     "2eb94132ad61ae75": {"path": "tha-KJV", "name": "Thai King James Version", "scope": "Bible", "revision": 3, "licenseId": 4021, "completed": "2003-01-01", "updated": "2022-04-16T01:47:21.874702", "rights": "Copyright © 2003 Philip Pope CC BY-NC-ND"},
     "7ea794434e9ea7ee": {"path": "zho-Hans-OCCB", "name": "Open Chinese Contemporary Bible 2022 (Simplified)", "scope": "Bible", "revision": 3, "licenseId": 42445, "completed": "2022-01-01", "updated": "2024-04-29T21:47:16.627434", "rights": "版权所有©1979, 2005, 2007, 2011, 2022 Biblica, Inc."},
