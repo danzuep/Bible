@@ -121,11 +121,11 @@
 <script>
   (async () => {
     try {
-      const dataResponse = await fetch('data.json');
+      const dataResponse = await fetch('src/Bible.WebView/Resources/Raw/data.json');
       if (!dataResponse.ok) throw new Error('Failed to load data.json');
       const data = await dataResponse.json();
 
-      const booksResponse = await fetch('books.json');
+      const booksResponse = await fetch('src/Bible.WebView/Resources/Raw/books.json');
       if (!booksResponse.ok) throw new Error('Failed to load books.json');
       const books = await booksResponse.json();
 
@@ -194,7 +194,7 @@
         const path = meta.path;  // example: "eng-WEB" or "zho-Hans-OCCB"
 
         books.forEach(({ code, name }) => {
-          const url = `texts/${path}/${code}.html`;
+          const url = `src/Bible.WebView/Resources/Raw/${path}/${code}.html`;
           const a = document.createElement('a');
           a.href = url;
           a.target = '_blank';

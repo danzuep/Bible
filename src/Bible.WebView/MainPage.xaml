@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Bible.WebView.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Name="MainPageRoot"
+    Title="Bible">
+
+    <ScrollView>
+
+        <VerticalStackLayout Padding="10" Spacing="10">
+
+            <Button
+                x:Name="Expander"
+                BackgroundColor="Transparent"
+                Clicked="OnShowControlsClicked"
+                HorizontalOptions="Fill"
+                Text="..."
+                TextColor="Black" />
+
+            <StackLayout x:Name="ControlsContainer" Spacing="10">
+                <Label FontAttributes="Bold" Text="Select Language:" />
+                <Picker x:Name="LanguagePicker" SelectedIndexChanged="OnLanguageSelected" />
+
+                <Label FontAttributes="Bold" Text="Select Version:" />
+                <Picker x:Name="VersionPicker" SelectedIndexChanged="OnVersionSelected" />
+
+                <ScrollView>
+                    <FlexLayout
+                        x:Name="BooksFlexLayout"
+                        Padding="2"
+                        AlignItems="Center"
+                        Direction="Row"
+                        JustifyContent="Start"
+                        Wrap="Wrap">
+                        <!--  Buttons will be added here dynamically  -->
+                    </FlexLayout>
+                </ScrollView>
+            </StackLayout>
+
+            <WebView x:Name="BibleWebView" HeightRequest="600" />
+
+        </VerticalStackLayout>
+
+    </ScrollView>
+
+</ContentPage>
