@@ -1,0 +1,7 @@
+{
+  "name": "C# .NET",
+  "image": "mcr.microsoft.com/vscode/devcontainers/dotnet:8.0",
+  "extensions": [
+    "ms-dotnettools.csharp"
+  ]
+}
