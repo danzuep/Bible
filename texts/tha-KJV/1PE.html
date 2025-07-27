@@ -1,6 +1,7 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
     <title>Bible</title>
     <style>
       /* Remove the default blue underline from URLs */
@@ -53,12 +54,21 @@
       .usx-w:hover::after {
         opacity: 1;
       }
+
+      /* When checkbox is checked, show the ruby text */
+      #toggle-ruby:checked ~ p ruby rt.unihan {
+        display: ruby-text; /* shows the ruby annotation */
+      }
+
+      ruby {
+        font-size: 1em;
+      }
     </style>
   </head>
 
   <body>
 <a href="#1 เปโตร">#</a> <a href="#1 เปโตร.1">[1]</a> <a href="#1 เปโตร.2">[2]</a> <a href="#1 เปโตร.3">[3]</a> <a href="#1 เปโตร.4">[4]</a> <a href="#1 เปโตร.5">[5]</a>
-<p id="ide-_" class="usx-ide" >UTF-8</p>
+<p id="ide-_" class="usx-ide" hidden>UTF-8</p>
 <a href="#1 เปโตร"><h2 id="1 เปโตร" class="usx-h">1 เปโตร</h2></a>
 <p id="toc1-1 เปโตร" class="usx-toc1" hidden>ประวัติ​ความเป็นมาของหนังสือ 1 เปโตร</p>
 <p id="toc2-1 เปโตร" class="usx-toc2" hidden>1 เปโตร</p>

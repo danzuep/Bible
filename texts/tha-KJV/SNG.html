@@ -1,6 +1,7 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
     <title>Bible</title>
     <style>
       /* Remove the default blue underline from URLs */
@@ -53,12 +54,21 @@
       .usx-w:hover::after {
         opacity: 1;
       }
+
+      /* When checkbox is checked, show the ruby text */
+      #toggle-ruby:checked ~ p ruby rt.unihan {
+        display: ruby-text; /* shows the ruby annotation */
+      }
+
+      ruby {
+        font-size: 1em;
+      }
     </style>
   </head>
 
   <body>
 <a href="#เพลงซาโลมอน">#</a> <a href="#เพลงซาโลมอน.1">[1]</a> <a href="#เพลงซาโลมอน.2">[2]</a> <a href="#เพลงซาโลมอน.3">[3]</a> <a href="#เพลงซาโลมอน.4">[4]</a> <a href="#เพลงซาโลมอน.5">[5]</a> <a href="#เพลงซาโลมอน.6">[6]</a> <a href="#เพลงซาโลมอน.7">[7]</a> <a href="#เพลงซาโลมอน.8">[8]</a>
-<p id="ide-_" class="usx-ide" >UTF-8</p>
+<p id="ide-_" class="usx-ide" hidden>UTF-8</p>
 <a href="#เพลงซาโลมอน"><h2 id="เพลงซาโลมอน" class="usx-h">เพลงซาโลมอน</h2></a>
 <p id="toc1-เพลงซาโลมอน" class="usx-toc1" hidden>ประวัติ​ความเป็นมาของหนังสือ เพลงซาโลมอน</p>
 <p id="toc2-เพลงซาโลมอน" class="usx-toc2" hidden>เพลงซาโลมอน</p>

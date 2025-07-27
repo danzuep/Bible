@@ -1,6 +1,7 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
     <title>Bible</title>
     <style>
       /* Remove the default blue underline from URLs */
@@ -53,13 +54,22 @@
       .usx-w:hover::after {
         opacity: 1;
       }
+
+      /* When checkbox is checked, show the ruby text */
+      #toggle-ruby:checked ~ p ruby rt.unihan {
+        display: ruby-text; /* shows the ruby annotation */
+      }
+
+      ruby {
+        font-size: 1em;
+      }
     </style>
   </head>
 
   <body>
 <a href="#MAL">#</a> <a href="#MAL.1">[1]</a> <a href="#MAL.2">[2]</a> <a href="#MAL.3">[3]</a> <a href="#MAL.4">[4]</a>
 <h1 id="id-MAL" class="usx-id">39-MAL-web.sfm World English Bible British Edition (WEBBE)</h1>
-<p id="ide-MAL" class="usx-ide" >UTF-8</p>
+<p id="ide-MAL" class="usx-ide" hidden>UTF-8</p>
 <a href="#MAL"><h2 id="MAL" class="usx-h">Malachi</h2></a>
 <p id="toc1-MAL" class="usx-toc1" hidden>The Book of Malachi</p>
 <p id="toc2-MAL" class="usx-toc2" hidden>Malachi</p>
@@ -176,11 +186,11 @@ He will turn the hearts of the fathers to the children and the hearts of the chi
 <details>
 <summary>†</summary>
 <ol>
-<li id="footnote-1"><a href="#note-1" title="Back to reference ↩"><span id="fr-MAL.4.6" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">1:1 </span></a><span id="ft-MAL.4.6" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">When rendered in ALL CAPITAL LETTERS, “LORD” or “GOD” is the translation of God’s Proper Name (Hebrew “<span id="wh-MAL.4.6" class="usx-wh" link-data="https://www.blueletterbible.org/lexicon/">יהוה</span>”, usually pronounced Yahweh).</span></li>
-<li id="footnote-2"><a href="#note-2" title="Back to reference ↩"><span id="fr-MAL.4.6" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">1:9 </span></a><span id="ft-MAL.4.6" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">The Hebrew word rendered “God” is “<span id="wh-MAL.4.6" class="usx-wh" link-data="https://www.blueletterbible.org/lexicon/">אֱלֹהִ֑ים</span>” (Elohim).</span></li>
-<li id="footnote-3"><a href="#note-3" title="Back to reference ↩"><span id="fr-MAL.4.6" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">1:13 </span></a><span id="ft-MAL.4.6" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">“Behold”, from “<span id="wh-MAL.4.6" class="usx-wh" link-data="https://www.blueletterbible.org/lexicon/">הִנֵּה</span>”, means look at, take notice, observe, see, or gaze at. It is often used as an interjection.</span></li>
-<li id="footnote-4"><a href="#note-4" title="Back to reference ↩"><span id="fr-MAL.4.6" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">1:14 </span></a><span id="ft-MAL.4.6" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">The word translated “Lord” is “Adonai.”</span></li>
-<li id="footnote-5"><a href="#note-5" title="Back to reference ↩"><span id="fr-MAL.4.6" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">2:3 </span></a><span id="ft-MAL.4.6" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">or, seed</span></li>
+<li id="footnote-1"><a href="#note-1" title="Back to reference ↩"><span id="fr-MAL.4.6" class="usx-fr">1:1 </span></a><span id="ft-MAL.4.6" class="usx-ft">When rendered in ALL CAPITAL LETTERS, “LORD” or “GOD” is the translation of God’s Proper Name (Hebrew “<span id="wh-MAL.4.6" class="usx-wh">יהוה</span>”, usually pronounced Yahweh).</span></li>
+<li id="footnote-2"><a href="#note-2" title="Back to reference ↩"><span id="fr-MAL.4.6" class="usx-fr">1:9 </span></a><span id="ft-MAL.4.6" class="usx-ft">The Hebrew word rendered “God” is “<span id="wh-MAL.4.6" class="usx-wh">אֱלֹהִ֑ים</span>” (Elohim).</span></li>
+<li id="footnote-3"><a href="#note-3" title="Back to reference ↩"><span id="fr-MAL.4.6" class="usx-fr">1:13 </span></a><span id="ft-MAL.4.6" class="usx-ft">“Behold”, from “<span id="wh-MAL.4.6" class="usx-wh">הִנֵּה</span>”, means look at, take notice, observe, see, or gaze at. It is often used as an interjection.</span></li>
+<li id="footnote-4"><a href="#note-4" title="Back to reference ↩"><span id="fr-MAL.4.6" class="usx-fr">1:14 </span></a><span id="ft-MAL.4.6" class="usx-ft">The word translated “Lord” is “Adonai.”</span></li>
+<li id="footnote-5"><a href="#note-5" title="Back to reference ↩"><span id="fr-MAL.4.6" class="usx-fr">2:3 </span></a><span id="ft-MAL.4.6" class="usx-ft">or, seed</span></li>
 </ol>
 </details>
 </section>

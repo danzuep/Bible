@@ -1,6 +1,7 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
     <title>Bible</title>
     <style>
       /* Remove the default blue underline from URLs */
@@ -53,12 +54,21 @@
       .usx-w:hover::after {
         opacity: 1;
       }
+
+      /* When checkbox is checked, show the ruby text */
+      #toggle-ruby:checked ~ p ruby rt.unihan {
+        display: ruby-text; /* shows the ruby annotation */
+      }
+
+      ruby {
+        font-size: 1em;
+      }
     </style>
   </head>
 
   <body>
 <a href="#โฮเชยา">#</a> <a href="#โฮเชยา.1">[1]</a> <a href="#โฮเชยา.2">[2]</a> <a href="#โฮเชยา.3">[3]</a> <a href="#โฮเชยา.4">[4]</a> <a href="#โฮเชยา.5">[5]</a> <a href="#โฮเชยา.6">[6]</a> <a href="#โฮเชยา.7">[7]</a> <a href="#โฮเชยา.8">[8]</a> <a href="#โฮเชยา.9">[9]</a> <a href="#โฮเชยา.10">[10]</a> <a href="#โฮเชยา.11">[11]</a> <a href="#โฮเชยา.12">[12]</a> <a href="#โฮเชยา.13">[13]</a> <a href="#โฮเชยา.14">[14]</a>
-<p id="ide-_" class="usx-ide" >UTF-8</p>
+<p id="ide-_" class="usx-ide" hidden>UTF-8</p>
 <a href="#โฮเชยา"><h2 id="โฮเชยา" class="usx-h">โฮเชยา</h2></a>
 <p id="toc1-โฮเชยา" class="usx-toc1" hidden>ประวัติ​ความเป็นมาของหนังสือ โฮเชยา</p>
 <p id="toc2-โฮเชยา" class="usx-toc2" hidden>โฮเชยา</p>

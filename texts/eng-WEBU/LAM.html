@@ -1,6 +1,7 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
     <title>Bible</title>
     <style>
       /* Remove the default blue underline from URLs */
@@ -53,13 +54,22 @@
       .usx-w:hover::after {
         opacity: 1;
       }
+
+      /* When checkbox is checked, show the ruby text */
+      #toggle-ruby:checked ~ p ruby rt.unihan {
+        display: ruby-text; /* shows the ruby annotation */
+      }
+
+      ruby {
+        font-size: 1em;
+      }
     </style>
   </head>
 
   <body>
 <a href="#LAM">#</a> <a href="#LAM.1">[1]</a> <a href="#LAM.2">[2]</a> <a href="#LAM.3">[3]</a> <a href="#LAM.4">[4]</a> <a href="#LAM.5">[5]</a>
 <h1 id="id-LAM" class="usx-id">25-LAM-web.sfm World English Bible (WEB)</h1>
-<p id="ide-LAM" class="usx-ide" >UTF-8</p>
+<p id="ide-LAM" class="usx-ide" hidden>UTF-8</p>
 <a href="#LAM"><h2 id="LAM" class="usx-h">Lamentations</h2></a>
 <p id="toc1-LAM" class="usx-toc1" hidden>The Lamentations of Jeremiah</p>
 <p id="toc2-LAM" class="usx-toc2" hidden>Lamentations</p>
@@ -1327,9 +1337,9 @@ We <span id="w-LAM.5.6" class="usx-w" link-data="https://www.blueletterbible.org
 <details>
 <summary>†</summary>
 <ol>
-<li id="footnote-1"><a href="#note-1" title="Back to reference ↩"><span id="fr-LAM.5.22" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">1:5 </span></a><span id="ft-LAM.5.22" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">“Yahweh” is God’s proper Name, sometimes rendered “LORD” (all caps) in other translations.</span></li>
-<li id="footnote-2"><a href="#note-2" title="Back to reference ↩"><span id="fr-LAM.5.22" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">1:14 </span></a><span id="ft-LAM.5.22" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">The word translated “Lord” is “Adonai.”</span></li>
-<li id="footnote-3"><a href="#note-3" title="Back to reference ↩"><span id="fr-LAM.5.22" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">3:41 </span></a><span id="ft-LAM.5.22" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">The Hebrew word rendered “God” is “<span id="wh-LAM.5.22" class="usx-wh" link-data="https://www.blueletterbible.org/lexicon/">אֱלֹהִ֑ים</span>” (Elohim).</span></li>
+<li id="footnote-1"><a href="#note-1" title="Back to reference ↩"><span id="fr-LAM.5.22" class="usx-fr">1:5 </span></a><span id="ft-LAM.5.22" class="usx-ft">“Yahweh” is God’s proper Name, sometimes rendered “LORD” (all caps) in other translations.</span></li>
+<li id="footnote-2"><a href="#note-2" title="Back to reference ↩"><span id="fr-LAM.5.22" class="usx-fr">1:14 </span></a><span id="ft-LAM.5.22" class="usx-ft">The word translated “Lord” is “Adonai.”</span></li>
+<li id="footnote-3"><a href="#note-3" title="Back to reference ↩"><span id="fr-LAM.5.22" class="usx-fr">3:41 </span></a><span id="ft-LAM.5.22" class="usx-ft">The Hebrew word rendered “God” is “<span id="wh-LAM.5.22" class="usx-wh">אֱלֹהִ֑ים</span>” (Elohim).</span></li>
 </ol>
 </details>
 </section>

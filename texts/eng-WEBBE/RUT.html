@@ -1,6 +1,7 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
     <title>Bible</title>
     <style>
       /* Remove the default blue underline from URLs */
@@ -53,13 +54,22 @@
       .usx-w:hover::after {
         opacity: 1;
       }
+
+      /* When checkbox is checked, show the ruby text */
+      #toggle-ruby:checked ~ p ruby rt.unihan {
+        display: ruby-text; /* shows the ruby annotation */
+      }
+
+      ruby {
+        font-size: 1em;
+      }
     </style>
   </head>
 
   <body>
 <a href="#RUT">#</a> <a href="#RUT.1">[1]</a> <a href="#RUT.2">[2]</a> <a href="#RUT.3">[3]</a> <a href="#RUT.4">[4]</a>
 <h1 id="id-RUT" class="usx-id">World English Bible British Edition (WEBBE)</h1>
-<p id="ide-RUT" class="usx-ide" >UTF-8</p>
+<p id="ide-RUT" class="usx-ide" hidden>UTF-8</p>
 <a href="#RUT"><h2 id="RUT" class="usx-h">Ruth</h2></a>
 <p id="toc1-RUT" class="usx-toc1" hidden>The Book of Ruth</p>
 <p id="toc2-RUT" class="usx-toc2" hidden>Ruth</p>
@@ -272,13 +282,13 @@ Now this is <span id="w-RUT.4.18" class="usx-w" link-data="https://www.bluelette
 <details>
 <summary>†</summary>
 <ol>
-<li id="footnote-1"><a href="#note-1" title="Back to reference ↩"><span id="fr-RUT.4.22" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">1:6 </span></a><span id="ft-RUT.4.22" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">When rendered in ALL CAPITAL LETTERS, “LORD” or “GOD” is the translation of God’s Proper Name (Hebrew “<span id="wh-RUT.4.22" class="usx-wh" link-data="https://www.blueletterbible.org/lexicon/">יהוה</span>”, usually pronounced Yahweh).</span></li>
-<li id="footnote-2"><a href="#note-2" title="Back to reference ↩"><span id="fr-RUT.4.22" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">1:15 </span></a><span id="ft-RUT.4.22" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">“Behold”, from “<span id="wh-RUT.4.22" class="usx-wh" link-data="https://www.blueletterbible.org/lexicon/">הִנֵּה</span>”, means look at, take notice, observe, see, or gaze at. It is often used as an interjection.</span></li>
-<li id="footnote-3"><a href="#note-3" title="Back to reference ↩"><span id="fr-RUT.4.22" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">1:16 </span></a><span id="ft-RUT.4.22" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">The Hebrew word rendered “God” is “<span id="wh-RUT.4.22" class="usx-wh" link-data="https://www.blueletterbible.org/lexicon/">אֱלֹהִ֑ים</span>” (Elohim).</span></li>
-<li id="footnote-4"><a href="#note-4" title="Back to reference ↩"><span id="fr-RUT.4.22" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">1:20 </span></a><span id="ft-RUT.4.22" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">“Naomi” means “pleasant”.</span></li>
-<li id="footnote-5"><a href="#note-5" title="Back to reference ↩"><span id="fr-RUT.4.22" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">1:20 </span></a><span id="ft-RUT.4.22" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">“Mara” means “bitter”.</span></li>
-<li id="footnote-6"><a href="#note-6" title="Back to reference ↩"><span id="fr-RUT.4.22" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">2:17 </span></a><span id="ft-RUT.4.22" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">1 ephah is about 22 litres or about 2/3 of a bushel</span></li>
-<li id="footnote-7"><a href="#note-7" title="Back to reference ↩"><span id="fr-RUT.4.22" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">4:12 </span></a><span id="ft-RUT.4.22" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">or, seed</span></li>
+<li id="footnote-1"><a href="#note-1" title="Back to reference ↩"><span id="fr-RUT.4.22" class="usx-fr">1:6 </span></a><span id="ft-RUT.4.22" class="usx-ft">When rendered in ALL CAPITAL LETTERS, “LORD” or “GOD” is the translation of God’s Proper Name (Hebrew “<span id="wh-RUT.4.22" class="usx-wh">יהוה</span>”, usually pronounced Yahweh).</span></li>
+<li id="footnote-2"><a href="#note-2" title="Back to reference ↩"><span id="fr-RUT.4.22" class="usx-fr">1:15 </span></a><span id="ft-RUT.4.22" class="usx-ft">“Behold”, from “<span id="wh-RUT.4.22" class="usx-wh">הִנֵּה</span>”, means look at, take notice, observe, see, or gaze at. It is often used as an interjection.</span></li>
+<li id="footnote-3"><a href="#note-3" title="Back to reference ↩"><span id="fr-RUT.4.22" class="usx-fr">1:16 </span></a><span id="ft-RUT.4.22" class="usx-ft">The Hebrew word rendered “God” is “<span id="wh-RUT.4.22" class="usx-wh">אֱלֹהִ֑ים</span>” (Elohim).</span></li>
+<li id="footnote-4"><a href="#note-4" title="Back to reference ↩"><span id="fr-RUT.4.22" class="usx-fr">1:20 </span></a><span id="ft-RUT.4.22" class="usx-ft">“Naomi” means “pleasant”.</span></li>
+<li id="footnote-5"><a href="#note-5" title="Back to reference ↩"><span id="fr-RUT.4.22" class="usx-fr">1:20 </span></a><span id="ft-RUT.4.22" class="usx-ft">“Mara” means “bitter”.</span></li>
+<li id="footnote-6"><a href="#note-6" title="Back to reference ↩"><span id="fr-RUT.4.22" class="usx-fr">2:17 </span></a><span id="ft-RUT.4.22" class="usx-ft">1 ephah is about 22 litres or about 2/3 of a bushel</span></li>
+<li id="footnote-7"><a href="#note-7" title="Back to reference ↩"><span id="fr-RUT.4.22" class="usx-fr">4:12 </span></a><span id="ft-RUT.4.22" class="usx-ft">or, seed</span></li>
 </ol>
 </details>
 </section>

@@ -1,6 +1,7 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
     <title>Bible</title>
     <style>
       /* Remove the default blue underline from URLs */
@@ -53,13 +54,22 @@
       .usx-w:hover::after {
         opacity: 1;
       }
+
+      /* When checkbox is checked, show the ruby text */
+      #toggle-ruby:checked ~ p ruby rt.unihan {
+        display: ruby-text; /* shows the ruby annotation */
+      }
+
+      ruby {
+        font-size: 1em;
+      }
     </style>
   </head>
 
   <body>
 <a href="#NAM">#</a> <a href="#NAM.1">[1]</a> <a href="#NAM.2">[2]</a> <a href="#NAM.3">[3]</a>
 <h1 id="id-NAM" class="usx-id">34-NAM-web.sfm World English Bible (WEB)</h1>
-<p id="ide-NAM" class="usx-ide" >UTF-8</p>
+<p id="ide-NAM" class="usx-ide" hidden>UTF-8</p>
 <a href="#NAM"><h2 id="NAM" class="usx-h">Nahum</h2></a>
 <p id="toc1-NAM" class="usx-toc1" hidden>The Book of Nahum</p>
 <p id="toc2-NAM" class="usx-toc2" hidden>Nahum</p>
@@ -152,11 +162,11 @@ Where <span id="w-NAM.2.11" class="usx-w" link-data="https://www.blueletterbible
 <details>
 <summary>†</summary>
 <ol>
-<li id="footnote-1"><a href="#note-1" title="Back to reference ↩"><span id="fr-NAM.3.19" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">1:2 </span></a><span id="ft-NAM.3.19" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">“Yahweh” is God’s proper Name, sometimes rendered “LORD” (all caps) in other translations.</span></li>
-<li id="footnote-2"><a href="#note-2" title="Back to reference ↩"><span id="fr-NAM.3.19" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">1:2 </span></a><span id="ft-NAM.3.19" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">The Hebrew word rendered “God” is “<span id="wh-NAM.3.19" class="usx-wh" link-data="https://www.blueletterbible.org/lexicon/">אֱלֹהִ֑ים</span>” (Elohim).</span></li>
-<li id="footnote-3"><a href="#note-3" title="Back to reference ↩"><span id="fr-NAM.3.19" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">1:15 </span></a><span id="ft-NAM.3.19" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">“Behold”, from “<span id="wh-NAM.3.19" class="usx-wh" link-data="https://www.blueletterbible.org/lexicon/">הִנֵּה</span>”, means look at, take notice, observe, see, or gaze at. It is often used as an interjection.</span></li>
-<li id="footnote-4"><a href="#note-4" title="Back to reference ↩"><span id="fr-NAM.3.19" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">3:8 </span></a><span id="ft-NAM.3.19" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">or, Thebes</span></li>
-<li id="footnote-5"><a href="#note-5" title="Back to reference ↩"><span id="fr-NAM.3.19" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">3:8 </span></a><span id="ft-NAM.3.19" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">or, Nile</span></li>
+<li id="footnote-1"><a href="#note-1" title="Back to reference ↩"><span id="fr-NAM.3.19" class="usx-fr">1:2 </span></a><span id="ft-NAM.3.19" class="usx-ft">“Yahweh” is God’s proper Name, sometimes rendered “LORD” (all caps) in other translations.</span></li>
+<li id="footnote-2"><a href="#note-2" title="Back to reference ↩"><span id="fr-NAM.3.19" class="usx-fr">1:2 </span></a><span id="ft-NAM.3.19" class="usx-ft">The Hebrew word rendered “God” is “<span id="wh-NAM.3.19" class="usx-wh">אֱלֹהִ֑ים</span>” (Elohim).</span></li>
+<li id="footnote-3"><a href="#note-3" title="Back to reference ↩"><span id="fr-NAM.3.19" class="usx-fr">1:15 </span></a><span id="ft-NAM.3.19" class="usx-ft">“Behold”, from “<span id="wh-NAM.3.19" class="usx-wh">הִנֵּה</span>”, means look at, take notice, observe, see, or gaze at. It is often used as an interjection.</span></li>
+<li id="footnote-4"><a href="#note-4" title="Back to reference ↩"><span id="fr-NAM.3.19" class="usx-fr">3:8 </span></a><span id="ft-NAM.3.19" class="usx-ft">or, Thebes</span></li>
+<li id="footnote-5"><a href="#note-5" title="Back to reference ↩"><span id="fr-NAM.3.19" class="usx-fr">3:8 </span></a><span id="ft-NAM.3.19" class="usx-ft">or, Nile</span></li>
 </ol>
 </details>
 </section>

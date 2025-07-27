@@ -1,6 +1,7 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
     <title>Bible</title>
     <style>
       /* Remove the default blue underline from URLs */
@@ -53,13 +54,22 @@
       .usx-w:hover::after {
         opacity: 1;
       }
+
+      /* When checkbox is checked, show the ruby text */
+      #toggle-ruby:checked ~ p ruby rt.unihan {
+        display: ruby-text; /* shows the ruby annotation */
+      }
+
+      ruby {
+        font-size: 1em;
+      }
     </style>
   </head>
 
   <body>
 <a href="#TIT">#</a> <a href="#TIT.1">[1]</a> <a href="#TIT.2">[2]</a> <a href="#TIT.3">[3]</a>
 <h1 id="id-TIT" class="usx-id">56-TIT-web.sfm World English Bible (WEB)</h1>
-<p id="ide-TIT" class="usx-ide" >UTF-8</p>
+<p id="ide-TIT" class="usx-ide" hidden>UTF-8</p>
 <a href="#TIT"><h2 id="TIT" class="usx-h">Titus</h2></a>
 <p id="toc1-TIT" class="usx-toc1" hidden>Paul’s Letter to Titus</p>
 <p id="toc2-TIT" class="usx-toc2" hidden>Titus</p>
@@ -149,7 +159,7 @@ Exhort <span id="w-TIT.2.9" class="usx-w" link-data="https://www.blueletterbible
 <details>
 <summary>†</summary>
 <ol>
-<li id="footnote-1"><a href="#note-1" title="Back to reference ↩"><span id="fr-TIT.3.15" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">1:1 </span></a><span id="ft-TIT.3.15" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">“Christ” means “Anointed One”.</span></li>
+<li id="footnote-1"><a href="#note-1" title="Back to reference ↩"><span id="fr-TIT.3.15" class="usx-fr">1:1 </span></a><span id="ft-TIT.3.15" class="usx-ft">“Christ” means “Anointed One”.</span></li>
 </ol>
 </details>
 </section>

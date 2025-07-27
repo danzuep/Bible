@@ -1,6 +1,7 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
     <title>Bible</title>
     <style>
       /* Remove the default blue underline from URLs */
@@ -53,13 +54,22 @@
       .usx-w:hover::after {
         opacity: 1;
       }
+
+      /* When checkbox is checked, show the ruby text */
+      #toggle-ruby:checked ~ p ruby rt.unihan {
+        display: ruby-text; /* shows the ruby annotation */
+      }
+
+      ruby {
+        font-size: 1em;
+      }
     </style>
   </head>
 
   <body>
 <a href="#JAS">#</a> <a href="#JAS.1">[1]</a> <a href="#JAS.2">[2]</a> <a href="#JAS.3">[3]</a> <a href="#JAS.4">[4]</a> <a href="#JAS.5">[5]</a>
 <h1 id="id-JAS" class="usx-id">59-JAS-web.sfm World English Bible British Edition (WEBBE)</h1>
-<p id="ide-JAS" class="usx-ide" >UTF-8</p>
+<p id="ide-JAS" class="usx-ide" hidden>UTF-8</p>
 <a href="#JAS"><h2 id="JAS" class="usx-h">James</h2></a>
 <p id="toc1-JAS" class="usx-toc1" hidden>The Letter from James</p>
 <p id="toc2-JAS" class="usx-toc2" hidden>James</p>
@@ -251,26 +261,26 @@ Brothers, <span id="w-JAS.5.19" class="usx-w" link-data="https://www.blueletterb
 <details>
 <summary>†</summary>
 <ol>
-<li id="footnote-1"><a href="#note-1" title="Back to reference ↩"><span id="fr-JAS.5.20" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">1:1 </span></a><span id="ft-JAS.5.20" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">“Christ” means “Anointed One”.</span></li>
-<li id="footnote-2"><a href="#note-2" title="Back to reference ↩"><span id="fr-JAS.5.20" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">1:2 </span></a><span id="ft-JAS.5.20" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">The word for “brothers” here and where context allows may also be correctly translated “brothers and sisters” or “siblings.”</span></li>
-<li id="footnote-3"><a href="#note-3" title="Back to reference ↩"><span id="fr-JAS.5.20" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">1:21 </span></a><span id="ft-JAS.5.20" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">or, preserve your life.</span></li>
-<li id="footnote-4"><a href="#note-4" title="Back to reference ↩"><span id="fr-JAS.5.20" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">2:2 </span></a><span id="ft-JAS.5.20" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">or, meeting</span></li>
-<li id="footnote-5"><a href="#note-5" title="Back to reference ↩"><span id="xo-JAS.5.20" class="usx-xo" link-data="https://www.blueletterbible.org/lexicon/">2:8 </span></a><span id="xt-JAS.5.20" class="usx-xt" link-data="https://www.blueletterbible.org/lexicon/"><a id="ref-JAS.5.20" class="usx-ref" title="Bible link" href="https://www.biblegateway.com/passage/?search=LEV+19%3A18" target="_blank">LEV 19:18 Leviticus 19:18</a>
+<li id="footnote-1"><a href="#note-1" title="Back to reference ↩"><span id="fr-JAS.5.20" class="usx-fr">1:1 </span></a><span id="ft-JAS.5.20" class="usx-ft">“Christ” means “Anointed One”.</span></li>
+<li id="footnote-2"><a href="#note-2" title="Back to reference ↩"><span id="fr-JAS.5.20" class="usx-fr">1:2 </span></a><span id="ft-JAS.5.20" class="usx-ft">The word for “brothers” here and where context allows may also be correctly translated “brothers and sisters” or “siblings.”</span></li>
+<li id="footnote-3"><a href="#note-3" title="Back to reference ↩"><span id="fr-JAS.5.20" class="usx-fr">1:21 </span></a><span id="ft-JAS.5.20" class="usx-ft">or, preserve your life.</span></li>
+<li id="footnote-4"><a href="#note-4" title="Back to reference ↩"><span id="fr-JAS.5.20" class="usx-fr">2:2 </span></a><span id="ft-JAS.5.20" class="usx-ft">or, meeting</span></li>
+<li id="footnote-5"><a href="#note-5" title="Back to reference ↩"><span id="xo-JAS.5.20" class="usx-xo">2:8 </span></a><span id="xt-JAS.5.20" class="usx-xt"><a id="ref-JAS.5.20" class="usx-ref" title="Bible link" href="https://www.biblegateway.com/passage/?search=LEV+19%3A18" target="_blank">LEV 19:18 Leviticus 19:18</a>
 </span></li>
-<li id="footnote-6"><a href="#note-6" title="Back to reference ↩"><span id="xo-JAS.5.20" class="usx-xo" link-data="https://www.blueletterbible.org/lexicon/">2:11 </span></a><span id="xt-JAS.5.20" class="usx-xt" link-data="https://www.blueletterbible.org/lexicon/"><a id="ref-JAS.5.20" class="usx-ref" title="Bible link" href="https://www.biblegateway.com/passage/?search=EXO+20%3A14" target="_blank">EXO 20:14 Exodus 20:14</a>
+<li id="footnote-6"><a href="#note-6" title="Back to reference ↩"><span id="xo-JAS.5.20" class="usx-xo">2:11 </span></a><span id="xt-JAS.5.20" class="usx-xt"><a id="ref-JAS.5.20" class="usx-ref" title="Bible link" href="https://www.biblegateway.com/passage/?search=EXO+20%3A14" target="_blank">EXO 20:14 Exodus 20:14</a>
 ; <a id="ref-JAS.5.20" class="usx-ref" title="Bible link" href="https://www.biblegateway.com/passage/?search=DEU+5%3A18" target="_blank">DEU 5:18 Deuteronomy 5:18</a>
 </span></li>
-<li id="footnote-7"><a href="#note-7" title="Back to reference ↩"><span id="xo-JAS.5.20" class="usx-xo" link-data="https://www.blueletterbible.org/lexicon/">2:11 </span></a><span id="xt-JAS.5.20" class="usx-xt" link-data="https://www.blueletterbible.org/lexicon/"><a id="ref-JAS.5.20" class="usx-ref" title="Bible link" href="https://www.biblegateway.com/passage/?search=EXO+20%3A13" target="_blank">EXO 20:13 Exodus 20:13</a>
+<li id="footnote-7"><a href="#note-7" title="Back to reference ↩"><span id="xo-JAS.5.20" class="usx-xo">2:11 </span></a><span id="xt-JAS.5.20" class="usx-xt"><a id="ref-JAS.5.20" class="usx-ref" title="Bible link" href="https://www.biblegateway.com/passage/?search=EXO+20%3A13" target="_blank">EXO 20:13 Exodus 20:13</a>
 ; <a id="ref-JAS.5.20" class="usx-ref" title="Bible link" href="https://www.biblegateway.com/passage/?search=DEU+5%3A17" target="_blank">DEU 5:17 Deuteronomy 5:17</a>
  </span></li>
-<li id="footnote-8"><a href="#note-8" title="Back to reference ↩"><span id="xo-JAS.5.20" class="usx-xo" link-data="https://www.blueletterbible.org/lexicon/">2:23 </span></a><span id="xt-JAS.5.20" class="usx-xt" link-data="https://www.blueletterbible.org/lexicon/"><a id="ref-JAS.5.20" class="usx-ref" title="Bible link" href="https://www.biblegateway.com/passage/?search=GEN+15%3A6" target="_blank">GEN 15:6 Genesis 15:6</a>
+<li id="footnote-8"><a href="#note-8" title="Back to reference ↩"><span id="xo-JAS.5.20" class="usx-xo">2:23 </span></a><span id="xt-JAS.5.20" class="usx-xt"><a id="ref-JAS.5.20" class="usx-ref" title="Bible link" href="https://www.biblegateway.com/passage/?search=GEN+15%3A6" target="_blank">GEN 15:6 Genesis 15:6</a>
 </span></li>
-<li id="footnote-9"><a href="#note-9" title="Back to reference ↩"><span id="fr-JAS.5.20" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">3:4 </span></a><span id="ft-JAS.5.20" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">“Behold”, from “ἰδοὺ”, means look at, take notice, observe, see, or gaze at. It is often used as an interjection.</span></li>
-<li id="footnote-10"><a href="#note-10" title="Back to reference ↩"><span id="fr-JAS.5.20" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">3:6 </span></a><span id="ft-JAS.5.20" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">or, Hell</span></li>
-<li id="footnote-11"><a href="#note-11" title="Back to reference ↩"><span id="xo-JAS.5.20" class="usx-xo" link-data="https://www.blueletterbible.org/lexicon/">4:6 </span></a><span id="xt-JAS.5.20" class="usx-xt" link-data="https://www.blueletterbible.org/lexicon/"><a id="ref-JAS.5.20" class="usx-ref" title="Bible link" href="https://www.biblegateway.com/passage/?search=PRO+3%3A34" target="_blank">PRO 3:34 Proverbs 3:34</a>
+<li id="footnote-9"><a href="#note-9" title="Back to reference ↩"><span id="fr-JAS.5.20" class="usx-fr">3:4 </span></a><span id="ft-JAS.5.20" class="usx-ft">“Behold”, from “ἰδοὺ”, means look at, take notice, observe, see, or gaze at. It is often used as an interjection.</span></li>
+<li id="footnote-10"><a href="#note-10" title="Back to reference ↩"><span id="fr-JAS.5.20" class="usx-fr">3:6 </span></a><span id="ft-JAS.5.20" class="usx-ft">or, Hell</span></li>
+<li id="footnote-11"><a href="#note-11" title="Back to reference ↩"><span id="xo-JAS.5.20" class="usx-xo">4:6 </span></a><span id="xt-JAS.5.20" class="usx-xt"><a id="ref-JAS.5.20" class="usx-ref" title="Bible link" href="https://www.biblegateway.com/passage/?search=PRO+3%3A34" target="_blank">PRO 3:34 Proverbs 3:34</a>
 </span></li>
-<li id="footnote-12"><a href="#note-12" title="Back to reference ↩"><span id="fr-JAS.5.20" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">5:4 </span></a><span id="ft-JAS.5.20" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">Greek: Sabaoth (or Hebrew: Tze’va’ot)</span></li>
-<li id="footnote-13"><a href="#note-13" title="Back to reference ↩"><span id="fr-JAS.5.20" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">5:12 </span></a><span id="ft-JAS.5.20" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">TR reads “under judgement” instead of “into hypocrisy”</span></li>
+<li id="footnote-12"><a href="#note-12" title="Back to reference ↩"><span id="fr-JAS.5.20" class="usx-fr">5:4 </span></a><span id="ft-JAS.5.20" class="usx-ft">Greek: Sabaoth (or Hebrew: Tze’va’ot)</span></li>
+<li id="footnote-13"><a href="#note-13" title="Back to reference ↩"><span id="fr-JAS.5.20" class="usx-fr">5:12 </span></a><span id="ft-JAS.5.20" class="usx-ft">TR reads “under judgement” instead of “into hypocrisy”</span></li>
 </ol>
 </details>
 </section>

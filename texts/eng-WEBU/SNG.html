@@ -1,6 +1,7 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
     <title>Bible</title>
     <style>
       /* Remove the default blue underline from URLs */
@@ -53,13 +54,22 @@
       .usx-w:hover::after {
         opacity: 1;
       }
+
+      /* When checkbox is checked, show the ruby text */
+      #toggle-ruby:checked ~ p ruby rt.unihan {
+        display: ruby-text; /* shows the ruby annotation */
+      }
+
+      ruby {
+        font-size: 1em;
+      }
     </style>
   </head>
 
   <body>
 <a href="#SNG">#</a> <a href="#SNG.1">[1]</a> <a href="#SNG.2">[2]</a> <a href="#SNG.3">[3]</a> <a href="#SNG.4">[4]</a> <a href="#SNG.5">[5]</a> <a href="#SNG.6">[6]</a> <a href="#SNG.7">[7]</a> <a href="#SNG.8">[8]</a>
 <h1 id="id-SNG" class="usx-id">World English Bible (WEB)</h1>
-<p id="ide-SNG" class="usx-ide" >UTF-8</p>
+<p id="ide-SNG" class="usx-ide" hidden>UTF-8</p>
 <a href="#SNG"><h2 id="SNG" class="usx-h">Song of Solomon</h2></a>
 <p id="toc1-SNG" class="usx-toc1" hidden>The Song of Solomon</p>
 <p id="toc2-SNG" class="usx-toc2" hidden>Song of Solomon</p>
@@ -1033,10 +1043,10 @@ Come <span id="w-SNG.8.14" class="usx-w" link-data="https://www.blueletterbible.
 <details>
 <summary>†</summary>
 <ol>
-<li id="footnote-1"><a href="#note-1" title="Back to reference ↩"><span id="fr-SNG.8.14" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">1:15 </span></a><span id="ft-SNG.8.14" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">“Behold”, from “<span id="wh-SNG.8.14" class="usx-wh" link-data="https://www.blueletterbible.org/lexicon/">הִנֵּה</span>”, means look at, take notice, observe, see, or gaze at. It is often used as an interjection.</span></li>
-<li id="footnote-2"><a href="#note-2" title="Back to reference ↩"><span id="fr-SNG.8.14" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">8:6 </span></a><span id="ft-SNG.8.14" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">Sheol is the place of the dead. </span></li>
-<li id="footnote-3"><a href="#note-3" title="Back to reference ↩"><span id="fr-SNG.8.14" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">8:6 </span></a><span id="ft-SNG.8.14" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">“Yah” is a short form of “Yahweh”, which is God’s proper Name, sometimes rendered “LORD” (all caps) in other translations.</span></li>
-<li id="footnote-4"><a href="#note-4" title="Back to reference ↩"><span id="fr-SNG.8.14" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">8:11 </span></a><span id="ft-SNG.8.14" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">A shekel is about 10 grams or about 0.35 ounces, so 1000 shekels is about 10 kilograms or about 22 pounds.</span></li>
+<li id="footnote-1"><a href="#note-1" title="Back to reference ↩"><span id="fr-SNG.8.14" class="usx-fr">1:15 </span></a><span id="ft-SNG.8.14" class="usx-ft">“Behold”, from “<span id="wh-SNG.8.14" class="usx-wh">הִנֵּה</span>”, means look at, take notice, observe, see, or gaze at. It is often used as an interjection.</span></li>
+<li id="footnote-2"><a href="#note-2" title="Back to reference ↩"><span id="fr-SNG.8.14" class="usx-fr">8:6 </span></a><span id="ft-SNG.8.14" class="usx-ft">Sheol is the place of the dead. </span></li>
+<li id="footnote-3"><a href="#note-3" title="Back to reference ↩"><span id="fr-SNG.8.14" class="usx-fr">8:6 </span></a><span id="ft-SNG.8.14" class="usx-ft">“Yah” is a short form of “Yahweh”, which is God’s proper Name, sometimes rendered “LORD” (all caps) in other translations.</span></li>
+<li id="footnote-4"><a href="#note-4" title="Back to reference ↩"><span id="fr-SNG.8.14" class="usx-fr">8:11 </span></a><span id="ft-SNG.8.14" class="usx-ft">A shekel is about 10 grams or about 0.35 ounces, so 1000 shekels is about 10 kilograms or about 22 pounds.</span></li>
 </ol>
 </details>
 </section>

@@ -1,6 +1,7 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
     <title>Bible</title>
     <style>
       /* Remove the default blue underline from URLs */
@@ -53,12 +54,21 @@
       .usx-w:hover::after {
         opacity: 1;
       }
+
+      /* When checkbox is checked, show the ruby text */
+      #toggle-ruby:checked ~ p ruby rt.unihan {
+        display: ruby-text; /* shows the ruby annotation */
+      }
+
+      ruby {
+        font-size: 1em;
+      }
     </style>
   </head>
 
   <body>
 <a href="#โยนาห์">#</a> <a href="#โยนาห์.1">[1]</a> <a href="#โยนาห์.2">[2]</a> <a href="#โยนาห์.3">[3]</a> <a href="#โยนาห์.4">[4]</a>
-<p id="ide-_" class="usx-ide" >UTF-8</p>
+<p id="ide-_" class="usx-ide" hidden>UTF-8</p>
 <a href="#โยนาห์"><h2 id="โยนาห์" class="usx-h">โยนาห์</h2></a>
 <p id="toc1-โยนาห์" class="usx-toc1" hidden>ประวัติ​ความเป็นมาของหนังสือ โยนาห์</p>
 <p id="toc2-โยนาห์" class="usx-toc2" hidden>โยนาห์</p>

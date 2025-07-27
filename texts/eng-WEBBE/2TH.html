@@ -1,6 +1,7 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
     <title>Bible</title>
     <style>
       /* Remove the default blue underline from URLs */
@@ -53,13 +54,22 @@
       .usx-w:hover::after {
         opacity: 1;
       }
+
+      /* When checkbox is checked, show the ruby text */
+      #toggle-ruby:checked ~ p ruby rt.unihan {
+        display: ruby-text; /* shows the ruby annotation */
+      }
+
+      ruby {
+        font-size: 1em;
+      }
     </style>
   </head>
 
   <body>
 <a href="#2TH">#</a> <a href="#2TH.1">[1]</a> <a href="#2TH.2">[2]</a> <a href="#2TH.3">[3]</a>
 <h1 id="id-2TH" class="usx-id">53-2TH-web.sfm World English Bible British Edition (WEBBE)</h1>
-<p id="ide-2TH" class="usx-ide" >UTF-8</p>
+<p id="ide-2TH" class="usx-ide" hidden>UTF-8</p>
 <a href="#2TH"><h2 id="2TH" class="usx-h">2 Thessalonians</h2></a>
 <p id="toc1-2TH" class="usx-toc1" hidden>Paul’s Second Letter to the Thessalonians</p>
 <p id="toc2-2TH" class="usx-toc2" hidden>2 Thessalonians</p>
@@ -152,9 +162,9 @@ Don’t <span id="w-2TH.3.15" class="usx-w" link-data="https://www.blueletterbib
 <details>
 <summary>†</summary>
 <ol>
-<li id="footnote-1"><a href="#note-1" title="Back to reference ↩"><span id="fr-2TH.3.18" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">1:3 </span></a><span id="ft-2TH.3.18" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">The word for “brothers” here and where context allows may also be correctly translated “brothers and sisters” or “siblings.”</span></li>
-<li id="footnote-2"><a href="#note-2" title="Back to reference ↩"><span id="fr-2TH.3.18" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">1:12 </span></a><span id="ft-2TH.3.18" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">TR adds “Christ”</span></li>
-<li id="footnote-3"><a href="#note-3" title="Back to reference ↩"><span id="fr-2TH.3.18" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">2:3 </span></a><span id="ft-2TH.3.18" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">or, </span><span id="fqa-2TH.3.18" class="usx-fqa" link-data="https://www.blueletterbible.org/lexicon/">falling away</span><span id="ft-2TH.3.18" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">, or, </span><span id="fqa-2TH.3.18" class="usx-fqa" link-data="https://www.blueletterbible.org/lexicon/">defection</span></li>
+<li id="footnote-1"><a href="#note-1" title="Back to reference ↩"><span id="fr-2TH.3.18" class="usx-fr">1:3 </span></a><span id="ft-2TH.3.18" class="usx-ft">The word for “brothers” here and where context allows may also be correctly translated “brothers and sisters” or “siblings.”</span></li>
+<li id="footnote-2"><a href="#note-2" title="Back to reference ↩"><span id="fr-2TH.3.18" class="usx-fr">1:12 </span></a><span id="ft-2TH.3.18" class="usx-ft">TR adds “Christ”</span></li>
+<li id="footnote-3"><a href="#note-3" title="Back to reference ↩"><span id="fr-2TH.3.18" class="usx-fr">2:3 </span></a><span id="ft-2TH.3.18" class="usx-ft">or, </span><span id="fqa-2TH.3.18" class="usx-fqa">falling away</span><span id="ft-2TH.3.18" class="usx-ft">, or, </span><span id="fqa-2TH.3.18" class="usx-fqa">defection</span></li>
 </ol>
 </details>
 </section>

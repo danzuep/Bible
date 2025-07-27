@@ -1,6 +1,7 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
     <title>Bible</title>
     <style>
       /* Remove the default blue underline from URLs */
@@ -53,13 +54,22 @@
       .usx-w:hover::after {
         opacity: 1;
       }
+
+      /* When checkbox is checked, show the ruby text */
+      #toggle-ruby:checked ~ p ruby rt.unihan {
+        display: ruby-text; /* shows the ruby annotation */
+      }
+
+      ruby {
+        font-size: 1em;
+      }
     </style>
   </head>
 
   <body>
 <a href="#AMO">#</a> <a href="#AMO.1">[1]</a> <a href="#AMO.2">[2]</a> <a href="#AMO.3">[3]</a> <a href="#AMO.4">[4]</a> <a href="#AMO.5">[5]</a> <a href="#AMO.6">[6]</a> <a href="#AMO.7">[7]</a> <a href="#AMO.8">[8]</a> <a href="#AMO.9">[9]</a>
 <h1 id="id-AMO" class="usx-id">30-AMO-web.sfm World English Bible British Edition (WEBBE)</h1>
-<p id="ide-AMO" class="usx-ide" >UTF-8</p>
+<p id="ide-AMO" class="usx-ide" hidden>UTF-8</p>
 <a href="#AMO"><h2 id="AMO" class="usx-h">Amos</h2></a>
 <p id="toc1-AMO" class="usx-toc1" hidden>The Book of Amos</p>
 <p id="toc2-AMO" class="usx-toc2" hidden>Amos</p>
@@ -1045,14 +1055,14 @@ Though <span id="w-AMO.9.4" class="usx-w" link-data="https://www.blueletterbible
 <details>
 <summary>†</summary>
 <ol>
-<li id="footnote-1"><a href="#note-1" title="Back to reference ↩"><span id="fr-AMO.9.15" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">1:2 </span></a><span id="ft-AMO.9.15" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">When rendered in ALL CAPITAL LETTERS, “LORD” or “GOD” is the translation of God’s Proper Name (Hebrew “<span id="wh-AMO.9.15" class="usx-wh" link-data="https://www.blueletterbible.org/lexicon/">יהוה</span>”, usually pronounced Yahweh).</span></li>
-<li id="footnote-2"><a href="#note-2" title="Back to reference ↩"><span id="fr-AMO.9.15" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">1:8 </span></a><span id="ft-AMO.9.15" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">The word translated “Lord” is “Adonai.”</span></li>
-<li id="footnote-3"><a href="#note-3" title="Back to reference ↩"><span id="fr-AMO.9.15" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">2:8 </span></a><span id="ft-AMO.9.15" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">The Hebrew word rendered “God” is “<span id="wh-AMO.9.15" class="usx-wh" link-data="https://www.blueletterbible.org/lexicon/">אֱלֹהִ֑ים</span>” (Elohim).</span></li>
-<li id="footnote-4"><a href="#note-4" title="Back to reference ↩"><span id="fr-AMO.9.15" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">2:13 </span></a><span id="ft-AMO.9.15" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">“Behold”, from “<span id="wh-AMO.9.15" class="usx-wh" link-data="https://www.blueletterbible.org/lexicon/">הִנֵּה</span>”, means look at, take notice, observe, see, or gaze at. It is often used as an interjection.</span></li>
-<li id="footnote-5"><a href="#note-5" title="Back to reference ↩"><span id="fr-AMO.9.15" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">8:5 </span></a><span id="ft-AMO.9.15" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">1 ephah is about 22 litres or about 2/3 of a bushel </span></li>
-<li id="footnote-6"><a href="#note-6" title="Back to reference ↩"><span id="fr-AMO.9.15" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">8:5 </span></a><span id="ft-AMO.9.15" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">a normal shekel is about 10 grams or about 0.35 ounces.</span></li>
-<li id="footnote-7"><a href="#note-7" title="Back to reference ↩"><span id="fr-AMO.9.15" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">9:2 </span></a><span id="ft-AMO.9.15" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">Sheol is the place of the dead.</span></li>
-<li id="footnote-8"><a href="#note-8" title="Back to reference ↩"><span id="fr-AMO.9.15" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">9:5 </span></a><span id="ft-AMO.9.15" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">When rendered in ALL CAPITAL LETTERS, “LORD” or “GOD” is the translation of God’s Proper Name (Hebrew “<span id="wh-AMO.9.15" class="usx-wh" link-data="https://www.blueletterbible.org/lexicon/">יהוה</span>”, usually pronounced Yahweh).</span></li>
+<li id="footnote-1"><a href="#note-1" title="Back to reference ↩"><span id="fr-AMO.9.15" class="usx-fr">1:2 </span></a><span id="ft-AMO.9.15" class="usx-ft">When rendered in ALL CAPITAL LETTERS, “LORD” or “GOD” is the translation of God’s Proper Name (Hebrew “<span id="wh-AMO.9.15" class="usx-wh">יהוה</span>”, usually pronounced Yahweh).</span></li>
+<li id="footnote-2"><a href="#note-2" title="Back to reference ↩"><span id="fr-AMO.9.15" class="usx-fr">1:8 </span></a><span id="ft-AMO.9.15" class="usx-ft">The word translated “Lord” is “Adonai.”</span></li>
+<li id="footnote-3"><a href="#note-3" title="Back to reference ↩"><span id="fr-AMO.9.15" class="usx-fr">2:8 </span></a><span id="ft-AMO.9.15" class="usx-ft">The Hebrew word rendered “God” is “<span id="wh-AMO.9.15" class="usx-wh">אֱלֹהִ֑ים</span>” (Elohim).</span></li>
+<li id="footnote-4"><a href="#note-4" title="Back to reference ↩"><span id="fr-AMO.9.15" class="usx-fr">2:13 </span></a><span id="ft-AMO.9.15" class="usx-ft">“Behold”, from “<span id="wh-AMO.9.15" class="usx-wh">הִנֵּה</span>”, means look at, take notice, observe, see, or gaze at. It is often used as an interjection.</span></li>
+<li id="footnote-5"><a href="#note-5" title="Back to reference ↩"><span id="fr-AMO.9.15" class="usx-fr">8:5 </span></a><span id="ft-AMO.9.15" class="usx-ft">1 ephah is about 22 litres or about 2/3 of a bushel </span></li>
+<li id="footnote-6"><a href="#note-6" title="Back to reference ↩"><span id="fr-AMO.9.15" class="usx-fr">8:5 </span></a><span id="ft-AMO.9.15" class="usx-ft">a normal shekel is about 10 grams or about 0.35 ounces.</span></li>
+<li id="footnote-7"><a href="#note-7" title="Back to reference ↩"><span id="fr-AMO.9.15" class="usx-fr">9:2 </span></a><span id="ft-AMO.9.15" class="usx-ft">Sheol is the place of the dead.</span></li>
+<li id="footnote-8"><a href="#note-8" title="Back to reference ↩"><span id="fr-AMO.9.15" class="usx-fr">9:5 </span></a><span id="ft-AMO.9.15" class="usx-ft">When rendered in ALL CAPITAL LETTERS, “LORD” or “GOD” is the translation of God’s Proper Name (Hebrew “<span id="wh-AMO.9.15" class="usx-wh">יהוה</span>”, usually pronounced Yahweh).</span></li>
 </ol>
 </details>
 </section>

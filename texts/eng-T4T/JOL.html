@@ -1,6 +1,7 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
     <title>Bible</title>
     <style>
       /* Remove the default blue underline from URLs */
@@ -53,13 +54,22 @@
       .usx-w:hover::after {
         opacity: 1;
       }
+
+      /* When checkbox is checked, show the ruby text */
+      #toggle-ruby:checked ~ p ruby rt.unihan {
+        display: ruby-text; /* shows the ruby annotation */
+      }
+
+      ruby {
+        font-size: 1em;
+      }
     </style>
   </head>
 
   <body>
 <a href="#JOL">#</a> <a href="#JOL.1">[1]</a> <a href="#JOL.2">[2]</a> <a href="#JOL.3">[3]</a>
 <h1 id="id-JOL" class="usx-id">- Translation 4 Translators 1</h1>
-<p id="ide-JOL" class="usx-ide" >65001 - Unicode (UTF-8)</p>
+<p id="ide-JOL" class="usx-ide" hidden>65001 - Unicode (UTF-8)</p>
 <a href="#JOL"><h2 id="JOL" class="usx-h">JOEL</h2></a>
 <p id="toc1-JOL" class="usx-toc1" hidden>Joel</p>
 <p id="toc2-JOL" class="usx-toc2" hidden>Joel</p>
@@ -70,11 +80,11 @@
 <p id="p-JOL.1" class="usx-p" >
     <a href="#JOL.1.1"><sup id="JOL.1.1" class="usx-v">1</sup></a>
 
-    <span id="add-JOL.1.1" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">I am</span> Joel, the son of Pethuel. <span id="add-JOL.1.1" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">This is</span> a message that Yahweh gave to me.</p>
+    <span id="add-JOL.1.1" class="usx-add">I am</span> Joel, the son of Pethuel. <span id="add-JOL.1.1" class="usx-add">This is</span> a message that Yahweh gave to me.</p>
 <p id="s1-JOL.1.1" class="usx-s1" >The attack by locusts</p>
 <p id="q1-JOL.1.1" class="usx-q1" >
     <a href="#JOL.1.2"><sup id="JOL.1.2" class="usx-v">2</sup></a>
-You leaders <span id="add-JOL.1.2" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">of Israel</span>, and everyone else who lives in this country, listen <span id="add-JOL.1.2" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">to this message</span>!</p>
+You leaders <span id="add-JOL.1.2" class="usx-add">of Israel</span>, and everyone else who lives in this country, listen <span id="add-JOL.1.2" class="usx-add">to this message</span>!</p>
 <p id="q2-JOL.1.2" class="usx-q2" >Nothing [RHQ] like this has ever happened during the time that we have lived</p>
 <p id="q2-JOL.1.2" class="usx-q2" >or the time when our ancestors lived.</p>
 <p id="q1-JOL.1.2" class="usx-q1" >
@@ -86,12 +96,12 @@ Tell your children about it,</p>
 <p id="q1-JOL.1.3" class="usx-q1" >
     <a href="#JOL.1.4"><sup id="JOL.1.4" class="usx-v">4</sup></a>
 
-    <span id="add-JOL.1.4" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">I am talking about</span> the locusts that have eaten our crops.</p>
-<p id="q2-JOL.1.4" class="usx-q2" >The first swarm of locusts came and cut <span id="add-JOL.1.4" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">many of the leaves of the crops</span>;</p>
-<p id="q1-JOL.1.4" class="usx-q1" >then another swarm came and ate <span id="add-JOL.1.4" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">the rest of the leaves</span>,</p>
+    <span id="add-JOL.1.4" class="usx-add">I am talking about</span> the locusts that have eaten our crops.</p>
+<p id="q2-JOL.1.4" class="usx-q2" >The first swarm of locusts came and cut <span id="add-JOL.1.4" class="usx-add">many of the leaves of the crops</span>;</p>
+<p id="q1-JOL.1.4" class="usx-q1" >then another swarm came and ate <span id="add-JOL.1.4" class="usx-add">the rest of the leaves</span>,</p>
 <p id="q2-JOL.1.4" class="usx-q2" >then another swarm came hopping along,</p>
 <p id="q1-JOL.1.4" class="usx-q1" >and finally another swarm came</p>
-<p id="q2-JOL.1.4" class="usx-q2" >and they destroyed <span id="add-JOL.1.4" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">everything else</span>.</p>
+<p id="q2-JOL.1.4" class="usx-q2" >and they destroyed <span id="add-JOL.1.4" class="usx-add">everything else</span>.</p>
 <p id="b-JOL.1.4" class="usx-b" ></p>
 <p id="q1-JOL.1.4" class="usx-q1" >
     <a href="#JOL.1.5"><sup id="JOL.1.5" class="usx-v">5</sup></a>
@@ -102,20 +112,20 @@ You people who are drunk, wake up!</p>
 <p id="q1-JOL.1.5" class="usx-q1" >
     <a href="#JOL.1.6"><sup id="JOL.1.6" class="usx-v">6</sup></a>
 
-    <span id="add-JOL.1.6" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">Huge swarms of</span> locusts have entered our country.</p>
+    <span id="add-JOL.1.6" class="usx-add">Huge swarms of</span> locusts have entered our country.</p>
 <p id="q1-JOL.1.6" class="usx-q1" >
-    <span id="add-JOL.1.6" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">They are like</span> [MET] a powerful army</p>
+    <span id="add-JOL.1.6" class="usx-add">They are like</span> [MET] a powerful army</p>
 <p id="q1-JOL.1.6" class="usx-q1" >
-    <span id="add-JOL.1.6" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">that has very many soldiers</span>,</p>
+    <span id="add-JOL.1.6" class="usx-add">that has very many soldiers</span>,</p>
 <p id="q2-JOL.1.6" class="usx-q2" >
-    <span id="add-JOL.1.6" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">with the result that</span> no one can count them.</p>
-<p id="q1-JOL.1.6" class="usx-q1" >The locusts have teeth that are <span id="add-JOL.1.6" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">as sharp as</span> the teeth of lions [DOU]!</p>
+    <span id="add-JOL.1.6" class="usx-add">with the result that</span> no one can count them.</p>
+<p id="q1-JOL.1.6" class="usx-q1" >The locusts have teeth that are <span id="add-JOL.1.6" class="usx-add">as sharp as</span> the teeth of lions [DOU]!</p>
 <p id="q1-JOL.1.6" class="usx-q1" >
     <a href="#JOL.1.7"><sup id="JOL.1.7" class="usx-v">7</sup></a>
 They have destroyed our grapevines and our fig trees</p>
 <p id="q2-JOL.1.7" class="usx-q2" >
-    <span id="add-JOL.1.7" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">by</span> stripping off <span id="add-JOL.1.7" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">and eating all</span> the bark,</p>
-<p id="q2-JOL.1.7" class="usx-q2" >with the result that the branches are white <span id="add-JOL.1.7" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">and ◄bare/have no leaves on them►</span>.</p>
+    <span id="add-JOL.1.7" class="usx-add">by</span> stripping off <span id="add-JOL.1.7" class="usx-add">and eating all</span> the bark,</p>
+<p id="q2-JOL.1.7" class="usx-q2" >with the result that the branches are white <span id="add-JOL.1.7" class="usx-add">and ◄bare/have no leaves on them►</span>.</p>
 <p id="b-JOL.1.7" class="usx-b" ></p>
 <p id="q1-JOL.1.7" class="usx-q1" >
     <a href="#JOL.1.8"><sup id="JOL.1.8" class="usx-v">8</sup></a>
@@ -123,18 +133,18 @@ Cry like [SIM] a young woman cries</p>
 <p id="q2-JOL.1.8" class="usx-q2" >when the young man to whom she was ◄engaged/promised to marry► has died.</p>
 <p id="q1-JOL.1.8" class="usx-q1" >
     <a href="#JOL.1.9"><sup id="JOL.1.9" class="usx-v">9</sup></a>
-There is no grain or wine for us to offer <span id="add-JOL.1.9" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">as sacrifices</span> at the temple,</p>
+There is no grain or wine for us to offer <span id="add-JOL.1.9" class="usx-add">as sacrifices</span> at the temple,</p>
 <p id="q2-JOL.1.9" class="usx-q2" >
-    <span id="add-JOL.1.9" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">so</span> the priests who serve Yahweh are mourning/weeping.</p>
+    <span id="add-JOL.1.9" class="usx-add">so</span> the priests who serve Yahweh are mourning/weeping.</p>
 <p id="q1-JOL.1.9" class="usx-q1" >
     <a href="#JOL.1.10"><sup id="JOL.1.10" class="usx-v">10</sup></a>
 
-    <span id="add-JOL.1.10" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">The crops in</span> the fields have been ruined;</p>
+    <span id="add-JOL.1.10" class="usx-add">The crops in</span> the fields have been ruined;</p>
 <p id="q2-JOL.1.10" class="usx-q2" >
-    <span id="add-JOL.1.10" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">it is as though</span> [PRS] the ground is mourning.</p>
+    <span id="add-JOL.1.10" class="usx-add">it is as though</span> [PRS] the ground is mourning.</p>
 <p id="q1-JOL.1.10" class="usx-q1" >The grain has been destroyed,</p>
-<p id="q2-JOL.1.10" class="usx-q2" >there are no <span id="add-JOL.1.10" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">grapes to make</span> wine,</p>
-<p id="q2-JOL.1.10" class="usx-q2" >and there is no <span id="add-JOL.1.10" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">more olive </span> oil.</p>
+<p id="q2-JOL.1.10" class="usx-q2" >there are no <span id="add-JOL.1.10" class="usx-add">grapes to make</span> wine,</p>
+<p id="q2-JOL.1.10" class="usx-q2" >and there is no <span id="add-JOL.1.10" class="usx-add">more olive </span> oil.</p>
 <p id="q1-JOL.1.10" class="usx-q1" >
     <a href="#JOL.1.11"><sup id="JOL.1.11" class="usx-v">11</sup></a>
 You farmers, grieve!</p>
@@ -144,39 +154,39 @@ You farmers, grieve!</p>
 <p id="q1-JOL.1.11" class="usx-q1" >
     <a href="#JOL.1.12"><sup id="JOL.1.12" class="usx-v">12</sup></a>
 The grapevines and the fig trees have withered,</p>
-<p id="q2-JOL.1.12" class="usx-q2" >and the pomegranate <span id="add-JOL.1.12" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">trees</span> and palm <span id="add-JOL.1.12" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">trees</span> and apricot <span id="add-JOL.1.12" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">trees</span> have also dried up.</p>
+<p id="q2-JOL.1.12" class="usx-q2" >and the pomegranate <span id="add-JOL.1.12" class="usx-add">trees</span> and palm <span id="add-JOL.1.12" class="usx-add">trees</span> and apricot <span id="add-JOL.1.12" class="usx-add">trees</span> have also dried up.</p>
 <p id="q1-JOL.1.12" class="usx-q1" >The people are no longer joyful.</p>
 <p id="b-JOL.1.12" class="usx-b" ></p>
 <p id="q1-JOL.1.12" class="usx-q1" >
     <a href="#JOL.1.13"><sup id="JOL.1.13" class="usx-v">13</sup></a>
-You priests, put on <span id="add-JOL.1.13" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">rough</span> sack clothes and wail.</p>
-<p id="q2-JOL.1.13" class="usx-q2" >You who serve God <span id="add-JOL.1.13" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">by offering sacrifices</span> on the altar,</p>
-<p id="q1-JOL.1.13" class="usx-q1" >wear those rough sack clothes all night <span id="add-JOL.1.13" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">to show that you are mourning</span>,</p>
+You priests, put on <span id="add-JOL.1.13" class="usx-add">rough</span> sack clothes and wail.</p>
+<p id="q2-JOL.1.13" class="usx-q2" >You who serve God <span id="add-JOL.1.13" class="usx-add">by offering sacrifices</span> on the altar,</p>
+<p id="q1-JOL.1.13" class="usx-q1" >wear those rough sack clothes all night <span id="add-JOL.1.13" class="usx-add">to show that you are mourning</span>,</p>
 <p id="q2-JOL.1.13" class="usx-q2" >because there is no grain or wine to be offered at the temple of your God.</p>
 <p id="q1-JOL.1.13" class="usx-q1" >
     <a href="#JOL.1.14"><sup id="JOL.1.14" class="usx-v">14</sup></a>
 Tell the people that they should ◄fast/abstain from eating food►.</p>
 <p id="q1-JOL.1.14" class="usx-q1" >Tell the leaders and the other people to gather at the temple</p>
-<p id="q2-JOL.1.14" class="usx-q2" >and to cry <span id="add-JOL.1.14" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">out</span> to Yahweh <span id="add-JOL.1.14" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">there</span>.</p>
+<p id="q2-JOL.1.14" class="usx-q2" >and to cry <span id="add-JOL.1.14" class="usx-add">out</span> to Yahweh <span id="add-JOL.1.14" class="usx-add">there</span>.</p>
 <p id="q1-JOL.1.14" class="usx-q1" >
     <a href="#JOL.1.15"><sup id="JOL.1.15" class="usx-v">15</sup></a>
 Terrible things are happening to us!</p>
-<p id="q2-JOL.1.15" class="usx-q2" >It will soon be the time when Yahweh, <span id="add-JOL.1.15" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">who is</span> the Almighty God, <span id="add-JOL.1.15" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">will really punish us</span>,</p>
+<p id="q2-JOL.1.15" class="usx-q2" >It will soon be the time when Yahweh, <span id="add-JOL.1.15" class="usx-add">who is</span> the Almighty God, <span id="add-JOL.1.15" class="usx-add">will really punish us</span>,</p>
 <p id="q2-JOL.1.15" class="usx-q2" >
-    <span id="add-JOL.1.15" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">when he</span> will cause us to experience more disasters.</p>
+    <span id="add-JOL.1.15" class="usx-add">when he</span> will cause us to experience more disasters.</p>
 <p id="b-JOL.1.15" class="usx-b" ></p>
 <p id="q1-JOL.1.15" class="usx-q1" >
     <a href="#JOL.1.16"><sup id="JOL.1.16" class="usx-v">16</sup></a>
 Our crops are already gone,</p>
-<p id="q2-JOL.1.16" class="usx-q2" >and no <span id="add-JOL.1.16" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">one is</span> rejoicing at all [DOU] at the temple of our God.</p>
+<p id="q2-JOL.1.16" class="usx-q2" >and no <span id="add-JOL.1.16" class="usx-add">one is</span> rejoicing at all [DOU] at the temple of our God.</p>
 <p id="q1-JOL.1.16" class="usx-q1" >
     <a href="#JOL.1.17"><sup id="JOL.1.17" class="usx-v">17</sup></a>
 
-    <span id="add-JOL.1.17" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">When we plant</span> seeds, <span id="add-JOL.1.17" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">they do not grow</span>;</p>
+    <span id="add-JOL.1.17" class="usx-add">When we plant</span> seeds, <span id="add-JOL.1.17" class="usx-add">they do not grow</span>;</p>
 <p id="q1-JOL.1.17" class="usx-q1" >they dry up in the ground,</p>
 <p id="q2-JOL.1.17" class="usx-q2" >so there are no crops to harvest.</p>
 <p id="q1-JOL.1.17" class="usx-q1" >Our barns/storehouses are empty;</p>
-<p id="q2-JOL.1.17" class="usx-q2" >there is no grain <span id="add-JOL.1.17" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">to store in them</span>.</p>
+<p id="q2-JOL.1.17" class="usx-q2" >there is no grain <span id="add-JOL.1.17" class="usx-add">to store in them</span>.</p>
 <p id="q1-JOL.1.17" class="usx-q1" >
     <a href="#JOL.1.18"><sup id="JOL.1.18" class="usx-v">18</sup></a>
 Our cattle groan, searching for a pasture with some grass to eat,</p>
@@ -184,12 +194,12 @@ Our cattle groan, searching for a pasture with some grass to eat,</p>
 <p id="b-JOL.1.18" class="usx-b" ></p>
 <p id="q1-JOL.1.18" class="usx-q1" >
     <a href="#JOL.1.19"><sup id="JOL.1.19" class="usx-v">19</sup></a>
-Yahweh, I cry <span id="add-JOL.1.19" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">out</span> to you,</p>
+Yahweh, I cry <span id="add-JOL.1.19" class="usx-add">out</span> to you,</p>
 <p id="q2-JOL.1.19" class="usx-q2" >because our pastures and our forests have dried up in the hot sunshine [MET].</p>
 <p id="q1-JOL.1.19" class="usx-q1" >
     <a href="#JOL.1.20"><sup id="JOL.1.20" class="usx-v">20</sup></a>
 
-    <span id="add-JOL.1.20" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">It is as though</span> even the wild animals cry <span id="add-JOL.1.20" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">out</span> to you</p>
+    <span id="add-JOL.1.20" class="usx-add">It is as though</span> even the wild animals cry <span id="add-JOL.1.20" class="usx-add">out</span> to you</p>
 <p id="q2-JOL.1.20" class="usx-q2" >because all the streams have dried up.</p>
 <p id="q1-JOL.1.20" class="usx-q1" >The rivers and streams are all dry,</p>
 <p id="q2-JOL.1.20" class="usx-q2" >and the grass in the pastures is all parched.</p>
@@ -197,37 +207,37 @@ Yahweh, I cry <span id="add-JOL.1.19" class="usx-add" link-data="https://www.blu
 <p id="s1-JOL.2" class="usx-s1" >A warning about the locusts</p>
 <p id="q1-JOL.2" class="usx-q1" >
     <a href="#JOL.2.1"><sup id="JOL.2.1" class="usx-v">1</sup></a>
-Blow trumpets on Zion <span id="add-JOL.2.1" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">Hill</span>,</p>
-<p id="q2-JOL.2.1" class="usx-q2" >God’s sacred hill <span id="add-JOL.2.1" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">in Jerusalem</span>!</p>
+Blow trumpets on Zion <span id="add-JOL.2.1" class="usx-add">Hill</span>,</p>
+<p id="q2-JOL.2.1" class="usx-q2" >God’s sacred hill <span id="add-JOL.2.1" class="usx-add">in Jerusalem</span>!</p>
 <p id="q1-JOL.2.1" class="usx-q1" >Tell the people of Judah that they should tremble,</p>
-<p id="q2-JOL.2.1" class="usx-q2" >because it will soon be the time for Yahweh <span id="add-JOL.2.1" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">to punish us further</span>.</p>
+<p id="q2-JOL.2.1" class="usx-q2" >because it will soon be the time for Yahweh <span id="add-JOL.2.1" class="usx-add">to punish us further</span>.</p>
 <p id="q1-JOL.2.1" class="usx-q1" >
     <a href="#JOL.2.2"><sup id="JOL.2.2" class="usx-v">2</sup></a>
 
-    <span id="add-JOL.2.2" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">That will be a very</span> dark and gloomy day;</p>
-<p id="q2-JOL.2.2" class="usx-q2" >there will be <span id="add-JOL.2.2" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">black</span> clouds and it will be very dark.</p>
-<p id="q1-JOL.2.2" class="usx-q1" >A huge <span id="add-JOL.2.2" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">swarm of locusts</span> has covered the mountains like [SIM] a black <span id="add-JOL.2.2" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">cloud</span>.</p>
+    <span id="add-JOL.2.2" class="usx-add">That will be a very</span> dark and gloomy day;</p>
+<p id="q2-JOL.2.2" class="usx-q2" >there will be <span id="add-JOL.2.2" class="usx-add">black</span> clouds and it will be very dark.</p>
+<p id="q1-JOL.2.2" class="usx-q1" >A huge <span id="add-JOL.2.2" class="usx-add">swarm of locusts</span> has covered the mountains like [SIM] a black <span id="add-JOL.2.2" class="usx-add">cloud</span>.</p>
 <p id="q1-JOL.2.2" class="usx-q1" >Nothing like this has ever happened before,</p>
-<p id="q2-JOL.2.2" class="usx-q2" >and nothing like this will ever <span id="add-JOL.2.2" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">happen</span> again.</p>
+<p id="q2-JOL.2.2" class="usx-q2" >and nothing like this will ever <span id="add-JOL.2.2" class="usx-add">happen</span> again.</p>
 <p id="q1-JOL.2.2" class="usx-q1" >
     <a href="#JOL.2.3"><sup id="JOL.2.3" class="usx-v">3</sup></a>
 
-    <span id="add-JOL.2.3" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">It is as though the locusts bring</span> flames of fire</p>
+    <span id="add-JOL.2.3" class="usx-add">It is as though the locusts bring</span> flames of fire</p>
 <p id="q2-JOL.2.3" class="usx-q2" >from which no one can escape.</p>
-<p id="q1-JOL.2.3" class="usx-q1" >In front of them, the land was <span id="add-JOL.2.3" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">beautiful</span> like [SIM] the garden of Eden,</p>
-<p id="q2-JOL.2.3" class="usx-q2" >but behind them <span id="add-JOL.2.3" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">the land is like</span> a desert</p>
+<p id="q1-JOL.2.3" class="usx-q1" >In front of them, the land was <span id="add-JOL.2.3" class="usx-add">beautiful</span> like [SIM] the garden of Eden,</p>
+<p id="q2-JOL.2.3" class="usx-q2" >but behind them <span id="add-JOL.2.3" class="usx-add">the land is like</span> a desert</p>
 <p id="q2-JOL.2.3" class="usx-q2" >and nothing survives.</p>
 <p id="q1-JOL.2.3" class="usx-q1" >
     <a href="#JOL.2.4"><sup id="JOL.2.4" class="usx-v">4</sup></a>
 
-    <span id="add-JOL.2.4" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">The locusts</span> resemble horses,</p>
+    <span id="add-JOL.2.4" class="usx-add">The locusts</span> resemble horses,</p>
 <p id="q2-JOL.2.4" class="usx-q2" >and they run like [SIM] war horses.</p>
 <p id="q1-JOL.2.4" class="usx-q1" >
     <a href="#JOL.2.5"><sup id="JOL.2.5" class="usx-v">5</sup></a>
 Leaping over the mountaintops,</p>
 <p id="q2-JOL.2.5" class="usx-q2" >they make a noise like rumbling chariots,</p>
 <p id="q1-JOL.2.5" class="usx-q1" >like [SIM] a mighty army that is preparing for a battle,</p>
-<p id="q2-JOL.2.5" class="usx-q2" >or like [SIM] the roar of a fire that burns up stubble <span id="add-JOL.2.5" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">in a field</span>.</p>
+<p id="q2-JOL.2.5" class="usx-q2" >or like [SIM] the roar of a fire that burns up stubble <span id="add-JOL.2.5" class="usx-add">in a field</span>.</p>
 <p id="b-JOL.2.5" class="usx-b" ></p>
 <p id="q1-JOL.2.5" class="usx-q1" >
     <a href="#JOL.2.6"><sup id="JOL.2.6" class="usx-v">6</sup></a>
@@ -236,15 +246,15 @@ When people see them coming,</p>
 <p id="q1-JOL.2.6" class="usx-q1" >
     <a href="#JOL.2.7"><sup id="JOL.2.7" class="usx-v">7</sup></a>
 
-    <span id="add-JOL.2.7" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">The locusts</span> climb over walls like soldiers do;</p>
+    <span id="add-JOL.2.7" class="usx-add">The locusts</span> climb over walls like soldiers do;</p>
 <p id="q2-JOL.2.7" class="usx-q2" >they march along in columns</p>
-<p id="q1-JOL.2.7" class="usx-q1" >and never turn aside <span id="add-JOL.2.7" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">from their columns</span>.</p>
+<p id="q1-JOL.2.7" class="usx-q1" >and never turn aside <span id="add-JOL.2.7" class="usx-add">from their columns</span>.</p>
 <p id="q1-JOL.2.7" class="usx-q1" >
     <a href="#JOL.2.8"><sup id="JOL.2.8" class="usx-v">8</sup></a>
 They rush straight ahead</p>
 <p id="q2-JOL.2.8" class="usx-q2" >without pushing each other.</p>
 <p id="q1-JOL.2.8" class="usx-q1" >
-    <span id="add-JOL.2.8" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">Even though people throw</span> spears and javelins at them,</p>
+    <span id="add-JOL.2.8" class="usx-add">Even though people throw</span> spears and javelins at them,</p>
 <p id="q2-JOL.2.8" class="usx-q2" >that will not cause them to stop.</p>
 <p id="q1-JOL.2.8" class="usx-q1" >
     <a href="#JOL.2.9"><sup id="JOL.2.9" class="usx-v">9</sup></a>
@@ -254,52 +264,52 @@ They swarm over the city walls and enter our houses;</p>
 <p id="q1-JOL.2.9" class="usx-q1" >
     <a href="#JOL.2.10"><sup id="JOL.2.10" class="usx-v">10</sup></a>
 
-    <span id="add-JOL.2.10" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">It is as though</span> they cause the earth to shake and the sky to tremble.</p>
+    <span id="add-JOL.2.10" class="usx-add">It is as though</span> they cause the earth to shake and the sky to tremble.</p>
 <p id="q1-JOL.2.10" class="usx-q1" >The sun and the moon become dark</p>
 <p id="q1-JOL.2.10" class="usx-q1" >and the stars do not shine</p>
 <p id="q2-JOL.2.10" class="usx-q2" >
-    <span id="add-JOL.2.10" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">because there are so many locusts in the sky</span>.</p>
+    <span id="add-JOL.2.10" class="usx-add">because there are so many locusts in the sky</span>.</p>
 <p id="q1-JOL.2.10" class="usx-q1" >
     <a href="#JOL.2.11"><sup id="JOL.2.11" class="usx-v">11</sup></a>
-Yahweh leads this army <span id="add-JOL.2.11" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">of countless locusts</span>,</p>
+Yahweh leads this army <span id="add-JOL.2.11" class="usx-add">of countless locusts</span>,</p>
 <p id="q2-JOL.2.11" class="usx-q2" >and they obey his commands.</p>
 <p id="q1-JOL.2.11" class="usx-q1" >This time when he is judging and punishing us is very terrible,</p>
 <p id="q2-JOL.2.11" class="usx-q2" >
-    <span id="add-JOL.2.11" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">with the result that it seems that</span> no one [RHQ] can survive it.</p>
+    <span id="add-JOL.2.11" class="usx-add">with the result that it seems that</span> no one [RHQ] can survive it.</p>
 <p id="s1-JOL.2.11" class="usx-s1" >Yahweh calls them to repent</p>
 <p id="p-JOL.2.11" class="usx-p" >
     <a href="#JOL.2.12"><sup id="JOL.2.12" class="usx-v">12</sup></a>
 But Yahweh says,</p>
-<p id="q1-JOL.2.12" class="usx-q1" >“In spite of <span id="add-JOL.2.12" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">these disasters that you have experienced</span>,</p>
+<p id="q1-JOL.2.12" class="usx-q1" >“In spite of <span id="add-JOL.2.12" class="usx-add">these disasters that you have experienced</span>,</p>
 <p id="q2-JOL.2.12" class="usx-q2" >you can return to me with all your inner beings.</p>
-<p id="q1-JOL.2.12" class="usx-q1" >Weep, and mourn, and ◄fast/abstain from eating food► <span id="add-JOL.2.12" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">to show that you are sorry for having abandoned me</span>.</p>
+<p id="q1-JOL.2.12" class="usx-q1" >Weep, and mourn, and ◄fast/abstain from eating food► <span id="add-JOL.2.12" class="usx-add">to show that you are sorry for having abandoned me</span>.</p>
 <p id="q1-JOL.2.12" class="usx-q1" >
     <a href="#JOL.2.13"><sup id="JOL.2.13" class="usx-v">13</sup></a>
 Do not tear your clothes</p>
 <p id="q2-JOL.2.13" class="usx-q2" >
-    <span id="add-JOL.2.13" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">to show that you are sorry</span>;</p>
+    <span id="add-JOL.2.13" class="usx-add">to show that you are sorry</span>;</p>
 <p id="q2-JOL.2.13" class="usx-q2" >instead, show [MET] that you are sorry.”</p>
 <p id="b-JOL.2.13" class="usx-b" ></p>
 <p id="q1-JOL.2.13" class="usx-q1" >Yahweh is merciful and kind;</p>
 <p id="q2-JOL.2.13" class="usx-q2" >he does not quickly become angry;</p>
-<p id="q1-JOL.2.13" class="usx-q1" >he faithfully loves <span id="add-JOL.2.13" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">people</span>.</p>
+<p id="q1-JOL.2.13" class="usx-q1" >he faithfully loves <span id="add-JOL.2.13" class="usx-add">people</span>.</p>
 <p id="q1-JOL.2.13" class="usx-q1" >He does not quickly become angry;</p>
-<p id="q2-JOL.2.13" class="usx-q2" >instead, he greatly and faithfully loves <span id="add-JOL.2.13" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">you</span>,</p>
+<p id="q2-JOL.2.13" class="usx-q2" >instead, he greatly and faithfully loves <span id="add-JOL.2.13" class="usx-add">you</span>,</p>
 <p id="q2-JOL.2.13" class="usx-q2" >and he does not like to punish you.</p>
 <p id="q1-JOL.2.13" class="usx-q1" >
     <a href="#JOL.2.14"><sup id="JOL.2.14" class="usx-v">14</sup></a>
-No one knows [RHQ] if he will change his mind <span id="add-JOL.2.14" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">about punishing you</span></p>
-<p id="q2-JOL.2.14" class="usx-q2" >and if instead he will act mercifully <span id="add-JOL.2.14" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">toward you</span>.</p>
+No one knows [RHQ] if he will change his mind <span id="add-JOL.2.14" class="usx-add">about punishing you</span></p>
+<p id="q2-JOL.2.14" class="usx-q2" >and if instead he will act mercifully <span id="add-JOL.2.14" class="usx-add">toward you</span>.</p>
 <p id="q1-JOL.2.14" class="usx-q1" >If he does that, he will bless you</p>
 <p id="q2-JOL.2.14" class="usx-q2" >
-    <span id="add-JOL.2.14" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">by giving you plenty of grain and wine</span></p>
-<p id="q2-JOL.2.14" class="usx-q2" >in order that you can offer <span id="add-JOL.2.14" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">some of </span> those things as sacrifices to him.</p>
+    <span id="add-JOL.2.14" class="usx-add">by giving you plenty of grain and wine</span></p>
+<p id="q2-JOL.2.14" class="usx-q2" >in order that you can offer <span id="add-JOL.2.14" class="usx-add">some of </span> those things as sacrifices to him.</p>
 <p id="b-JOL.2.14" class="usx-b" ></p>
 <p id="q1-JOL.2.14" class="usx-q1" >
     <a href="#JOL.2.15"><sup id="JOL.2.15" class="usx-v">15</sup></a>
-Blow the trumpets on Zion <span id="add-JOL.2.15" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">Hill</span>!</p>
+Blow the trumpets on Zion <span id="add-JOL.2.15" class="usx-add">Hill</span>!</p>
 <p id="q2-JOL.2.15" class="usx-q2" >Gather the people together!</p>
-<p id="q1-JOL.2.15" class="usx-q1" >Show by fasting that you are sorry <span id="add-JOL.2.15" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">for the sins that you have committed</span>.</p>
+<p id="q1-JOL.2.15" class="usx-q1" >Show by fasting that you are sorry <span id="add-JOL.2.15" class="usx-add">for the sins that you have committed</span>.</p>
 <p id="q1-JOL.2.15" class="usx-q1" >
     <a href="#JOL.2.16"><sup id="JOL.2.16" class="usx-v">16</sup></a>
 Perform the rituals to cause yourselves to be acceptable to Yahweh.</p>
@@ -309,33 +319,33 @@ Perform the rituals to cause yourselves to be acceptable to Yahweh.</p>
 <p id="q1-JOL.2.16" class="usx-q1" >
     <a href="#JOL.2.17"><sup id="JOL.2.17" class="usx-v">17</sup></a>
 Tell the priests who serve Yahweh to cry between the altar and the entrance to the temple</p>
-<p id="q2-JOL.2.17" class="usx-q2" >and to pray <span id="add-JOL.2.17" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">this</span>:</p>
-<p id="q1-JOL.2.17" class="usx-q1" >“Yahweh, rescue/save <span id="add-JOL.2.17" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">us</span> your people;</p>
+<p id="q2-JOL.2.17" class="usx-q2" >and to pray <span id="add-JOL.2.17" class="usx-add">this</span>:</p>
+<p id="q1-JOL.2.17" class="usx-q1" >“Yahweh, rescue/save <span id="add-JOL.2.17" class="usx-add">us</span> your people;</p>
 <p id="q2-JOL.2.17" class="usx-q2" >do not allow people from other nations to despise us;</p>
 <p id="q1-JOL.2.17" class="usx-q1" >do not allow them to ridicule us and say,</p>
-<p id="q2-JOL.2.17" class="usx-q2" >‘Why has [RHQ] their God <span id="add-JOL.2.17" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">abandoned them</span>?’”</p>
+<p id="q2-JOL.2.17" class="usx-q2" >‘Why has [RHQ] their God <span id="add-JOL.2.17" class="usx-add">abandoned them</span>?’”</p>
 <p id="s1-JOL.2.17" class="usx-s1" >Yahweh promised to prosper them again</p>
 <p id="q1-JOL.2.17" class="usx-q1" >
     <a href="#JOL.2.18"><sup id="JOL.2.18" class="usx-v">18</sup></a>
-But Yahweh <span id="add-JOL.2.18" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">showed that he</span> was concerned about his people</p>
+But Yahweh <span id="add-JOL.2.18" class="usx-add">showed that he</span> was concerned about his people</p>
 <p id="q2-JOL.2.18" class="usx-q2" >and that he would act mercifully toward them.</p>
 <p id="p-JOL.2.18" class="usx-p" >
     <a href="#JOL.2.19"><sup id="JOL.2.19" class="usx-v">19</sup></a>
 When the people prayed,</p>
 <p id="q1-JOL.2.19" class="usx-q1" >Yahweh answered and said,</p>
-<p id="q1-JOL.2.19" class="usx-q1" >“I will give you <span id="add-JOL.2.19" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">plenty of</span> grain and wine and <span id="add-JOL.2.19" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">olive</span> oil,</p>
+<p id="q1-JOL.2.19" class="usx-q1" >“I will give you <span id="add-JOL.2.19" class="usx-add">plenty of</span> grain and wine and <span id="add-JOL.2.19" class="usx-add">olive</span> oil,</p>
 <p id="q2-JOL.2.19" class="usx-q2" >and you will be satisfied.</p>
 <p id="q1-JOL.2.19" class="usx-q1" >And I will no longer allow other nations to insult you.</p>
 <p id="b-JOL.2.19" class="usx-b" ></p>
 <p id="q1-JOL.2.19" class="usx-q1" >
     <a href="#JOL.2.20"><sup id="JOL.2.20" class="usx-v">20</sup></a>
-Another army <span id="add-JOL.2.20" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">of locusts will come</span> from the north <span id="add-JOL.2.20" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">to attack you</span>,</p>
-<p id="q2-JOL.2.20" class="usx-q2" >but I will force them to continue <span id="add-JOL.2.20" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">past Jerusalem</span></p>
+Another army <span id="add-JOL.2.20" class="usx-add">of locusts will come</span> from the north <span id="add-JOL.2.20" class="usx-add">to attack you</span>,</p>
+<p id="q2-JOL.2.20" class="usx-q2" >but I will force them to continue <span id="add-JOL.2.20" class="usx-add">past Jerusalem</span></p>
 <p id="q2-JOL.2.20" class="usx-q2" >into the desert.</p>
 <p id="q1-JOL.2.20" class="usx-q1" >Some will go into the Dead Sea in the east</p>
-<p id="q2-JOL.2.20" class="usx-q2" >and some will go into the <span id="add-JOL.2.20" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">Mediterranean</span> Sea in the west.</p>
+<p id="q2-JOL.2.20" class="usx-q2" >and some will go into the <span id="add-JOL.2.20" class="usx-add">Mediterranean</span> Sea in the west.</p>
 <p id="q1-JOL.2.20" class="usx-q1" >
-    <span id="add-JOL.2.20" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">There</span> they will <span id="add-JOL.2.20" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">all die, and their bodies</span> will stink.”</p>
+    <span id="add-JOL.2.20" class="usx-add">There</span> they will <span id="add-JOL.2.20" class="usx-add">all die, and their bodies</span> will stink.”</p>
 <p id="b-JOL.2.20" class="usx-b" ></p>
 <p id="q1-JOL.2.20" class="usx-q1" >Yahweh does great things!</p>
 <p id="q2-JOL.2.20" class="usx-q2" >
@@ -346,24 +356,24 @@ He does wonderful things!</p>
     <a href="#JOL.2.22"><sup id="JOL.2.22" class="usx-v">22</sup></a>
 And the wild animals should not be afraid,</p>
 <p id="q2-JOL.2.22" class="usx-q2" >because the meadows will soon become green again;</p>
-<p id="q1-JOL.2.22" class="usx-q1" >the fig trees and <span id="add-JOL.2.22" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">other</span> trees will be full of fruit,</p>
+<p id="q1-JOL.2.22" class="usx-q1" >the fig trees and <span id="add-JOL.2.22" class="usx-add">other</span> trees will be full of fruit,</p>
 <p id="q2-JOL.2.22" class="usx-q2" >and the grapevines will be covered with grapes.</p>
 <p id="q1-JOL.2.22" class="usx-q1" >
     <a href="#JOL.2.23"><sup id="JOL.2.23" class="usx-v">23</sup></a>
 You people of Jerusalem,</p>
-<p id="q2-JOL.2.23" class="usx-q2" >rejoice about what Yahweh, your God, <span id="add-JOL.2.23" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">will be doing for you</span>.</p>
+<p id="q2-JOL.2.23" class="usx-q2" >rejoice about what Yahweh, your God, <span id="add-JOL.2.23" class="usx-add">will be doing for you</span>.</p>
 <p id="q1-JOL.2.23" class="usx-q1" >He will send abundant rain at the ◄right time/time when it is needed►—</p>
 <p id="q2-JOL.2.23" class="usx-q2" >◄in the spring/early in the year► and ◄in the autumn/late in the year►</p>
 <p id="q2-JOL.2.23" class="usx-q2" >like he did previously.</p>
 <p id="q1-JOL.2.23" class="usx-q1" >
     <a href="#JOL.2.24"><sup id="JOL.2.24" class="usx-v">24</sup></a>
 The ground where you thresh the grain will be covered with grain,</p>
-<p id="q2-JOL.2.24" class="usx-q2" >and your vats where you store grape juice and <span id="add-JOL.2.24" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">olive</span> oil will be full.</p>
+<p id="q2-JOL.2.24" class="usx-q2" >and your vats where you store grape juice and <span id="add-JOL.2.24" class="usx-add">olive</span> oil will be full.</p>
 <p id="b-JOL.2.24" class="usx-b" ></p>
 <p id="q1-JOL.2.24" class="usx-q1" >
     <a href="#JOL.2.25"><sup id="JOL.2.25" class="usx-v">25</sup></a>
 
-    <span id="add-JOL.2.25" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">Yahweh said,</span> “I will repay you for everything that was destroyed by those great swarms of locusts</p>
+    <span id="add-JOL.2.25" class="usx-add">Yahweh said,</span> “I will repay you for everything that was destroyed by those great swarms of locusts</p>
 <p id="q2-JOL.2.25" class="usx-q2" >that I sent to attack you.</p>
 <p id="q1-JOL.2.25" class="usx-q1" >
     <a href="#JOL.2.26"><sup id="JOL.2.26" class="usx-v">26</sup></a>
@@ -373,17 +383,17 @@ You, my people, will eat until your stomachs are full.</p>
 <p id="q1-JOL.2.26" class="usx-q1" >And never again will you be disgraced.</p>
 <p id="q1-JOL.2.26" class="usx-q1" >
     <a href="#JOL.2.27"><sup id="JOL.2.27" class="usx-v">27</sup></a>
-When that happens, you will know that I am <span id="add-JOL.2.27" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">always</span> among you,</p>
+When that happens, you will know that I am <span id="add-JOL.2.27" class="usx-add">always</span> among you,</p>
 <p id="q2-JOL.2.27" class="usx-q2" >and that I am Yahweh, your God,</p>
-<p id="q2-JOL.2.27" class="usx-q2" >and that there is no other <span id="add-JOL.2.27" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">God</span>.</p>
+<p id="q2-JOL.2.27" class="usx-q2" >and that there is no other <span id="add-JOL.2.27" class="usx-add">God</span>.</p>
 <p id="q1-JOL.2.27" class="usx-q1" >Never again will you be disgraced.”</p>
 <p id="s1-JOL.2.27" class="usx-s1" >Yahweh promised to send his Spirit</p>
 <p id="q1-JOL.2.27" class="usx-q1" >
     <a href="#JOL.2.28"><sup id="JOL.2.28" class="usx-v">28</sup></a>
 “Some time later, I will give my Spirit to many [HYP] people.</p>
 <p id="q2-JOL.2.28" class="usx-q2" >Your sons and daughters will proclaim messages that come directly from me.</p>
-<p id="q1-JOL.2.28" class="usx-q1" >Your old men will have dreams <span id="add-JOL.2.28" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">that come from me</span>,</p>
-<p id="q2-JOL.2.28" class="usx-q2" >and your young men will have visions <span id="add-JOL.2.28" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">that come from me</span>.</p>
+<p id="q1-JOL.2.28" class="usx-q1" >Your old men will have dreams <span id="add-JOL.2.28" class="usx-add">that come from me</span>,</p>
+<p id="q2-JOL.2.28" class="usx-q2" >and your young men will have visions <span id="add-JOL.2.28" class="usx-add">that come from me</span>.</p>
 <p id="q1-JOL.2.28" class="usx-q1" >
     <a href="#JOL.2.29"><sup id="JOL.2.29" class="usx-v">29</sup></a>
 At that time, I will give my Spirit even to servants, both men and women.</p>
@@ -391,98 +401,98 @@ At that time, I will give my Spirit even to servants, both men and women.</p>
     <a href="#JOL.2.30"><sup id="JOL.2.30" class="usx-v">30</sup></a>
 I will do unusual/amazing things on the earth and in the sky.</p>
 <p id="q2-JOL.2.30" class="usx-q2" >
-    <span id="add-JOL.2.30" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">On the earth</span> [CHI], there will be much blood <span id="add-JOL.2.30" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">shed</span></p>
-<p id="q2-JOL.2.30" class="usx-q2" >and <span id="add-JOL.2.30" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">there will be very large</span> fires and smoke that resembles huge clouds.</p>
+    <span id="add-JOL.2.30" class="usx-add">On the earth</span> [CHI], there will be much blood <span id="add-JOL.2.30" class="usx-add">shed</span></p>
+<p id="q2-JOL.2.30" class="usx-q2" >and <span id="add-JOL.2.30" class="usx-add">there will be very large</span> fires and smoke that resembles huge clouds.</p>
 <p id="q1-JOL.2.30" class="usx-q1" >
     <a href="#JOL.2.31"><sup id="JOL.2.31" class="usx-v">31</sup></a>
 
-    <span id="add-JOL.2.31" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">In the sky,</span> the sun will become dark and the moon will become <span id="add-JOL.2.31" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">as red as</span> [MET] blood.</p>
+    <span id="add-JOL.2.31" class="usx-add">In the sky,</span> the sun will become dark and the moon will become <span id="add-JOL.2.31" class="usx-add">as red as</span> [MET] blood.</p>
 <p id="q2-JOL.2.31" class="usx-q2" >
-    <span id="add-JOL.2.31" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">Those things will happen</span> before that great and terrible day when <span id="add-JOL.2.31" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">I</span>, Yahweh, appear.</p>
+    <span id="add-JOL.2.31" class="usx-add">Those things will happen</span> before that great and terrible day when <span id="add-JOL.2.31" class="usx-add">I</span>, Yahweh, appear.</p>
 <p id="q1-JOL.2.31" class="usx-q1" >
     <a href="#JOL.2.32"><sup id="JOL.2.32" class="usx-v">32</sup></a>
-But at that time <span id="add-JOL.2.32" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">I</span> will save everyone who worships me.</p>
-<p id="q2-JOL.2.32" class="usx-q2" >I promise that some people in Jerusalem [DOU] will escape <span id="add-JOL.2.32" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">those disasters</span>;</p>
+But at that time <span id="add-JOL.2.32" class="usx-add">I</span> will save everyone who worships me.</p>
+<p id="q2-JOL.2.32" class="usx-q2" >I promise that some people in Jerusalem [DOU] will escape <span id="add-JOL.2.32" class="usx-add">those disasters</span>;</p>
 <p id="q2-JOL.2.32" class="usx-q2" >those whom I have chosen will survive.”</p>
 <a href="#JOL.3"><h3 id="JOL.3" class="usx-c">3</h3></a>
 <p id="s1-JOL.3" class="usx-s1" >Yahweh will judge the nations</p>
 <p id="p-JOL.3" class="usx-p" >
     <a href="#JOL.3.1"><sup id="JOL.3.1" class="usx-v">1</sup></a>
 
-    <span id="add-JOL.3.1" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">Yahweh says this</span>:</p>
-<p id="q1-JOL.3.1" class="usx-q1" >“At that time [DOU], I will enable <span id="add-JOL.3.1" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">the people of</span> Jerusalem and <span id="add-JOL.3.1" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">other places in</span> Judah to prosper again.</p>
+    <span id="add-JOL.3.1" class="usx-add">Yahweh says this</span>:</p>
+<p id="q1-JOL.3.1" class="usx-q1" >“At that time [DOU], I will enable <span id="add-JOL.3.1" class="usx-add">the people of</span> Jerusalem and <span id="add-JOL.3.1" class="usx-add">other places in</span> Judah to prosper again.</p>
 <p id="q1-JOL.3.1" class="usx-q1" >
     <a href="#JOL.3.2"><sup id="JOL.3.2" class="usx-v">2</sup></a>
 
-    <span id="add-JOL.3.2" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">Then</span> in the Valley of Judgment I will gather together <span id="add-JOL.3.2" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">the people of</span> all the <span id="add-JOL.3.2" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">other</span> nations;</p>
-<p id="q1-JOL.3.2" class="usx-q1" >I will judge <span id="add-JOL.3.2" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">and punish</span> them</p>
+    <span id="add-JOL.3.2" class="usx-add">Then</span> in the Valley of Judgment I will gather together <span id="add-JOL.3.2" class="usx-add">the people of</span> all the <span id="add-JOL.3.2" class="usx-add">other</span> nations;</p>
+<p id="q1-JOL.3.2" class="usx-q1" >I will judge <span id="add-JOL.3.2" class="usx-add">and punish</span> them</p>
 <p id="q2-JOL.3.2" class="usx-q2" >because they scattered my Israeli people</p>
 <p id="q2-JOL.3.2" class="usx-q2" >and forced them to go to other countries.</p>
 <p id="q1-JOL.3.2" class="usx-q1" >They divided up my land</p>
 <p id="q1-JOL.3.2" class="usx-q1" >
     <a href="#JOL.3.3"><sup id="JOL.3.3" class="usx-v">3</sup></a>
-and they ◄threw marked stones/cast lots► to determine who would get <span id="add-JOL.3.3" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">each of</span> my people.</p>
-<p id="q1-JOL.3.3" class="usx-q1" >Then they sold <span id="add-JOL.3.3" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">some of</span> the Israeli boys and girls</p>
+and they ◄threw marked stones/cast lots► to determine who would get <span id="add-JOL.3.3" class="usx-add">each of</span> my people.</p>
+<p id="q1-JOL.3.3" class="usx-q1" >Then they sold <span id="add-JOL.3.3" class="usx-add">some of</span> the Israeli boys and girls</p>
 <p id="q2-JOL.3.3" class="usx-q2" >
-    <span id="add-JOL.3.3" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">to get money to pay</span> for prostitutes and wine to drink.</p>
+    <span id="add-JOL.3.3" class="usx-add">to get money to pay</span> for prostitutes and wine to drink.</p>
 <p id="p-JOL.3.3" class="usx-p" >
     <a href="#JOL.3.4"><sup id="JOL.3.4" class="usx-v">4</sup></a>
-You <span id="add-JOL.3.4" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">people of</span> [APO] Tyre and Sidon <span id="add-JOL.3.4" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">cities</span> and <span id="add-JOL.3.4" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">you people of</span> the Philistia <span id="add-JOL.3.4" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">region</span>, I certainly have not [RHQ] done anything to harm you! <span id="add-JOL.3.4" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">So</span> if you are trying to get revenge on me, I will very quickly get revenge on you. <a href="#JOL.3.5"><sup id="JOL.3.5" class="usx-v">5</sup></a>
-You have taken the silver and gold and <span id="add-JOL.3.5" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">other </span>valuable things from my temple and put them in your temples. <a href="#JOL.3.6"><sup id="JOL.3.6" class="usx-v">6</sup></a>
-<span id="add-JOL.3.6" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">You dragged away</span> the people of Jerusalem and <span id="add-JOL.3.6" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">other places in</span> Judah, and you took them far away and sold them to people in Greece.</p>
+You <span id="add-JOL.3.4" class="usx-add">people of</span> [APO] Tyre and Sidon <span id="add-JOL.3.4" class="usx-add">cities</span> and <span id="add-JOL.3.4" class="usx-add">you people of</span> the Philistia <span id="add-JOL.3.4" class="usx-add">region</span>, I certainly have not [RHQ] done anything to harm you! <span id="add-JOL.3.4" class="usx-add">So</span> if you are trying to get revenge on me, I will very quickly get revenge on you. <a href="#JOL.3.5"><sup id="JOL.3.5" class="usx-v">5</sup></a>
+You have taken the silver and gold and <span id="add-JOL.3.5" class="usx-add">other </span>valuable things from my temple and put them in your temples. <a href="#JOL.3.6"><sup id="JOL.3.6" class="usx-v">6</sup></a>
+<span id="add-JOL.3.6" class="usx-add">You dragged away</span> the people of Jerusalem and <span id="add-JOL.3.6" class="usx-add">other places in</span> Judah, and you took them far away and sold them to people in Greece.</p>
 <p id="p-JOL.3.6" class="usx-p" >
     <a href="#JOL.3.7"><sup id="JOL.3.7" class="usx-v">7</sup></a>
 But I will cause my people to want to return from the places to which you sold them, and I will do to you what you did to them. <a href="#JOL.3.8"><sup id="JOL.3.8" class="usx-v">8</sup></a>
-Then I will cause <span id="add-JOL.3.8" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">some of</span> your sons and your daughters to be sold to the people of Judah! And <span id="add-JOL.3.8" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">some of</span> them will be sold to the Sabea people-group, who live far away. <span id="add-JOL.3.8" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">That will certainly happen because I</span>, Yahweh, have said it.”</p>
+Then I will cause <span id="add-JOL.3.8" class="usx-add">some of</span> your sons and your daughters to be sold to the people of Judah! And <span id="add-JOL.3.8" class="usx-add">some of</span> them will be sold to the Sabea people-group, who live far away. <span id="add-JOL.3.8" class="usx-add">That will certainly happen because I</span>, Yahweh, have said it.”</p>
 <p id="s1-JOL.3.8" class="usx-s1" >God will judge and punish the nations</p>
 <p id="q1-JOL.3.8" class="usx-q1" >
     <a href="#JOL.3.9"><sup id="JOL.3.9" class="usx-v">9</sup></a>
-Proclaim to the <span id="add-JOL.3.9" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">people of all</span> nations,</p>
+Proclaim to the <span id="add-JOL.3.9" class="usx-add">people of all</span> nations,</p>
 <p id="q2-JOL.3.9" class="usx-q2" >“Prepare for a war!</p>
 <p id="q1-JOL.3.9" class="usx-q1" >Summon your soldiers,</p>
 <p id="q2-JOL.3.9" class="usx-q2" >and tell them to stand in their battle positions.</p>
 <p id="q1-JOL.3.9" class="usx-q1" >
     <a href="#JOL.3.10"><sup id="JOL.3.10" class="usx-v">10</sup></a>
 
-    <span id="add-JOL.3.10" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">Take</span> your plows and make swords from them,</p>
-<p id="q2-JOL.3.10" class="usx-q2" >and <span id="add-JOL.3.10" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">take</span> your pruning knives and make spears from them.</p>
+    <span id="add-JOL.3.10" class="usx-add">Take</span> your plows and make swords from them,</p>
+<p id="q2-JOL.3.10" class="usx-q2" >and <span id="add-JOL.3.10" class="usx-add">take</span> your pruning knives and make spears from them.</p>
 <p id="q1-JOL.3.10" class="usx-q1" >
-    <span id="add-JOL.3.10" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">Even</span> the weak people must <span id="add-JOL.3.10" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">also</span> be like [MET] <span id="add-JOL.3.10" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">strong</span> soldiers.</p>
+    <span id="add-JOL.3.10" class="usx-add">Even</span> the weak people must <span id="add-JOL.3.10" class="usx-add">also</span> be like [MET] <span id="add-JOL.3.10" class="usx-add">strong</span> soldiers.</p>
 <p id="q1-JOL.3.10" class="usx-q1" >
     <a href="#JOL.3.11"><sup id="JOL.3.11" class="usx-v">11</sup></a>
-All you <span id="add-JOL.3.11" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">people from the</span> nations that are near <span id="add-JOL.3.11" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">Judah</span></p>
-<p id="q2-JOL.3.11" class="usx-q2" >must come quickly and gather <span id="add-JOL.3.11" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">in the Valley of Judgment</span>.”</p>
+All you <span id="add-JOL.3.11" class="usx-add">people from the</span> nations that are near <span id="add-JOL.3.11" class="usx-add">Judah</span></p>
+<p id="q2-JOL.3.11" class="usx-q2" >must come quickly and gather <span id="add-JOL.3.11" class="usx-add">in the Valley of Judgment</span>.”</p>
 <p id="b-JOL.3.11" class="usx-b" ></p>
-<p id="q1-JOL.3.11" class="usx-q1" >But Yahweh, <span id="add-JOL.3.11" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">when that happens</span>, send your army <span id="add-JOL.3.11" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">of angels to attack them</span>!</p>
+<p id="q1-JOL.3.11" class="usx-q1" >But Yahweh, <span id="add-JOL.3.11" class="usx-add">when that happens</span>, send your army <span id="add-JOL.3.11" class="usx-add">of angels to attack them</span>!</p>
 <p id="b-JOL.3.11" class="usx-b" ></p>
 <p id="q1-JOL.3.11" class="usx-q1" >
     <a href="#JOL.3.12"><sup id="JOL.3.12" class="usx-v">12</sup></a>
-The <span id="add-JOL.3.12" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">people in</span> the nations near <span id="add-JOL.3.12" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">Judah</span> must get ready and come to the Valley of Judgment.</p>
-<p id="q2-JOL.3.12" class="usx-q2" >There Yahweh will sit and judge <span id="add-JOL.3.12" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">and punish</span> them.</p>
+The <span id="add-JOL.3.12" class="usx-add">people in</span> the nations near <span id="add-JOL.3.12" class="usx-add">Judah</span> must get ready and come to the Valley of Judgment.</p>
+<p id="q2-JOL.3.12" class="usx-q2" >There Yahweh will sit and judge <span id="add-JOL.3.12" class="usx-add">and punish</span> them.</p>
 <p id="q1-JOL.3.12" class="usx-q1" >
     <a href="#JOL.3.13"><sup id="JOL.3.13" class="usx-v">13</sup></a>
 
-    <span id="add-JOL.3.13" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">They are like</span> [MET] crops that are ready to be harvested;</p>
-<p id="q2-JOL.3.13" class="usx-q2" >so <span id="add-JOL.3.13" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">strike them like</span> [MET] <span id="add-JOL.3.13" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">a farmer</span> swings his sickle to cut the grain.</p>
+    <span id="add-JOL.3.13" class="usx-add">They are like</span> [MET] crops that are ready to be harvested;</p>
+<p id="q2-JOL.3.13" class="usx-q2" >so <span id="add-JOL.3.13" class="usx-add">strike them like</span> [MET] <span id="add-JOL.3.13" class="usx-add">a farmer</span> swings his sickle to cut the grain.</p>
 <p id="q1-JOL.3.13" class="usx-q1" >They are like [MET] grapes that are piled high in the pits where they will be pressed;</p>
 <p id="q2-JOL.3.13" class="usx-q2" >because they are very wicked,</p>
 <p id="q1-JOL.3.13" class="usx-q1" >
-    <span id="add-JOL.3.13" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">punish them severely</span> [MET] now,</p>
-<p id="q2-JOL.3.13" class="usx-q2" >like [MET] <span id="add-JOL.3.13" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">a farmer</span> tramples on the grapes until the pits are full of juice.</p>
+    <span id="add-JOL.3.13" class="usx-add">punish them severely</span> [MET] now,</p>
+<p id="q2-JOL.3.13" class="usx-q2" >like [MET] <span id="add-JOL.3.13" class="usx-add">a farmer</span> tramples on the grapes until the pits are full of juice.</p>
 <p id="b-JOL.3.13" class="usx-b" ></p>
 <p id="q1-JOL.3.13" class="usx-q1" >
     <a href="#JOL.3.14"><sup id="JOL.3.14" class="usx-v">14</sup></a>
 
-    <span id="add-JOL.3.14" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">There will be</span> huge crowds of people in that Valley of Judgment.</p>
-<p id="q2-JOL.3.14" class="usx-q2" >It will soon be the time that Yahweh <span id="add-JOL.3.14" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">will punish them</span>.</p>
+    <span id="add-JOL.3.14" class="usx-add">There will be</span> huge crowds of people in that Valley of Judgment.</p>
+<p id="q2-JOL.3.14" class="usx-q2" >It will soon be the time that Yahweh <span id="add-JOL.3.14" class="usx-add">will punish them</span>.</p>
 <p id="q1-JOL.3.14" class="usx-q1" >
     <a href="#JOL.3.15"><sup id="JOL.3.15" class="usx-v">15</sup></a>
 
-    <span id="add-JOL.3.15" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">At that time</span> there will be no light from the sun or moon,</p>
+    <span id="add-JOL.3.15" class="usx-add">At that time</span> there will be no light from the sun or moon,</p>
 <p id="q2-JOL.3.15" class="usx-q2" >and the stars will not shine.</p>
 <p id="q1-JOL.3.15" class="usx-q1" >
     <a href="#JOL.3.16"><sup id="JOL.3.16" class="usx-v">16</sup></a>
-From Zion <span id="add-JOL.3.16" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">Hill</span> in Jerusalem Yahweh will shout,</p>
+From Zion <span id="add-JOL.3.16" class="usx-add">Hill</span> in Jerusalem Yahweh will shout,</p>
 <p id="q2-JOL.3.16" class="usx-q2" >and his voice will be like thunder,</p>
 <p id="q2-JOL.3.16" class="usx-q2" >and his voice will cause the sky and the earth to shake.</p>
 <p id="q1-JOL.3.16" class="usx-q1" >But Yahweh will protect [MET] his people;</p>
@@ -491,31 +501,31 @@ From Zion <span id="add-JOL.3.16" class="usx-add" link-data="https://www.bluelet
 <p id="q1-JOL.3.16" class="usx-q1" >
     <a href="#JOL.3.17"><sup id="JOL.3.17" class="usx-v">17</sup></a>
 
-    <span id="add-JOL.3.17" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">Yahweh says</span>, “At that time, you Israeli people will know that I am Yahweh, your God.</p>
+    <span id="add-JOL.3.17" class="usx-add">Yahweh says</span>, “At that time, you Israeli people will know that I am Yahweh, your God.</p>
 <p id="q2-JOL.3.17" class="usx-q2" >I live on Zion, my sacred hill.</p>
-<p id="q1-JOL.3.17" class="usx-q1" >Jerusalem will be a sacred <span id="add-JOL.3.17" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">city</span>,</p>
-<p id="q2-JOL.3.17" class="usx-q2" >and <span id="add-JOL.3.17" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">soldiers from</span> other countries will never conquer it again.</p>
+<p id="q1-JOL.3.17" class="usx-q1" >Jerusalem will be a sacred <span id="add-JOL.3.17" class="usx-add">city</span>,</p>
+<p id="q2-JOL.3.17" class="usx-q2" >and <span id="add-JOL.3.17" class="usx-add">soldiers from</span> other countries will never conquer it again.</p>
 <p id="b-JOL.3.17" class="usx-b" ></p>
 <p id="q1-JOL.3.17" class="usx-q1" >
     <a href="#JOL.3.18"><sup id="JOL.3.18" class="usx-v">18</sup></a>
 At that time, there will be vineyards covering [MTY] the hills,</p>
-<p id="q2-JOL.3.18" class="usx-q2" >and <span id="add-JOL.3.18" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">your cattle and goats on</span> those hills will produce plenty of milk.</p>
+<p id="q2-JOL.3.18" class="usx-q2" >and <span id="add-JOL.3.18" class="usx-add">your cattle and goats on</span> those hills will produce plenty of milk.</p>
 <p id="q2-JOL.3.18" class="usx-q2" >The streams in Judah will never dry up.</p>
-<p id="q1-JOL.3.18" class="usx-q1" >And a stream will flow from my temple into the Acacia Valley <span id="add-JOL.3.18" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">northeast of the Dead Sea</span>.</p>
+<p id="q1-JOL.3.18" class="usx-q1" >And a stream will flow from my temple into the Acacia Valley <span id="add-JOL.3.18" class="usx-add">northeast of the Dead Sea</span>.</p>
 <p id="q1-JOL.3.18" class="usx-q1" >
     <a href="#JOL.3.19"><sup id="JOL.3.19" class="usx-v">19</sup></a>
 
-    <span id="add-JOL.3.19" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">The armies of</span> Egypt and Edom attacked the people of Judah</p>
+    <span id="add-JOL.3.19" class="usx-add">The armies of</span> Egypt and Edom attacked the people of Judah</p>
 <p id="q2-JOL.3.19" class="usx-q2" >and killed [MTY] many people who had not done anything that was wrong.</p>
-<p id="q1-JOL.3.19" class="usx-q1" >So <span id="add-JOL.3.19" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">now</span> those countries will become deserts,</p>
+<p id="q1-JOL.3.19" class="usx-q1" >So <span id="add-JOL.3.19" class="usx-add">now</span> those countries will become deserts,</p>
 <p id="q1-JOL.3.19" class="usx-q1" >
     <a href="#JOL.3.20"><sup id="JOL.3.20" class="usx-v">20</sup></a>
-but there will always be people living in Jerusalem and <span id="add-JOL.3.20" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">in other places</span> in Judea.</p>
+but there will always be people living in Jerusalem and <span id="add-JOL.3.20" class="usx-add">in other places</span> in Judea.</p>
 <p id="q1-JOL.3.20" class="usx-q1" >
     <a href="#JOL.3.21"><sup id="JOL.3.21" class="usx-v">21</sup></a>
 
-    <span id="add-JOL.3.21" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">I</span>, Yahweh, live on Zion <span id="add-JOL.3.21" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">Hill in Jerusalem</span>,</p>
-<p id="q2-JOL.3.21" class="usx-q2" >and I will get revenge on the people <span id="add-JOL.3.21" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">of Egypt and Edom</span> who killed [MTY] <span id="add-JOL.3.21" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">many of my people</span>.”</p>
+    <span id="add-JOL.3.21" class="usx-add">I</span>, Yahweh, live on Zion <span id="add-JOL.3.21" class="usx-add">Hill in Jerusalem</span>,</p>
+<p id="q2-JOL.3.21" class="usx-q2" >and I will get revenge on the people <span id="add-JOL.3.21" class="usx-add">of Egypt and Edom</span> who killed [MTY] <span id="add-JOL.3.21" class="usx-add">many of my people</span>.”</p>
 
 
   </body>

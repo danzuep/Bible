@@ -1,6 +1,7 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
     <title>Bible</title>
     <style>
       /* Remove the default blue underline from URLs */
@@ -53,12 +54,21 @@
       .usx-w:hover::after {
         opacity: 1;
       }
+
+      /* When checkbox is checked, show the ruby text */
+      #toggle-ruby:checked ~ p ruby rt.unihan {
+        display: ruby-text; /* shows the ruby annotation */
+      }
+
+      ruby {
+        font-size: 1em;
+      }
     </style>
   </head>
 
   <body>
 <a href="#เอสรา">#</a> <a href="#เอสรา.1">[1]</a> <a href="#เอสรา.2">[2]</a> <a href="#เอสรา.3">[3]</a> <a href="#เอสรา.4">[4]</a> <a href="#เอสรา.5">[5]</a> <a href="#เอสรา.6">[6]</a> <a href="#เอสรา.7">[7]</a> <a href="#เอสรา.8">[8]</a> <a href="#เอสรา.9">[9]</a> <a href="#เอสรา.10">[10]</a>
-<p id="ide-_" class="usx-ide" >UTF-8</p>
+<p id="ide-_" class="usx-ide" hidden>UTF-8</p>
 <a href="#เอสรา"><h2 id="เอสรา" class="usx-h">เอสรา</h2></a>
 <p id="toc1-เอสรา" class="usx-toc1" hidden>ประวัติ​ความเป็นมาของหนังสือ เอสรา</p>
 <p id="toc2-เอสรา" class="usx-toc2" hidden>เอสรา</p>

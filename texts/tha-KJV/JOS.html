@@ -1,6 +1,7 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
     <title>Bible</title>
     <style>
       /* Remove the default blue underline from URLs */
@@ -53,12 +54,21 @@
       .usx-w:hover::after {
         opacity: 1;
       }
+
+      /* When checkbox is checked, show the ruby text */
+      #toggle-ruby:checked ~ p ruby rt.unihan {
+        display: ruby-text; /* shows the ruby annotation */
+      }
+
+      ruby {
+        font-size: 1em;
+      }
     </style>
   </head>
 
   <body>
 <a href="#โยชูวา">#</a> <a href="#โยชูวา.1">[1]</a> <a href="#โยชูวา.2">[2]</a> <a href="#โยชูวา.3">[3]</a> <a href="#โยชูวา.4">[4]</a> <a href="#โยชูวา.5">[5]</a> <a href="#โยชูวา.6">[6]</a> <a href="#โยชูวา.7">[7]</a> <a href="#โยชูวา.8">[8]</a> <a href="#โยชูวา.9">[9]</a> <a href="#โยชูวา.10">[10]</a> <a href="#โยชูวา.11">[11]</a> <a href="#โยชูวา.12">[12]</a> <a href="#โยชูวา.13">[13]</a> <a href="#โยชูวา.14">[14]</a> <a href="#โยชูวา.15">[15]</a> <a href="#โยชูวา.16">[16]</a> <a href="#โยชูวา.17">[17]</a> <a href="#โยชูวา.18">[18]</a> <a href="#โยชูวา.19">[19]</a> <a href="#โยชูวา.20">[20]</a> <a href="#โยชูวา.21">[21]</a> <a href="#โยชูวา.22">[22]</a> <a href="#โยชูวา.23">[23]</a> <a href="#โยชูวา.24">[24]</a>
-<p id="ide-_" class="usx-ide" >UTF-8</p>
+<p id="ide-_" class="usx-ide" hidden>UTF-8</p>
 <a href="#โยชูวา"><h2 id="โยชูวา" class="usx-h">โยชูวา</h2></a>
 <p id="toc1-โยชูวา" class="usx-toc1" hidden>ประวัติ​ความเป็นมาของหนังสือ โยชูวา</p>
 <p id="toc2-โยชูวา" class="usx-toc2" hidden>โยชูวา</p>

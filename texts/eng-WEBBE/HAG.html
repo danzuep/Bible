@@ -1,6 +1,7 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
     <title>Bible</title>
     <style>
       /* Remove the default blue underline from URLs */
@@ -53,13 +54,22 @@
       .usx-w:hover::after {
         opacity: 1;
       }
+
+      /* When checkbox is checked, show the ruby text */
+      #toggle-ruby:checked ~ p ruby rt.unihan {
+        display: ruby-text; /* shows the ruby annotation */
+      }
+
+      ruby {
+        font-size: 1em;
+      }
     </style>
   </head>
 
   <body>
 <a href="#HAG">#</a> <a href="#HAG.1">[1]</a> <a href="#HAG.2">[2]</a>
 <h1 id="id-HAG" class="usx-id">7-HAG-web.sfm World English Bible British Edition (WEBBE)</h1>
-<p id="ide-HAG" class="usx-ide" >UTF-8</p>
+<p id="ide-HAG" class="usx-ide" hidden>UTF-8</p>
 <a href="#HAG"><h2 id="HAG" class="usx-h">Haggai</h2></a>
 <p id="toc1-HAG" class="usx-toc1" hidden>The Book of Haggai</p>
 <p id="toc2-HAG" class="usx-toc2" hidden>Haggai</p>
@@ -146,9 +156,9 @@ I <span id="w-HAG.2.22" class="usx-w" link-data="https://www.blueletterbible.org
 <details>
 <summary>†</summary>
 <ol>
-<li id="footnote-1"><a href="#note-1" title="Back to reference ↩"><span id="fr-HAG.2.23" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">1:1 </span></a><span id="ft-HAG.2.23" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">When rendered in ALL CAPITAL LETTERS, “LORD” or “GOD” is the translation of God’s Proper Name (Hebrew “<span id="wh-HAG.2.23" class="usx-wh" link-data="https://www.blueletterbible.org/lexicon/">יהוה</span>”, usually pronounced Yahweh).</span></li>
-<li id="footnote-2"><a href="#note-2" title="Back to reference ↩"><span id="fr-HAG.2.23" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">1:9 </span></a><span id="ft-HAG.2.23" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">“Behold”, from “<span id="wh-HAG.2.23" class="usx-wh" link-data="https://www.blueletterbible.org/lexicon/">הִנֵּה</span>”, means look at, take notice, observe, see, or gaze at. It is often used as an interjection.</span></li>
-<li id="footnote-3"><a href="#note-3" title="Back to reference ↩"><span id="fr-HAG.2.23" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">1:12 </span></a><span id="ft-HAG.2.23" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">The Hebrew word rendered “God” is “<span id="wh-HAG.2.23" class="usx-wh" link-data="https://www.blueletterbible.org/lexicon/">אֱלֹהִ֑ים</span>” (Elohim).</span></li>
+<li id="footnote-1"><a href="#note-1" title="Back to reference ↩"><span id="fr-HAG.2.23" class="usx-fr">1:1 </span></a><span id="ft-HAG.2.23" class="usx-ft">When rendered in ALL CAPITAL LETTERS, “LORD” or “GOD” is the translation of God’s Proper Name (Hebrew “<span id="wh-HAG.2.23" class="usx-wh">יהוה</span>”, usually pronounced Yahweh).</span></li>
+<li id="footnote-2"><a href="#note-2" title="Back to reference ↩"><span id="fr-HAG.2.23" class="usx-fr">1:9 </span></a><span id="ft-HAG.2.23" class="usx-ft">“Behold”, from “<span id="wh-HAG.2.23" class="usx-wh">הִנֵּה</span>”, means look at, take notice, observe, see, or gaze at. It is often used as an interjection.</span></li>
+<li id="footnote-3"><a href="#note-3" title="Back to reference ↩"><span id="fr-HAG.2.23" class="usx-fr">1:12 </span></a><span id="ft-HAG.2.23" class="usx-ft">The Hebrew word rendered “God” is “<span id="wh-HAG.2.23" class="usx-wh">אֱלֹהִ֑ים</span>” (Elohim).</span></li>
 </ol>
 </details>
 </section>

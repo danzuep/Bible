@@ -1,6 +1,7 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
     <title>Bible</title>
     <style>
       /* Remove the default blue underline from URLs */
@@ -53,13 +54,22 @@
       .usx-w:hover::after {
         opacity: 1;
       }
+
+      /* When checkbox is checked, show the ruby text */
+      #toggle-ruby:checked ~ p ruby rt.unihan {
+        display: ruby-text; /* shows the ruby annotation */
+      }
+
+      ruby {
+        font-size: 1em;
+      }
     </style>
   </head>
 
   <body>
 <a href="#DAN">#</a> <a href="#DAN.1">[1]</a> <a href="#DAN.2">[2]</a> <a href="#DAN.3">[3]</a> <a href="#DAN.4">[4]</a> <a href="#DAN.5">[5]</a> <a href="#DAN.6">[6]</a> <a href="#DAN.7">[7]</a> <a href="#DAN.8">[8]</a> <a href="#DAN.9">[9]</a> <a href="#DAN.10">[10]</a> <a href="#DAN.11">[11]</a> <a href="#DAN.12">[12]</a>
 <h1 id="id-DAN" class="usx-id">27-DAN-web.sfm World English Bible British Edition (WEBBE)</h1>
-<p id="ide-DAN" class="usx-ide" >UTF-8</p>
+<p id="ide-DAN" class="usx-ide" hidden>UTF-8</p>
 <a href="#DAN"><h2 id="DAN" class="usx-h">Daniel</h2></a>
 <p id="toc1-DAN" class="usx-toc1" hidden>The Book of Daniel</p>
 <p id="toc2-DAN" class="usx-toc2" hidden>Daniel</p>
@@ -927,16 +937,16 @@ Blessed <span id="w-DAN.12.12" class="usx-w" link-data="https://www.blueletterbi
 <details>
 <summary>†</summary>
 <ol>
-<li id="footnote-1"><a href="#note-1" title="Back to reference ↩"><span id="fr-DAN.12.13" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">1:2 </span></a><span id="ft-DAN.12.13" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">The word translated “Lord” is “Adonai.”</span></li>
-<li id="footnote-2"><a href="#note-2" title="Back to reference ↩"><span id="fr-DAN.12.13" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">1:2 </span></a><span id="ft-DAN.12.13" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">The Hebrew word rendered “God” is “<span id="wh-DAN.12.13" class="usx-wh" link-data="https://www.blueletterbible.org/lexicon/">אֱלֹהִ֑ים</span>” (Elohim).</span></li>
-<li id="footnote-3"><a href="#note-3" title="Back to reference ↩"><span id="fr-DAN.12.13" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">1:3 </span></a><span id="ft-DAN.12.13" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">or, seed</span></li>
-<li id="footnote-4"><a href="#note-4" title="Back to reference ↩"><span id="fr-DAN.12.13" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">2:31 </span></a><span id="ft-DAN.12.13" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">“Behold”, from “<span id="wh-DAN.12.13" class="usx-wh" link-data="https://www.blueletterbible.org/lexicon/">הִנֵּה</span>”, means look at, take notice, observe, see, or gaze at. It is often used as an interjection.</span></li>
-<li id="footnote-5"><a href="#note-5" title="Back to reference ↩"><span id="fr-DAN.12.13" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">3:1 </span></a><span id="ft-DAN.12.13" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">A cubit is the length from the tip of the middle finger to the elbow on a man’s arm, or about 18 inches or 46 centimetres.</span></li>
-<li id="footnote-6"><a href="#note-6" title="Back to reference ↩"><span id="fr-DAN.12.13" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">3:25 </span></a><span id="ft-DAN.12.13" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">Or, the Son of God.</span></li>
-<li id="footnote-7"><a href="#note-7" title="Back to reference ↩"><span id="fr-DAN.12.13" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">9:2 </span></a><span id="ft-DAN.12.13" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">When rendered in ALL CAPITAL LETTERS, “LORD” or “GOD” is the translation of God’s Proper Name (Hebrew “<span id="wh-DAN.12.13" class="usx-wh" link-data="https://www.blueletterbible.org/lexicon/">יהוה</span>”, usually pronounced Yahweh). </span></li>
-<li id="footnote-8"><a href="#note-8" title="Back to reference ↩"><span id="fr-DAN.12.13" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">9:25 </span></a><span id="ft-DAN.12.13" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">“Anointed One” can also be translated “Messiah” (same as “Christ”).</span></li>
-<li id="footnote-9"><a href="#note-9" title="Back to reference ↩"><span id="fr-DAN.12.13" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">9:26 </span></a><span id="ft-DAN.12.13" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">“Anointed One” can also be translated “Messiah” (same as “Christ”).</span></li>
-<li id="footnote-10"><a href="#note-10" title="Back to reference ↩"><span id="fr-DAN.12.13" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">10:4 </span></a><span id="ft-DAN.12.13" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">or, Tigris River</span></li>
+<li id="footnote-1"><a href="#note-1" title="Back to reference ↩"><span id="fr-DAN.12.13" class="usx-fr">1:2 </span></a><span id="ft-DAN.12.13" class="usx-ft">The word translated “Lord” is “Adonai.”</span></li>
+<li id="footnote-2"><a href="#note-2" title="Back to reference ↩"><span id="fr-DAN.12.13" class="usx-fr">1:2 </span></a><span id="ft-DAN.12.13" class="usx-ft">The Hebrew word rendered “God” is “<span id="wh-DAN.12.13" class="usx-wh">אֱלֹהִ֑ים</span>” (Elohim).</span></li>
+<li id="footnote-3"><a href="#note-3" title="Back to reference ↩"><span id="fr-DAN.12.13" class="usx-fr">1:3 </span></a><span id="ft-DAN.12.13" class="usx-ft">or, seed</span></li>
+<li id="footnote-4"><a href="#note-4" title="Back to reference ↩"><span id="fr-DAN.12.13" class="usx-fr">2:31 </span></a><span id="ft-DAN.12.13" class="usx-ft">“Behold”, from “<span id="wh-DAN.12.13" class="usx-wh">הִנֵּה</span>”, means look at, take notice, observe, see, or gaze at. It is often used as an interjection.</span></li>
+<li id="footnote-5"><a href="#note-5" title="Back to reference ↩"><span id="fr-DAN.12.13" class="usx-fr">3:1 </span></a><span id="ft-DAN.12.13" class="usx-ft">A cubit is the length from the tip of the middle finger to the elbow on a man’s arm, or about 18 inches or 46 centimetres.</span></li>
+<li id="footnote-6"><a href="#note-6" title="Back to reference ↩"><span id="fr-DAN.12.13" class="usx-fr">3:25 </span></a><span id="ft-DAN.12.13" class="usx-ft">Or, the Son of God.</span></li>
+<li id="footnote-7"><a href="#note-7" title="Back to reference ↩"><span id="fr-DAN.12.13" class="usx-fr">9:2 </span></a><span id="ft-DAN.12.13" class="usx-ft">When rendered in ALL CAPITAL LETTERS, “LORD” or “GOD” is the translation of God’s Proper Name (Hebrew “<span id="wh-DAN.12.13" class="usx-wh">יהוה</span>”, usually pronounced Yahweh). </span></li>
+<li id="footnote-8"><a href="#note-8" title="Back to reference ↩"><span id="fr-DAN.12.13" class="usx-fr">9:25 </span></a><span id="ft-DAN.12.13" class="usx-ft">“Anointed One” can also be translated “Messiah” (same as “Christ”).</span></li>
+<li id="footnote-9"><a href="#note-9" title="Back to reference ↩"><span id="fr-DAN.12.13" class="usx-fr">9:26 </span></a><span id="ft-DAN.12.13" class="usx-ft">“Anointed One” can also be translated “Messiah” (same as “Christ”).</span></li>
+<li id="footnote-10"><a href="#note-10" title="Back to reference ↩"><span id="fr-DAN.12.13" class="usx-fr">10:4 </span></a><span id="ft-DAN.12.13" class="usx-ft">or, Tigris River</span></li>
 </ol>
 </details>
 </section>

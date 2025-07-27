@@ -1,6 +1,7 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
     <title>Bible</title>
     <style>
       /* Remove the default blue underline from URLs */
@@ -53,13 +54,22 @@
       .usx-w:hover::after {
         opacity: 1;
       }
+
+      /* When checkbox is checked, show the ruby text */
+      #toggle-ruby:checked ~ p ruby rt.unihan {
+        display: ruby-text; /* shows the ruby annotation */
+      }
+
+      ruby {
+        font-size: 1em;
+      }
     </style>
   </head>
 
   <body>
 <a href="#3JN">#</a> <a href="#3JN.1">[1]</a>
 <h1 id="id-3JN" class="usx-id">64-3JN-web.sfm World English Bible British Edition (WEBBE)</h1>
-<p id="ide-3JN" class="usx-ide" >UTF-8</p>
+<p id="ide-3JN" class="usx-ide" hidden>UTF-8</p>
 <a href="#3JN"><h2 id="3JN" class="usx-h">3 John</h2></a>
 <p id="toc1-3JN" class="usx-toc1" hidden>John’s Third Letter</p>
 <p id="toc2-3JN" class="usx-toc2" hidden>3 John</p>

@@ -1,6 +1,7 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
     <title>Bible</title>
     <style>
       /* Remove the default blue underline from URLs */
@@ -53,13 +54,22 @@
       .usx-w:hover::after {
         opacity: 1;
       }
+
+      /* When checkbox is checked, show the ruby text */
+      #toggle-ruby:checked ~ p ruby rt.unihan {
+        display: ruby-text; /* shows the ruby annotation */
+      }
+
+      ruby {
+        font-size: 1em;
+      }
     </style>
   </head>
 
   <body>
 <a href="#EST">#</a> <a href="#EST.1">[1]</a> <a href="#EST.2">[2]</a> <a href="#EST.3">[3]</a> <a href="#EST.4">[4]</a> <a href="#EST.5">[5]</a> <a href="#EST.6">[6]</a> <a href="#EST.7">[7]</a> <a href="#EST.8">[8]</a> <a href="#EST.9">[9]</a> <a href="#EST.10">[10]</a>
 <h1 id="id-EST" class="usx-id">World English Bible (WEB)</h1>
-<p id="ide-EST" class="usx-ide" >UTF-8</p>
+<p id="ide-EST" class="usx-ide" hidden>UTF-8</p>
 <a href="#EST"><h2 id="EST" class="usx-h">Esther</h2></a>
 <p id="toc1-EST" class="usx-toc1" hidden>The Book of Esther</p>
 <p id="toc2-EST" class="usx-toc2" hidden>Esther</p>
@@ -434,12 +444,12 @@ Aren’t <span id="w-EST.10.2" class="usx-w" link-data="https://www.blueletterbi
 <details>
 <summary>†</summary>
 <ol>
-<li id="footnote-1"><a href="#note-1" title="Back to reference ↩"><span id="fr-EST.10.3" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">3:9 </span></a><span id="ft-EST.10.3" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">A talent is about 30 kilograms or 66 pounds or 965 Troy ounces</span></li>
-<li id="footnote-2"><a href="#note-2" title="Back to reference ↩"><span id="fr-EST.10.3" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">5:14 </span></a><span id="ft-EST.10.3" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">A cubit is the length from the tip of the middle finger to the elbow on a man’s arm, or about 18 inches or 46 centimeters.</span></li>
-<li id="footnote-3"><a href="#note-3" title="Back to reference ↩"><span id="fr-EST.10.3" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">6:5 </span></a><span id="ft-EST.10.3" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">“Behold”, from “<span id="wh-EST.10.3" class="usx-wh" link-data="https://www.blueletterbible.org/lexicon/">הִנֵּה</span>”, means look at, take notice, observe, see, or gaze at. It is often used as an interjection.</span></li>
-<li id="footnote-4"><a href="#note-4" title="Back to reference ↩"><span id="fr-EST.10.3" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">7:9 </span></a><span id="ft-EST.10.3" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">A cubit is the length from the tip of the middle finger to the elbow on a man’s arm, or about 18 inches or 46 centimeters.</span></li>
-<li id="footnote-5"><a href="#note-5" title="Back to reference ↩"><span id="fr-EST.10.3" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">9:26 </span></a><span id="ft-EST.10.3" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">Purim is the Hebrew plural for pur, which means lot.</span></li>
-<li id="footnote-6"><a href="#note-6" title="Back to reference ↩"><span id="fr-EST.10.3" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">9:28 </span></a><span id="ft-EST.10.3" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">or, seed</span></li>
+<li id="footnote-1"><a href="#note-1" title="Back to reference ↩"><span id="fr-EST.10.3" class="usx-fr">3:9 </span></a><span id="ft-EST.10.3" class="usx-ft">A talent is about 30 kilograms or 66 pounds or 965 Troy ounces</span></li>
+<li id="footnote-2"><a href="#note-2" title="Back to reference ↩"><span id="fr-EST.10.3" class="usx-fr">5:14 </span></a><span id="ft-EST.10.3" class="usx-ft">A cubit is the length from the tip of the middle finger to the elbow on a man’s arm, or about 18 inches or 46 centimeters.</span></li>
+<li id="footnote-3"><a href="#note-3" title="Back to reference ↩"><span id="fr-EST.10.3" class="usx-fr">6:5 </span></a><span id="ft-EST.10.3" class="usx-ft">“Behold”, from “<span id="wh-EST.10.3" class="usx-wh">הִנֵּה</span>”, means look at, take notice, observe, see, or gaze at. It is often used as an interjection.</span></li>
+<li id="footnote-4"><a href="#note-4" title="Back to reference ↩"><span id="fr-EST.10.3" class="usx-fr">7:9 </span></a><span id="ft-EST.10.3" class="usx-ft">A cubit is the length from the tip of the middle finger to the elbow on a man’s arm, or about 18 inches or 46 centimeters.</span></li>
+<li id="footnote-5"><a href="#note-5" title="Back to reference ↩"><span id="fr-EST.10.3" class="usx-fr">9:26 </span></a><span id="ft-EST.10.3" class="usx-ft">Purim is the Hebrew plural for pur, which means lot.</span></li>
+<li id="footnote-6"><a href="#note-6" title="Back to reference ↩"><span id="fr-EST.10.3" class="usx-fr">9:28 </span></a><span id="ft-EST.10.3" class="usx-ft">or, seed</span></li>
 </ol>
 </details>
 </section>

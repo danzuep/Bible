@@ -1,6 +1,7 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
     <title>Bible</title>
     <style>
       /* Remove the default blue underline from URLs */
@@ -53,13 +54,22 @@
       .usx-w:hover::after {
         opacity: 1;
       }
+
+      /* When checkbox is checked, show the ruby text */
+      #toggle-ruby:checked ~ p ruby rt.unihan {
+        display: ruby-text; /* shows the ruby annotation */
+      }
+
+      ruby {
+        font-size: 1em;
+      }
     </style>
   </head>
 
   <body>
 <a href="#ECC">#</a> <a href="#ECC.1">[1]</a> <a href="#ECC.2">[2]</a> <a href="#ECC.3">[3]</a> <a href="#ECC.4">[4]</a> <a href="#ECC.5">[5]</a> <a href="#ECC.6">[6]</a> <a href="#ECC.7">[7]</a> <a href="#ECC.8">[8]</a> <a href="#ECC.9">[9]</a> <a href="#ECC.10">[10]</a> <a href="#ECC.11">[11]</a> <a href="#ECC.12">[12]</a>
 <h1 id="id-ECC" class="usx-id">World English Bible (WEB)</h1>
-<p id="ide-ECC" class="usx-ide" >UTF-8</p>
+<p id="ide-ECC" class="usx-ide" hidden>UTF-8</p>
 <a href="#ECC"><h2 id="ECC" class="usx-h">Ecclesiastes</h2></a>
 <p id="toc1-ECC" class="usx-toc1" hidden>Ecclesiates or, The Preacher</p>
 <p id="toc2-ECC" class="usx-toc2" hidden>Ecclesiastes</p>
@@ -665,9 +675,9 @@ Furthermore, <span id="w-ECC.12.12" class="usx-w" link-data="https://www.bluelet
 <details>
 <summary>†</summary>
 <ol>
-<li id="footnote-1"><a href="#note-1" title="Back to reference ↩"><span id="fr-ECC.12.14" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">1:10 </span></a><span id="ft-ECC.12.14" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">“Behold”, from “<span id="wh-ECC.12.14" class="usx-wh" link-data="https://www.blueletterbible.org/lexicon/">הִנֵּה</span>”, means look at, take notice, observe, see, or gaze at. It is often used as an interjection.</span></li>
-<li id="footnote-2"><a href="#note-2" title="Back to reference ↩"><span id="fr-ECC.12.14" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">1:13 </span></a><span id="ft-ECC.12.14" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">The Hebrew word rendered “God” is “<span id="wh-ECC.12.14" class="usx-wh" link-data="https://www.blueletterbible.org/lexicon/">אֱלֹהִ֑ים</span>” (Elohim).</span></li>
-<li id="footnote-3"><a href="#note-3" title="Back to reference ↩"><span id="fr-ECC.12.14" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">9:10 </span></a><span id="ft-ECC.12.14" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">Sheol is the place of the dead.</span></li>
+<li id="footnote-1"><a href="#note-1" title="Back to reference ↩"><span id="fr-ECC.12.14" class="usx-fr">1:10 </span></a><span id="ft-ECC.12.14" class="usx-ft">“Behold”, from “<span id="wh-ECC.12.14" class="usx-wh">הִנֵּה</span>”, means look at, take notice, observe, see, or gaze at. It is often used as an interjection.</span></li>
+<li id="footnote-2"><a href="#note-2" title="Back to reference ↩"><span id="fr-ECC.12.14" class="usx-fr">1:13 </span></a><span id="ft-ECC.12.14" class="usx-ft">The Hebrew word rendered “God” is “<span id="wh-ECC.12.14" class="usx-wh">אֱלֹהִ֑ים</span>” (Elohim).</span></li>
+<li id="footnote-3"><a href="#note-3" title="Back to reference ↩"><span id="fr-ECC.12.14" class="usx-fr">9:10 </span></a><span id="ft-ECC.12.14" class="usx-ft">Sheol is the place of the dead.</span></li>
 </ol>
 </details>
 </section>

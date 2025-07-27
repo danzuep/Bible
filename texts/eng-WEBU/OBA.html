@@ -1,6 +1,7 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
     <title>Bible</title>
     <style>
       /* Remove the default blue underline from URLs */
@@ -53,13 +54,22 @@
       .usx-w:hover::after {
         opacity: 1;
       }
+
+      /* When checkbox is checked, show the ruby text */
+      #toggle-ruby:checked ~ p ruby rt.unihan {
+        display: ruby-text; /* shows the ruby annotation */
+      }
+
+      ruby {
+        font-size: 1em;
+      }
     </style>
   </head>
 
   <body>
 <a href="#OBA">#</a> <a href="#OBA.1">[1]</a>
 <h1 id="id-OBA" class="usx-id">31-OBA-web.sfm World English Bible (WEB)</h1>
-<p id="ide-OBA" class="usx-ide" >UTF-8</p>
+<p id="ide-OBA" class="usx-ide" hidden>UTF-8</p>
 <a href="#OBA"><h2 id="OBA" class="usx-h">Obadiah</h2></a>
 <p id="toc1-OBA" class="usx-toc1" hidden>The Book of Obadiah</p>
 <p id="toc2-OBA" class="usx-toc2" hidden>Obadiah</p>
@@ -99,9 +109,9 @@ Saviors <span id="w-OBA.1.21" class="usx-w" link-data="https://www.blueletterbib
 <details>
 <summary>†</summary>
 <ol>
-<li id="footnote-1"><a href="#note-1" title="Back to reference ↩"><span id="fr-OBA.1.21" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">1:1 </span></a><span id="ft-OBA.1.21" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">The word translated “Lord” is “Adonai.”</span></li>
-<li id="footnote-2"><a href="#note-2" title="Back to reference ↩"><span id="fr-OBA.1.21" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">1:1 </span></a><span id="ft-OBA.1.21" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">“Yahweh” is God’s proper Name, sometimes rendered “LORD” (all caps) in other translations.</span></li>
-<li id="footnote-3"><a href="#note-3" title="Back to reference ↩"><span id="fr-OBA.1.21" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">1:2 </span></a><span id="ft-OBA.1.21" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">“Behold”, from “<span id="wh-OBA.1.21" class="usx-wh" link-data="https://www.blueletterbible.org/lexicon/">הִנֵּה</span>”, means look at, take notice, observe, see, or gaze at. It is often used as an interjection.</span></li>
+<li id="footnote-1"><a href="#note-1" title="Back to reference ↩"><span id="fr-OBA.1.21" class="usx-fr">1:1 </span></a><span id="ft-OBA.1.21" class="usx-ft">The word translated “Lord” is “Adonai.”</span></li>
+<li id="footnote-2"><a href="#note-2" title="Back to reference ↩"><span id="fr-OBA.1.21" class="usx-fr">1:1 </span></a><span id="ft-OBA.1.21" class="usx-ft">“Yahweh” is God’s proper Name, sometimes rendered “LORD” (all caps) in other translations.</span></li>
+<li id="footnote-3"><a href="#note-3" title="Back to reference ↩"><span id="fr-OBA.1.21" class="usx-fr">1:2 </span></a><span id="ft-OBA.1.21" class="usx-ft">“Behold”, from “<span id="wh-OBA.1.21" class="usx-wh">הִנֵּה</span>”, means look at, take notice, observe, see, or gaze at. It is often used as an interjection.</span></li>
 </ol>
 </details>
 </section>

@@ -1,6 +1,7 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
     <title>Bible</title>
     <style>
       /* Remove the default blue underline from URLs */
@@ -53,13 +54,22 @@
       .usx-w:hover::after {
         opacity: 1;
       }
+
+      /* When checkbox is checked, show the ruby text */
+      #toggle-ruby:checked ~ p ruby rt.unihan {
+        display: ruby-text; /* shows the ruby annotation */
+      }
+
+      ruby {
+        font-size: 1em;
+      }
     </style>
   </head>
 
   <body>
 <a href="#PHM">#</a> <a href="#PHM.1">[1]</a>
 <h1 id="id-PHM" class="usx-id">57-PHM-web.sfm World English Bible British Edition (WEBBE)</h1>
-<p id="ide-PHM" class="usx-ide" >UTF-8</p>
+<p id="ide-PHM" class="usx-ide" hidden>UTF-8</p>
 <a href="#PHM"><h2 id="PHM" class="usx-h">Philemon</h2></a>
 <p id="toc1-PHM" class="usx-toc1" hidden>Paul’s Letter to Philemon</p>
 <p id="toc2-PHM" class="usx-toc2" hidden>Philemon</p>
@@ -119,8 +129,8 @@ hearing <span id="w-PHM.1.5" class="usx-w" link-data="https://www.blueletterbibl
 <details>
 <summary>†</summary>
 <ol>
-<li id="footnote-1"><a href="#note-1" title="Back to reference ↩"><span id="fr-PHM.1.25" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">1:1 </span></a><span id="ft-PHM.1.25" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">“Christ” means “Anointed One”.</span></li>
-<li id="footnote-2"><a href="#note-2" title="Back to reference ↩"><span id="fr-PHM.1.25" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">1:10 </span></a><span id="ft-PHM.1.25" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">Onesimus means “useful”.</span></li>
+<li id="footnote-1"><a href="#note-1" title="Back to reference ↩"><span id="fr-PHM.1.25" class="usx-fr">1:1 </span></a><span id="ft-PHM.1.25" class="usx-ft">“Christ” means “Anointed One”.</span></li>
+<li id="footnote-2"><a href="#note-2" title="Back to reference ↩"><span id="fr-PHM.1.25" class="usx-fr">1:10 </span></a><span id="ft-PHM.1.25" class="usx-ft">Onesimus means “useful”.</span></li>
 </ol>
 </details>
 </section>

@@ -1,6 +1,7 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
     <title>Bible</title>
     <style>
       /* Remove the default blue underline from URLs */
@@ -53,13 +54,22 @@
       .usx-w:hover::after {
         opacity: 1;
       }
+
+      /* When checkbox is checked, show the ruby text */
+      #toggle-ruby:checked ~ p ruby rt.unihan {
+        display: ruby-text; /* shows the ruby annotation */
+      }
+
+      ruby {
+        font-size: 1em;
+      }
     </style>
   </head>
 
   <body>
 <a href="#DEU">#</a> <a href="#DEU.1">[1]</a> <a href="#DEU.2">[2]</a> <a href="#DEU.3">[3]</a> <a href="#DEU.4">[4]</a> <a href="#DEU.5">[5]</a> <a href="#DEU.6">[6]</a> <a href="#DEU.7">[7]</a> <a href="#DEU.8">[8]</a> <a href="#DEU.9">[9]</a> <a href="#DEU.10">[10]</a> <a href="#DEU.11">[11]</a> <a href="#DEU.12">[12]</a> <a href="#DEU.13">[13]</a> <a href="#DEU.14">[14]</a> <a href="#DEU.15">[15]</a> <a href="#DEU.16">[16]</a> <a href="#DEU.17">[17]</a> <a href="#DEU.18">[18]</a> <a href="#DEU.19">[19]</a> <a href="#DEU.20">[20]</a> <a href="#DEU.21">[21]</a> <a href="#DEU.22">[22]</a> <a href="#DEU.23">[23]</a> <a href="#DEU.24">[24]</a> <a href="#DEU.25">[25]</a> <a href="#DEU.26">[26]</a> <a href="#DEU.27">[27]</a> <a href="#DEU.28">[28]</a> <a href="#DEU.29">[29]</a> <a href="#DEU.30">[30]</a> <a href="#DEU.31">[31]</a> <a href="#DEU.32">[32]</a> <a href="#DEU.33">[33]</a> <a href="#DEU.34">[34]</a>
 <h1 id="id-DEU" class="usx-id">1World English Bible (WEB)</h1>
-<p id="ide-DEU" class="usx-ide" >UTF-8</p>
+<p id="ide-DEU" class="usx-ide" hidden>UTF-8</p>
 <a href="#DEU"><h2 id="DEU" class="usx-h">Deuteronomy</h2></a>
 <p id="toc1-DEU" class="usx-toc1" hidden>The Fifth Book of Moses, Commonly Called Deuteronomy</p>
 <p id="toc2-DEU" class="usx-toc2" hidden>Deuteronomy</p>
@@ -2133,24 +2143,24 @@ About <span id="w-DEU.33.23" class="usx-w" link-data="https://www.blueletterbibl
 <details>
 <summary>†</summary>
 <ol>
-<li id="footnote-1"><a href="#note-1" title="Back to reference ↩"><span id="fr-DEU.34.12" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">1:3 </span></a><span id="ft-DEU.34.12" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">“Yahweh” is God’s proper Name, sometimes rendered “LORD” (all caps) in other translations.</span></li>
-<li id="footnote-2"><a href="#note-2" title="Back to reference ↩"><span id="fr-DEU.34.12" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">1:6 </span></a><span id="ft-DEU.34.12" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">The Hebrew word rendered “God” is “<span id="wh-DEU.34.12" class="usx-wh" link-data="https://www.blueletterbible.org/lexicon/">אֱלֹהִ֑ים</span>” (Elohim).</span></li>
-<li id="footnote-3"><a href="#note-3" title="Back to reference ↩"><span id="fr-DEU.34.12" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">1:8 </span></a><span id="ft-DEU.34.12" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">“Behold”, from “<span id="wh-DEU.34.12" class="usx-wh" link-data="https://www.blueletterbible.org/lexicon/">הִנֵּה</span>”, means look at, take notice, observe, see, or gaze at. It is often used as an interjection.</span></li>
-<li id="footnote-4"><a href="#note-4" title="Back to reference ↩"><span id="fr-DEU.34.12" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">1:8 </span></a><span id="ft-DEU.34.12" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">or, seed</span></li>
-<li id="footnote-5"><a href="#note-5" title="Back to reference ↩"><span id="fr-DEU.34.12" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">3:11 </span></a><span id="ft-DEU.34.12" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">A cubit is the length from the tip of the middle finger to the elbow on a man’s arm, or about 18 inches or 46 centimeters.</span></li>
-<li id="footnote-6"><a href="#note-6" title="Back to reference ↩"><span id="fr-DEU.34.12" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">3:24 </span></a><span id="ft-DEU.34.12" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">The word translated “Lord” is “Adonai.”</span></li>
-<li id="footnote-7"><a href="#note-7" title="Back to reference ↩"><span id="fr-DEU.34.12" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">5:11 </span></a><span id="ft-DEU.34.12" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">or, You shall not take the name of Yahweh your God in vain;</span></li>
-<li id="footnote-8"><a href="#note-8" title="Back to reference ↩"><span id="fr-DEU.34.12" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">22:12 </span></a><span id="ft-DEU.34.12" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">or, tassels</span></li>
-<li id="footnote-9"><a href="#note-9" title="Back to reference ↩"><span id="fr-DEU.34.12" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">22:19 </span></a><span id="ft-DEU.34.12" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">A shekel is about 10 grams or about 0.35 ounces, so 100 shekels is about a kilogram or 2.2 pounds.</span></li>
-<li id="footnote-10"><a href="#note-10" title="Back to reference ↩"><span id="fr-DEU.34.12" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">22:29 </span></a><span id="ft-DEU.34.12" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">A shekel is about 10 grams or about 0.35 ounces.</span></li>
-<li id="footnote-11"><a href="#note-11" title="Back to reference ↩"><span id="fr-DEU.34.12" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">23:18 </span></a><span id="ft-DEU.34.12" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">literally, dog</span></li>
-<li id="footnote-12"><a href="#note-12" title="Back to reference ↩"><span id="fr-DEU.34.12" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">26:5 </span></a><span id="ft-DEU.34.12" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">or, forefather</span></li>
-<li id="footnote-13"><a href="#note-13" title="Back to reference ↩"><span id="fr-DEU.34.12" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">27:20 </span></a><span id="ft-DEU.34.12" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">i.e., has sexual relations with</span></li>
-<li id="footnote-14"><a href="#note-14" title="Back to reference ↩"><span id="fr-DEU.34.12" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">32:22 </span></a><span id="ft-DEU.34.12" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">Sheol is the place of the dead.</span></li>
-<li id="footnote-15"><a href="#note-15" title="Back to reference ↩"><span id="fr-DEU.34.12" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">32:43 </span></a><span id="ft-DEU.34.12" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">For this verse, LXX reads: Rejoice, you heavens, with him, and let all the angels of God worship him; rejoice you Gentiles, with his people, and let all the sons of God strengthen themselves in him; for he will avenge the blood of his sons, and he will give vengeance, and recompense justice to his enemies, and will reward them that hate him; and the Lord shall purge the land of his people.</span></li>
-<li id="footnote-16"><a href="#note-16" title="Back to reference ↩"><span id="fr-DEU.34.12" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">33:2 </span></a><span id="ft-DEU.34.12" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">another manuscript reads “He came with myriads of holy ones from the south, from his mountain slopes.”</span></li>
-<li id="footnote-17"><a href="#note-17" title="Back to reference ↩"><span id="fr-DEU.34.12" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">33:16 </span></a><span id="ft-DEU.34.12" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">i.e., the burning bush of Exodus 3:3-4.</span></li>
-<li id="footnote-18"><a href="#note-18" title="Back to reference ↩"><span id="fr-DEU.34.12" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">34:3 </span></a><span id="ft-DEU.34.12" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">or, Negev</span></li>
+<li id="footnote-1"><a href="#note-1" title="Back to reference ↩"><span id="fr-DEU.34.12" class="usx-fr">1:3 </span></a><span id="ft-DEU.34.12" class="usx-ft">“Yahweh” is God’s proper Name, sometimes rendered “LORD” (all caps) in other translations.</span></li>
+<li id="footnote-2"><a href="#note-2" title="Back to reference ↩"><span id="fr-DEU.34.12" class="usx-fr">1:6 </span></a><span id="ft-DEU.34.12" class="usx-ft">The Hebrew word rendered “God” is “<span id="wh-DEU.34.12" class="usx-wh">אֱלֹהִ֑ים</span>” (Elohim).</span></li>
+<li id="footnote-3"><a href="#note-3" title="Back to reference ↩"><span id="fr-DEU.34.12" class="usx-fr">1:8 </span></a><span id="ft-DEU.34.12" class="usx-ft">“Behold”, from “<span id="wh-DEU.34.12" class="usx-wh">הִנֵּה</span>”, means look at, take notice, observe, see, or gaze at. It is often used as an interjection.</span></li>
+<li id="footnote-4"><a href="#note-4" title="Back to reference ↩"><span id="fr-DEU.34.12" class="usx-fr">1:8 </span></a><span id="ft-DEU.34.12" class="usx-ft">or, seed</span></li>
+<li id="footnote-5"><a href="#note-5" title="Back to reference ↩"><span id="fr-DEU.34.12" class="usx-fr">3:11 </span></a><span id="ft-DEU.34.12" class="usx-ft">A cubit is the length from the tip of the middle finger to the elbow on a man’s arm, or about 18 inches or 46 centimeters.</span></li>
+<li id="footnote-6"><a href="#note-6" title="Back to reference ↩"><span id="fr-DEU.34.12" class="usx-fr">3:24 </span></a><span id="ft-DEU.34.12" class="usx-ft">The word translated “Lord” is “Adonai.”</span></li>
+<li id="footnote-7"><a href="#note-7" title="Back to reference ↩"><span id="fr-DEU.34.12" class="usx-fr">5:11 </span></a><span id="ft-DEU.34.12" class="usx-ft">or, You shall not take the name of Yahweh your God in vain;</span></li>
+<li id="footnote-8"><a href="#note-8" title="Back to reference ↩"><span id="fr-DEU.34.12" class="usx-fr">22:12 </span></a><span id="ft-DEU.34.12" class="usx-ft">or, tassels</span></li>
+<li id="footnote-9"><a href="#note-9" title="Back to reference ↩"><span id="fr-DEU.34.12" class="usx-fr">22:19 </span></a><span id="ft-DEU.34.12" class="usx-ft">A shekel is about 10 grams or about 0.35 ounces, so 100 shekels is about a kilogram or 2.2 pounds.</span></li>
+<li id="footnote-10"><a href="#note-10" title="Back to reference ↩"><span id="fr-DEU.34.12" class="usx-fr">22:29 </span></a><span id="ft-DEU.34.12" class="usx-ft">A shekel is about 10 grams or about 0.35 ounces.</span></li>
+<li id="footnote-11"><a href="#note-11" title="Back to reference ↩"><span id="fr-DEU.34.12" class="usx-fr">23:18 </span></a><span id="ft-DEU.34.12" class="usx-ft">literally, dog</span></li>
+<li id="footnote-12"><a href="#note-12" title="Back to reference ↩"><span id="fr-DEU.34.12" class="usx-fr">26:5 </span></a><span id="ft-DEU.34.12" class="usx-ft">or, forefather</span></li>
+<li id="footnote-13"><a href="#note-13" title="Back to reference ↩"><span id="fr-DEU.34.12" class="usx-fr">27:20 </span></a><span id="ft-DEU.34.12" class="usx-ft">i.e., has sexual relations with</span></li>
+<li id="footnote-14"><a href="#note-14" title="Back to reference ↩"><span id="fr-DEU.34.12" class="usx-fr">32:22 </span></a><span id="ft-DEU.34.12" class="usx-ft">Sheol is the place of the dead.</span></li>
+<li id="footnote-15"><a href="#note-15" title="Back to reference ↩"><span id="fr-DEU.34.12" class="usx-fr">32:43 </span></a><span id="ft-DEU.34.12" class="usx-ft">For this verse, LXX reads: Rejoice, you heavens, with him, and let all the angels of God worship him; rejoice you Gentiles, with his people, and let all the sons of God strengthen themselves in him; for he will avenge the blood of his sons, and he will give vengeance, and recompense justice to his enemies, and will reward them that hate him; and the Lord shall purge the land of his people.</span></li>
+<li id="footnote-16"><a href="#note-16" title="Back to reference ↩"><span id="fr-DEU.34.12" class="usx-fr">33:2 </span></a><span id="ft-DEU.34.12" class="usx-ft">another manuscript reads “He came with myriads of holy ones from the south, from his mountain slopes.”</span></li>
+<li id="footnote-17"><a href="#note-17" title="Back to reference ↩"><span id="fr-DEU.34.12" class="usx-fr">33:16 </span></a><span id="ft-DEU.34.12" class="usx-ft">i.e., the burning bush of Exodus 3:3-4.</span></li>
+<li id="footnote-18"><a href="#note-18" title="Back to reference ↩"><span id="fr-DEU.34.12" class="usx-fr">34:3 </span></a><span id="ft-DEU.34.12" class="usx-ft">or, Negev</span></li>
 </ol>
 </details>
 </section>

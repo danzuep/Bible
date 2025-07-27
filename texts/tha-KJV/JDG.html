@@ -1,6 +1,7 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
     <title>Bible</title>
     <style>
       /* Remove the default blue underline from URLs */
@@ -53,12 +54,21 @@
       .usx-w:hover::after {
         opacity: 1;
       }
+
+      /* When checkbox is checked, show the ruby text */
+      #toggle-ruby:checked ~ p ruby rt.unihan {
+        display: ruby-text; /* shows the ruby annotation */
+      }
+
+      ruby {
+        font-size: 1em;
+      }
     </style>
   </head>
 
   <body>
 <a href="#ผู้​วินิจฉัย">#</a> <a href="#ผู้​วินิจฉัย.1">[1]</a> <a href="#ผู้​วินิจฉัย.2">[2]</a> <a href="#ผู้​วินิจฉัย.3">[3]</a> <a href="#ผู้​วินิจฉัย.4">[4]</a> <a href="#ผู้​วินิจฉัย.5">[5]</a> <a href="#ผู้​วินิจฉัย.6">[6]</a> <a href="#ผู้​วินิจฉัย.7">[7]</a> <a href="#ผู้​วินิจฉัย.8">[8]</a> <a href="#ผู้​วินิจฉัย.9">[9]</a> <a href="#ผู้​วินิจฉัย.10">[10]</a> <a href="#ผู้​วินิจฉัย.11">[11]</a> <a href="#ผู้​วินิจฉัย.12">[12]</a> <a href="#ผู้​วินิจฉัย.13">[13]</a> <a href="#ผู้​วินิจฉัย.14">[14]</a> <a href="#ผู้​วินิจฉัย.15">[15]</a> <a href="#ผู้​วินิจฉัย.16">[16]</a> <a href="#ผู้​วินิจฉัย.17">[17]</a> <a href="#ผู้​วินิจฉัย.18">[18]</a> <a href="#ผู้​วินิจฉัย.19">[19]</a> <a href="#ผู้​วินิจฉัย.20">[20]</a> <a href="#ผู้​วินิจฉัย.21">[21]</a>
-<p id="ide-_" class="usx-ide" >UTF-8</p>
+<p id="ide-_" class="usx-ide" hidden>UTF-8</p>
 <a href="#ผู้​วินิจฉัย"><h2 id="ผู้​วินิจฉัย" class="usx-h">ผู้​วินิจฉัย</h2></a>
 <p id="toc1-ผู้​วินิจฉัย" class="usx-toc1" hidden>ประวัติ​ความเป็นมาของ ผู้​วินิจฉัย</p>
 <p id="toc2-ผู้​วินิจฉัย" class="usx-toc2" hidden>ผู้​วินิจฉัย</p>

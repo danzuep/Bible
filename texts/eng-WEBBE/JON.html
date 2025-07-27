@@ -1,6 +1,7 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
     <title>Bible</title>
     <style>
       /* Remove the default blue underline from URLs */
@@ -53,13 +54,22 @@
       .usx-w:hover::after {
         opacity: 1;
       }
+
+      /* When checkbox is checked, show the ruby text */
+      #toggle-ruby:checked ~ p ruby rt.unihan {
+        display: ruby-text; /* shows the ruby annotation */
+      }
+
+      ruby {
+        font-size: 1em;
+      }
     </style>
   </head>
 
   <body>
 <a href="#JON">#</a> <a href="#JON.1">[1]</a> <a href="#JON.2">[2]</a> <a href="#JON.3">[3]</a> <a href="#JON.4">[4]</a>
 <h1 id="id-JON" class="usx-id">2-JON-web.sfm World English Bible British Edition (WEBBE)</h1>
-<p id="ide-JON" class="usx-ide" >UTF-8</p>
+<p id="ide-JON" class="usx-ide" hidden>UTF-8</p>
 <a href="#JON"><h2 id="JON" class="usx-h">Jonah</h2></a>
 <p id="toc1-JON" class="usx-toc1" hidden>The Book of Jonah</p>
 <p id="toc2-JON" class="usx-toc2" hidden>Jonah</p>
@@ -232,11 +242,11 @@ Shouldn’t <span id="w-JON.4.11" class="usx-w" link-data="https://www.bluelette
 <details>
 <summary>†</summary>
 <ol>
-<li id="footnote-1"><a href="#note-1" title="Back to reference ↩"><span id="fr-JON.4.11" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">1:1 </span></a><span id="ft-JON.4.11" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">When rendered in ALL CAPITAL LETTERS, “LORD” or “GOD” is the translation of God’s Proper Name (Hebrew “<span id="wh-JON.4.11" class="usx-wh" link-data="https://www.blueletterbible.org/lexicon/">יהוה</span>”, usually pronounced Yahweh).</span></li>
-<li id="footnote-2"><a href="#note-2" title="Back to reference ↩"><span id="fr-JON.4.11" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">1:6 </span></a><span id="ft-JON.4.11" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">or, gods</span></li>
-<li id="footnote-3"><a href="#note-3" title="Back to reference ↩"><span id="fr-JON.4.11" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">1:6 </span></a><span id="ft-JON.4.11" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">or, gods </span></li>
-<li id="footnote-4"><a href="#note-4" title="Back to reference ↩"><span id="fr-JON.4.11" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">1:9 </span></a><span id="ft-JON.4.11" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">The Hebrew word rendered “God” is “<span id="wh-JON.4.11" class="usx-wh" link-data="https://www.blueletterbible.org/lexicon/">אֱלֹהִ֑ים</span>” (Elohim).</span></li>
-<li id="footnote-5"><a href="#note-5" title="Back to reference ↩"><span id="fr-JON.4.11" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">2:2 </span></a><span id="ft-JON.4.11" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">Sheol is the place of the dead.</span></li>
+<li id="footnote-1"><a href="#note-1" title="Back to reference ↩"><span id="fr-JON.4.11" class="usx-fr">1:1 </span></a><span id="ft-JON.4.11" class="usx-ft">When rendered in ALL CAPITAL LETTERS, “LORD” or “GOD” is the translation of God’s Proper Name (Hebrew “<span id="wh-JON.4.11" class="usx-wh">יהוה</span>”, usually pronounced Yahweh).</span></li>
+<li id="footnote-2"><a href="#note-2" title="Back to reference ↩"><span id="fr-JON.4.11" class="usx-fr">1:6 </span></a><span id="ft-JON.4.11" class="usx-ft">or, gods</span></li>
+<li id="footnote-3"><a href="#note-3" title="Back to reference ↩"><span id="fr-JON.4.11" class="usx-fr">1:6 </span></a><span id="ft-JON.4.11" class="usx-ft">or, gods </span></li>
+<li id="footnote-4"><a href="#note-4" title="Back to reference ↩"><span id="fr-JON.4.11" class="usx-fr">1:9 </span></a><span id="ft-JON.4.11" class="usx-ft">The Hebrew word rendered “God” is “<span id="wh-JON.4.11" class="usx-wh">אֱלֹהִ֑ים</span>” (Elohim).</span></li>
+<li id="footnote-5"><a href="#note-5" title="Back to reference ↩"><span id="fr-JON.4.11" class="usx-fr">2:2 </span></a><span id="ft-JON.4.11" class="usx-ft">Sheol is the place of the dead.</span></li>
 </ol>
 </details>
 </section>

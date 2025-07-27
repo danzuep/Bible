@@ -1,6 +1,7 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
     <title>Bible</title>
     <style>
       /* Remove the default blue underline from URLs */
@@ -53,12 +54,21 @@
       .usx-w:hover::after {
         opacity: 1;
       }
+
+      /* When checkbox is checked, show the ruby text */
+      #toggle-ruby:checked ~ p ruby rt.unihan {
+        display: ruby-text; /* shows the ruby annotation */
+      }
+
+      ruby {
+        font-size: 1em;
+      }
     </style>
   </head>
 
   <body>
 <a href="#ฮี​บรู">#</a> <a href="#ฮี​บรู.1">[1]</a> <a href="#ฮี​บรู.2">[2]</a> <a href="#ฮี​บรู.3">[3]</a> <a href="#ฮี​บรู.4">[4]</a> <a href="#ฮี​บรู.5">[5]</a> <a href="#ฮี​บรู.6">[6]</a> <a href="#ฮี​บรู.7">[7]</a> <a href="#ฮี​บรู.8">[8]</a> <a href="#ฮี​บรู.9">[9]</a> <a href="#ฮี​บรู.10">[10]</a> <a href="#ฮี​บรู.11">[11]</a> <a href="#ฮี​บรู.12">[12]</a> <a href="#ฮี​บรู.13">[13]</a>
-<p id="ide-_" class="usx-ide" >UTF-8</p>
+<p id="ide-_" class="usx-ide" hidden>UTF-8</p>
 <a href="#ฮี​บรู"><h2 id="ฮี​บรู" class="usx-h">ฮี​บรู</h2></a>
 <p id="toc1-ฮี​บรู" class="usx-toc1" hidden>ประวัติ​ความเป็นมาของหนังสือ ฮี​บรู</p>
 <p id="toc2-ฮี​บรู" class="usx-toc2" hidden>ฮี​บรู</p>

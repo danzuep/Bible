@@ -1,6 +1,7 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
     <title>Bible</title>
     <style>
       /* Remove the default blue underline from URLs */
@@ -53,13 +54,22 @@
       .usx-w:hover::after {
         opacity: 1;
       }
+
+      /* When checkbox is checked, show the ruby text */
+      #toggle-ruby:checked ~ p ruby rt.unihan {
+        display: ruby-text; /* shows the ruby annotation */
+      }
+
+      ruby {
+        font-size: 1em;
+      }
     </style>
   </head>
 
   <body>
 <a href="#EPH">#</a> <a href="#EPH.1">[1]</a> <a href="#EPH.2">[2]</a> <a href="#EPH.3">[3]</a> <a href="#EPH.4">[4]</a> <a href="#EPH.5">[5]</a> <a href="#EPH.6">[6]</a>
 <h1 id="id-EPH" class="usx-id">49-EPH-web.sfm World English Bible (WEB)</h1>
-<p id="ide-EPH" class="usx-ide" >UTF-8</p>
+<p id="ide-EPH" class="usx-ide" hidden>UTF-8</p>
 <a href="#EPH"><h2 id="EPH" class="usx-h">Ephesians</h2></a>
 <p id="toc1-EPH" class="usx-toc1" hidden>Paul’s Letter to the Ephesians</p>
 <p id="toc2-EPH" class="usx-toc2" hidden>Ephesians</p>
@@ -315,20 +325,20 @@ above <span id="w-EPH.6.16" class="usx-w" link-data="https://www.blueletterbible
 <details>
 <summary>†</summary>
 <ol>
-<li id="footnote-1"><a href="#note-1" title="Back to reference ↩"><span id="fr-EPH.6.24" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">1:1 </span></a><span id="ft-EPH.6.24" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">“Christ” means “Anointed One”.</span></li>
-<li id="footnote-2"><a href="#note-2" title="Back to reference ↩"><span id="fr-EPH.6.24" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">1:18 </span></a><span id="ft-EPH.6.24" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">TR reads “understanding” instead of “hearts”</span></li>
-<li id="footnote-3"><a href="#note-3" title="Back to reference ↩"><span id="fr-EPH.6.24" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">3:9 </span></a><span id="ft-EPH.6.24" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">TR reads “fellowship” instead of “administration”</span></li>
-<li id="footnote-4"><a href="#note-4" title="Back to reference ↩"><span id="xo-EPH.6.24" class="usx-xo" link-data="https://www.blueletterbible.org/lexicon/">4:8 </span></a><span id="xt-EPH.6.24" class="usx-xt" link-data="https://www.blueletterbible.org/lexicon/"><a id="ref-EPH.6.24" class="usx-ref" title="Bible link" href="https://www.biblegateway.com/passage/?search=PSA+68%3A18" target="_blank">PSA 68:18 Psalms 68:18</a>
+<li id="footnote-1"><a href="#note-1" title="Back to reference ↩"><span id="fr-EPH.6.24" class="usx-fr">1:1 </span></a><span id="ft-EPH.6.24" class="usx-ft">“Christ” means “Anointed One”.</span></li>
+<li id="footnote-2"><a href="#note-2" title="Back to reference ↩"><span id="fr-EPH.6.24" class="usx-fr">1:18 </span></a><span id="ft-EPH.6.24" class="usx-ft">TR reads “understanding” instead of “hearts”</span></li>
+<li id="footnote-3"><a href="#note-3" title="Back to reference ↩"><span id="fr-EPH.6.24" class="usx-fr">3:9 </span></a><span id="ft-EPH.6.24" class="usx-ft">TR reads “fellowship” instead of “administration”</span></li>
+<li id="footnote-4"><a href="#note-4" title="Back to reference ↩"><span id="xo-EPH.6.24" class="usx-xo">4:8 </span></a><span id="xt-EPH.6.24" class="usx-xt"><a id="ref-EPH.6.24" class="usx-ref" title="Bible link" href="https://www.biblegateway.com/passage/?search=PSA+68%3A18" target="_blank">PSA 68:18 Psalms 68:18</a>
 </span></li>
-<li id="footnote-5"><a href="#note-5" title="Back to reference ↩"><span id="fr-EPH.6.24" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">4:11 </span></a><span id="ft-EPH.6.24" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">or, pastors</span></li>
-<li id="footnote-6"><a href="#note-6" title="Back to reference ↩"><span id="xo-EPH.6.24" class="usx-xo" link-data="https://www.blueletterbible.org/lexicon/">4:26 </span></a><span id="xt-EPH.6.24" class="usx-xt" link-data="https://www.blueletterbible.org/lexicon/"><a id="ref-EPH.6.24" class="usx-ref" title="Bible link" href="https://www.biblegateway.com/passage/?search=PSA+4%3A4" target="_blank">PSA 4:4 Psalms 4:4</a>
+<li id="footnote-5"><a href="#note-5" title="Back to reference ↩"><span id="fr-EPH.6.24" class="usx-fr">4:11 </span></a><span id="ft-EPH.6.24" class="usx-ft">or, pastors</span></li>
+<li id="footnote-6"><a href="#note-6" title="Back to reference ↩"><span id="xo-EPH.6.24" class="usx-xo">4:26 </span></a><span id="xt-EPH.6.24" class="usx-xt"><a id="ref-EPH.6.24" class="usx-ref" title="Bible link" href="https://www.biblegateway.com/passage/?search=PSA+4%3A4" target="_blank">PSA 4:4 Psalms 4:4</a>
 </span></li>
-<li id="footnote-7"><a href="#note-7" title="Back to reference ↩"><span id="fr-EPH.6.24" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">4:27 </span></a><span id="ft-EPH.6.24" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">or, opportunity</span></li>
-<li id="footnote-8"><a href="#note-8" title="Back to reference ↩"><span id="xo-EPH.6.24" class="usx-xo" link-data="https://www.blueletterbible.org/lexicon/">5:31 </span></a><span id="xt-EPH.6.24" class="usx-xt" link-data="https://www.blueletterbible.org/lexicon/"><a id="ref-EPH.6.24" class="usx-ref" title="Bible link" href="https://www.biblegateway.com/passage/?search=GEN+2%3A24" target="_blank">GEN 2:24 Genesis 2:24</a>
+<li id="footnote-7"><a href="#note-7" title="Back to reference ↩"><span id="fr-EPH.6.24" class="usx-fr">4:27 </span></a><span id="ft-EPH.6.24" class="usx-ft">or, opportunity</span></li>
+<li id="footnote-8"><a href="#note-8" title="Back to reference ↩"><span id="xo-EPH.6.24" class="usx-xo">5:31 </span></a><span id="xt-EPH.6.24" class="usx-xt"><a id="ref-EPH.6.24" class="usx-ref" title="Bible link" href="https://www.biblegateway.com/passage/?search=GEN+2%3A24" target="_blank">GEN 2:24 Genesis 2:24</a>
 </span></li>
-<li id="footnote-9"><a href="#note-9" title="Back to reference ↩"><span id="xo-EPH.6.24" class="usx-xo" link-data="https://www.blueletterbible.org/lexicon/">6:3 </span></a><span id="xt-EPH.6.24" class="usx-xt" link-data="https://www.blueletterbible.org/lexicon/"><a id="ref-EPH.6.24" class="usx-ref" title="Bible link" href="https://www.biblegateway.com/passage/?search=DEU+5%3A16" target="_blank">DEU 5:16 Deuteronomy 5:16</a>
+<li id="footnote-9"><a href="#note-9" title="Back to reference ↩"><span id="xo-EPH.6.24" class="usx-xo">6:3 </span></a><span id="xt-EPH.6.24" class="usx-xt"><a id="ref-EPH.6.24" class="usx-ref" title="Bible link" href="https://www.biblegateway.com/passage/?search=DEU+5%3A16" target="_blank">DEU 5:16 Deuteronomy 5:16</a>
 </span></li>
-<li id="footnote-10"><a href="#note-10" title="Back to reference ↩"><span id="fr-EPH.6.24" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">6:17 </span></a><span id="ft-EPH.6.24" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">from the Greek “ῥῆμα” (rhema), which means “spoken word”</span></li>
+<li id="footnote-10"><a href="#note-10" title="Back to reference ↩"><span id="fr-EPH.6.24" class="usx-fr">6:17 </span></a><span id="ft-EPH.6.24" class="usx-ft">from the Greek “ῥῆμα” (rhema), which means “spoken word”</span></li>
 </ol>
 </details>
 </section>

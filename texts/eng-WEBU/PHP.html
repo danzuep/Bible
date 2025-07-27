@@ -1,6 +1,7 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
     <title>Bible</title>
     <style>
       /* Remove the default blue underline from URLs */
@@ -53,13 +54,22 @@
       .usx-w:hover::after {
         opacity: 1;
       }
+
+      /* When checkbox is checked, show the ruby text */
+      #toggle-ruby:checked ~ p ruby rt.unihan {
+        display: ruby-text; /* shows the ruby annotation */
+      }
+
+      ruby {
+        font-size: 1em;
+      }
     </style>
   </head>
 
   <body>
 <a href="#PHP">#</a> <a href="#PHP.1">[1]</a> <a href="#PHP.2">[2]</a> <a href="#PHP.3">[3]</a> <a href="#PHP.4">[4]</a>
 <h1 id="id-PHP" class="usx-id">50-PHP-web.sfm World English Bible (WEB)</h1>
-<p id="ide-PHP" class="usx-ide" >UTF-8</p>
+<p id="ide-PHP" class="usx-ide" hidden>UTF-8</p>
 <a href="#PHP"><h2 id="PHP" class="usx-h">Philippians</h2></a>
 <p id="toc1-PHP" class="usx-toc1" hidden>Paul’s Letter to the Philippians</p>
 <p id="toc2-PHP" class="usx-toc2" hidden>Philippians</p>
@@ -244,13 +254,13 @@ Greet <span id="w-PHP.4.21" class="usx-w" link-data="https://www.blueletterbible
 <details>
 <summary>†</summary>
 <ol>
-<li id="footnote-1"><a href="#note-1" title="Back to reference ↩"><span id="fr-PHP.4.23" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">1:1 </span></a><span id="ft-PHP.4.23" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">“Christ” means “Anointed One”.</span></li>
-<li id="footnote-2"><a href="#note-2" title="Back to reference ↩"><span id="fr-PHP.4.23" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">1:1 </span></a><span id="ft-PHP.4.23" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">or, superintendents, or bishops</span></li>
-<li id="footnote-3"><a href="#note-3" title="Back to reference ↩"><span id="fr-PHP.4.23" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">1:1 </span></a><span id="ft-PHP.4.23" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">Or, deacons</span></li>
-<li id="footnote-4"><a href="#note-4" title="Back to reference ↩"><span id="fr-PHP.4.23" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">1:5 </span></a><span id="ft-PHP.4.23" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">The word translated “partnership” (κοινωνίᾳ) also means “fellowship” and “sharing”.</span></li>
-<li id="footnote-5"><a href="#note-5" title="Back to reference ↩"><span id="fr-PHP.4.23" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">1:12 </span></a><span id="ft-PHP.4.23" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">The word for “brothers” here and where context allows may also be correctly translated “brothers and sisters” or “siblings.”</span></li>
-<li id="footnote-6"><a href="#note-6" title="Back to reference ↩"><span id="fr-PHP.4.23" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">1:13 </span></a><span id="ft-PHP.4.23" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">or, praetorian </span></li>
-<li id="footnote-7"><a href="#note-7" title="Back to reference ↩"><span id="fr-PHP.4.23" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">1:26 </span></a><span id="ft-PHP.4.23" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">or, rejoicing</span></li>
+<li id="footnote-1"><a href="#note-1" title="Back to reference ↩"><span id="fr-PHP.4.23" class="usx-fr">1:1 </span></a><span id="ft-PHP.4.23" class="usx-ft">“Christ” means “Anointed One”.</span></li>
+<li id="footnote-2"><a href="#note-2" title="Back to reference ↩"><span id="fr-PHP.4.23" class="usx-fr">1:1 </span></a><span id="ft-PHP.4.23" class="usx-ft">or, superintendents, or bishops</span></li>
+<li id="footnote-3"><a href="#note-3" title="Back to reference ↩"><span id="fr-PHP.4.23" class="usx-fr">1:1 </span></a><span id="ft-PHP.4.23" class="usx-ft">Or, deacons</span></li>
+<li id="footnote-4"><a href="#note-4" title="Back to reference ↩"><span id="fr-PHP.4.23" class="usx-fr">1:5 </span></a><span id="ft-PHP.4.23" class="usx-ft">The word translated “partnership” (κοινωνίᾳ) also means “fellowship” and “sharing”.</span></li>
+<li id="footnote-5"><a href="#note-5" title="Back to reference ↩"><span id="fr-PHP.4.23" class="usx-fr">1:12 </span></a><span id="ft-PHP.4.23" class="usx-ft">The word for “brothers” here and where context allows may also be correctly translated “brothers and sisters” or “siblings.”</span></li>
+<li id="footnote-6"><a href="#note-6" title="Back to reference ↩"><span id="fr-PHP.4.23" class="usx-fr">1:13 </span></a><span id="ft-PHP.4.23" class="usx-ft">or, praetorian </span></li>
+<li id="footnote-7"><a href="#note-7" title="Back to reference ↩"><span id="fr-PHP.4.23" class="usx-fr">1:26 </span></a><span id="ft-PHP.4.23" class="usx-ft">or, rejoicing</span></li>
 </ol>
 </details>
 </section>

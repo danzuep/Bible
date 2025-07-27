@@ -1,6 +1,7 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
     <title>Bible</title>
     <style>
       /* Remove the default blue underline from URLs */
@@ -53,13 +54,22 @@
       .usx-w:hover::after {
         opacity: 1;
       }
+
+      /* When checkbox is checked, show the ruby text */
+      #toggle-ruby:checked ~ p ruby rt.unihan {
+        display: ruby-text; /* shows the ruby annotation */
+      }
+
+      ruby {
+        font-size: 1em;
+      }
     </style>
   </head>
 
   <body>
 <a href="#COL">#</a> <a href="#COL.1">[1]</a> <a href="#COL.2">[2]</a> <a href="#COL.3">[3]</a> <a href="#COL.4">[4]</a>
 <h1 id="id-COL" class="usx-id">51-COL-web.sfm World English Bible British Edition (WEBBE)</h1>
-<p id="ide-COL" class="usx-ide" >UTF-8</p>
+<p id="ide-COL" class="usx-ide" hidden>UTF-8</p>
 <a href="#COL"><h2 id="COL" class="usx-h">Colossians</h2></a>
 <p id="toc1-COL" class="usx-toc1" hidden>Paul’s Letter to the Colossians</p>
 <p id="toc2-COL" class="usx-toc2" hidden>Colossians</p>
@@ -250,10 +260,10 @@ Greet <span id="w-COL.4.15" class="usx-w" link-data="https://www.blueletterbible
 <details>
 <summary>†</summary>
 <ol>
-<li id="footnote-1"><a href="#note-1" title="Back to reference ↩"><span id="fr-COL.4.18" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">1:1 </span></a><span id="ft-COL.4.18" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">“Christ” means “Anointed One”.</span></li>
-<li id="footnote-2"><a href="#note-2" title="Back to reference ↩"><span id="fr-COL.4.18" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">1:2 </span></a><span id="ft-COL.4.18" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">The word for “brothers” here and where context allows may also be correctly translated “brothers and sisters” or “siblings.”</span></li>
-<li id="footnote-3"><a href="#note-3" title="Back to reference ↩"><span id="fr-COL.4.18" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">1:7 </span></a><span id="ft-COL.4.18" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">NU reads </span><span id="fqa-COL.4.18" class="usx-fqa" link-data="https://www.blueletterbible.org/lexicon/">our</span></li>
-<li id="footnote-4"><a href="#note-4" title="Back to reference ↩"><span id="fr-COL.4.18" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">1:14 </span></a><span id="ft-COL.4.18" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">TR adds “through his blood,” </span></li>
+<li id="footnote-1"><a href="#note-1" title="Back to reference ↩"><span id="fr-COL.4.18" class="usx-fr">1:1 </span></a><span id="ft-COL.4.18" class="usx-ft">“Christ” means “Anointed One”.</span></li>
+<li id="footnote-2"><a href="#note-2" title="Back to reference ↩"><span id="fr-COL.4.18" class="usx-fr">1:2 </span></a><span id="ft-COL.4.18" class="usx-ft">The word for “brothers” here and where context allows may also be correctly translated “brothers and sisters” or “siblings.”</span></li>
+<li id="footnote-3"><a href="#note-3" title="Back to reference ↩"><span id="fr-COL.4.18" class="usx-fr">1:7 </span></a><span id="ft-COL.4.18" class="usx-ft">NU reads </span><span id="fqa-COL.4.18" class="usx-fqa">our</span></li>
+<li id="footnote-4"><a href="#note-4" title="Back to reference ↩"><span id="fr-COL.4.18" class="usx-fr">1:14 </span></a><span id="ft-COL.4.18" class="usx-ft">TR adds “through his blood,” </span></li>
 </ol>
 </details>
 </section>

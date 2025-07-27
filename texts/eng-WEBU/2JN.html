@@ -1,6 +1,7 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
     <title>Bible</title>
     <style>
       /* Remove the default blue underline from URLs */
@@ -53,13 +54,22 @@
       .usx-w:hover::after {
         opacity: 1;
       }
+
+      /* When checkbox is checked, show the ruby text */
+      #toggle-ruby:checked ~ p ruby rt.unihan {
+        display: ruby-text; /* shows the ruby annotation */
+      }
+
+      ruby {
+        font-size: 1em;
+      }
     </style>
   </head>
 
   <body>
 <a href="#2JN">#</a> <a href="#2JN.1">[1]</a>
 <h1 id="id-2JN" class="usx-id">63-2JN-web.sfm World English Bible (WEB)</h1>
-<p id="ide-2JN" class="usx-ide" >UTF-8</p>
+<p id="ide-2JN" class="usx-ide" hidden>UTF-8</p>
 <a href="#2JN"><h2 id="2JN" class="usx-h">2 John</h2></a>
 <p id="toc1-2JN" class="usx-toc1" hidden>John’s Second Letter</p>
 <p id="toc2-2JN" class="usx-toc2" hidden>2 John</p>
@@ -95,7 +105,7 @@ Watch <span id="w-2JN.1.8" class="usx-w" link-data="https://www.blueletterbible.
 <details>
 <summary>†</summary>
 <ol>
-<li id="footnote-1"><a href="#note-1" title="Back to reference ↩"><span id="fr-2JN.1.13" class="usx-fr" link-data="https://www.blueletterbible.org/lexicon/">1:3 </span></a><span id="ft-2JN.1.13" class="usx-ft" link-data="https://www.blueletterbible.org/lexicon/">“Christ” means “Anointed One”.</span></li>
+<li id="footnote-1"><a href="#note-1" title="Back to reference ↩"><span id="fr-2JN.1.13" class="usx-fr">1:3 </span></a><span id="ft-2JN.1.13" class="usx-ft">“Christ” means “Anointed One”.</span></li>
 </ol>
 </details>
 </section>

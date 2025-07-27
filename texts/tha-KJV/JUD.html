@@ -1,6 +1,7 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
     <title>Bible</title>
     <style>
       /* Remove the default blue underline from URLs */
@@ -53,12 +54,21 @@
       .usx-w:hover::after {
         opacity: 1;
       }
+
+      /* When checkbox is checked, show the ruby text */
+      #toggle-ruby:checked ~ p ruby rt.unihan {
+        display: ruby-text; /* shows the ruby annotation */
+      }
+
+      ruby {
+        font-size: 1em;
+      }
     </style>
   </head>
 
   <body>
 <a href="#ยู​ดาส">#</a> <a href="#ยู​ดาส.1">[1]</a>
-<p id="ide-_" class="usx-ide" >UTF-8</p>
+<p id="ide-_" class="usx-ide" hidden>UTF-8</p>
 <a href="#ยู​ดาส"><h2 id="ยู​ดาส" class="usx-h">ยู​ดาส</h2></a>
 <p id="toc1-ยู​ดาส" class="usx-toc1" hidden>ประวัติ​ความเป็นมาของหนังสือ ยู​ดาส</p>
 <p id="toc2-ยู​ดาส" class="usx-toc2" hidden>ยู​ดาส</p>

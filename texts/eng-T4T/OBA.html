@@ -1,6 +1,7 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
     <title>Bible</title>
     <style>
       /* Remove the default blue underline from URLs */
@@ -53,13 +54,22 @@
       .usx-w:hover::after {
         opacity: 1;
       }
+
+      /* When checkbox is checked, show the ruby text */
+      #toggle-ruby:checked ~ p ruby rt.unihan {
+        display: ruby-text; /* shows the ruby annotation */
+      }
+
+      ruby {
+        font-size: 1em;
+      }
     </style>
   </head>
 
   <body>
 <a href="#OBA">#</a> <a href="#OBA.1">[1]</a>
 <h1 id="id-OBA" class="usx-id">- Translation 4 Translators 1</h1>
-<p id="ide-OBA" class="usx-ide" >65001 - Unicode (UTF-8)</p>
+<p id="ide-OBA" class="usx-ide" hidden>65001 - Unicode (UTF-8)</p>
 <a href="#OBA"><h2 id="OBA" class="usx-h">OBADIAH</h2></a>
 <p id="toc1-OBA" class="usx-toc1" hidden>Obadiah</p>
 <p id="toc2-OBA" class="usx-toc2" hidden>Obadiah</p>
@@ -70,26 +80,26 @@
 <p id="s1-OBA.1" class="usx-s1" >Yahweh will punish the Edomites</p>
 <p id="p-OBA.1" class="usx-p" >
     <a href="#OBA.1.1"><sup id="OBA.1.1" class="usx-v">1</sup></a>
-This is a message that Yahweh our God gave to me, Obadiah, about the Edom <span id="add-OBA.1.1" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">people-group</span>.</p>
-<p id="p-OBA.1.1" class="usx-p" >Yahweh our God has told me this about <span id="add-OBA.1.1" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">the people of</span> Edom:</p>
+This is a message that Yahweh our God gave to me, Obadiah, about the Edom <span id="add-OBA.1.1" class="usx-add">people-group</span>.</p>
+<p id="p-OBA.1.1" class="usx-p" >Yahweh our God has told me this about <span id="add-OBA.1.1" class="usx-add">the people of</span> Edom:</p>
 <p id="q1-OBA.1.1" class="usx-q1" >“I, Yahweh, have sent a messenger to other nations,</p>
 <p id="q2-OBA.1.1" class="usx-q2" >telling them to prepare to go and attack Edom.”</p>
 <p id="b-OBA.1.1" class="usx-b" ></p>
 <p id="p-OBA.1.1" class="usx-p" >
     <a href="#OBA.1.2"><sup id="OBA.1.2" class="usx-v">2</sup></a>
 And Yahweh says this to the people of Edom:</p>
-<p id="q1-OBA.1.2" class="usx-q1" >“I will soon cause you to become the weakest and most despised nation <span id="add-OBA.1.2" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">on the earth</span>.</p>
+<p id="q1-OBA.1.2" class="usx-q1" >“I will soon cause you to become the weakest and most despised nation <span id="add-OBA.1.2" class="usx-add">on the earth</span>.</p>
 <p id="q1-OBA.1.2" class="usx-q1" >
     <a href="#OBA.1.3"><sup id="OBA.1.3" class="usx-v">3</sup></a>
-Your <span id="add-OBA.1.3" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">capital city</span> is high in the rocky cliffs,</p>
+Your <span id="add-OBA.1.3" class="usx-add">capital city</span> is high in the rocky cliffs,</p>
 <p id="q2-OBA.1.3" class="usx-q2" >and you are very proud;</p>
 <p id="q1-OBA.1.3" class="usx-q1" >you think that you are safe from being attacked by your enemies [RHQ],</p>
 <p id="q2-OBA.1.3" class="usx-q2" >but you [IDM] have deceived yourselves.</p>
 <p id="q1-OBA.1.3" class="usx-q1" >
     <a href="#OBA.1.4"><sup id="OBA.1.4" class="usx-v">4</sup></a>
-And I tell you that even if <span id="add-OBA.1.4" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">you had wings and</span> could fly higher than eagles fly,</p>
+And I tell you that even if <span id="add-OBA.1.4" class="usx-add">you had wings and</span> could fly higher than eagles fly,</p>
 <p id="q2-OBA.1.4" class="usx-q2" >and if you could make your homes among the stars,</p>
-<p id="q2-OBA.1.4" class="usx-q2" >I would bring you <span id="add-OBA.1.4" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">crashing</span> down from there.</p>
+<p id="q2-OBA.1.4" class="usx-q2" >I would bring you <span id="add-OBA.1.4" class="usx-add">crashing</span> down from there.</p>
 <p id="b-OBA.1.4" class="usx-b" ></p>
 <p id="q1-OBA.1.4" class="usx-q1" >
     <a href="#OBA.1.5"><sup id="OBA.1.5" class="usx-v">5</sup></a>
@@ -101,90 +111,90 @@ When thieves break into someone’s house during the night,</p>
     <a href="#OBA.1.6"><sup id="OBA.1.6" class="usx-v">6</sup></a>
 Everything that is valuable will be taken away.</p>
 <p id="q2-OBA.1.6" class="usx-q2" >
-    <span id="add-OBA.1.6" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">Your enemies</span> will find and take away even the valuable things that you have hidden.</p>
+    <span id="add-OBA.1.6" class="usx-add">Your enemies</span> will find and take away even the valuable things that you have hidden.</p>
 <p id="q1-OBA.1.6" class="usx-q1" >
     <a href="#OBA.1.7"><sup id="OBA.1.7" class="usx-v">7</sup></a>
 All ◄your allies/nations who promised to help you► will turn against you,</p>
 <p id="q2-OBA.1.7" class="usx-q2" >and they will force you to leave your country/land.</p>
 <p id="q1-OBA.1.7" class="usx-q1" >Those with whom you have peace now will trick/deceive you and defeat you.</p>
 <p id="q2-OBA.1.7" class="usx-q2" >Those who eat meals with you now are planning to trap you,</p>
-<p id="q1-OBA.1.7" class="usx-q1" >and <span id="add-OBA.1.7" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">then they will say to you</span>, ‘You are not [RHQ] as clever <span id="add-OBA.1.7" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">as you thought you were</span>!’</p>
+<p id="q1-OBA.1.7" class="usx-q1" >and <span id="add-OBA.1.7" class="usx-add">then they will say to you</span>, ‘You are not [RHQ] as clever <span id="add-OBA.1.7" class="usx-add">as you thought you were</span>!’</p>
 <p id="b-OBA.1.7" class="usx-b" ></p>
 <p id="q1-OBA.1.7" class="usx-q1" >
     <a href="#OBA.1.8"><sup id="OBA.1.8" class="usx-v">8</sup></a>
 I, Yahweh, declare that at the time that I destroy Edom,</p>
-<p id="q2-OBA.1.8" class="usx-q2" >I will punish the men who live in those cliffs who <span id="add-OBA.1.8" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">thought that they</span> were wise.</p>
+<p id="q2-OBA.1.8" class="usx-q2" >I will punish the men who live in those cliffs who <span id="add-OBA.1.8" class="usx-add">thought that they</span> were wise.</p>
 <p id="q1-OBA.1.8" class="usx-q1" >
     <a href="#OBA.1.9"><sup id="OBA.1.9" class="usx-v">9</sup></a>
-The soldiers from Teman <span id="add-OBA.1.9" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">town</span> will become terrified;</p>
+The soldiers from Teman <span id="add-OBA.1.9" class="usx-add">town</span> will become terrified;</p>
 <p id="q2-OBA.1.9" class="usx-q2" >all you people who are descendants of Esau will be ◄wiped out/killed►.</p>
 <p id="s1-OBA.1.9" class="usx-s1" >The reasons for Edom’s punishment</p>
 <p id="q1-OBA.1.9" class="usx-q1" >
     <a href="#OBA.1.10"><sup id="OBA.1.10" class="usx-v">10</sup></a>
-You acted cruel in a cruel way toward your relatives who are descendants of Jacob, <span id="add-OBA.1.10" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">the twin brother of your ancestor Esau</span>.</p>
+You acted cruel in a cruel way toward your relatives who are descendants of Jacob, <span id="add-OBA.1.10" class="usx-add">the twin brother of your ancestor Esau</span>.</p>
 <p id="q2-OBA.1.10" class="usx-q2" >So now you will be disgraced forever; you will be completely destroyed.</p>
 <p id="q1-OBA.1.10" class="usx-q1" >
     <a href="#OBA.1.11"><sup id="OBA.1.11" class="usx-v">11</sup></a>
 Foreigners entered the gates of Jerusalem</p>
 <p id="q2-OBA.1.11" class="usx-q2" >and ◄cast lots/threw small stones that were marked► to decide what valuable things they would take away;</p>
 <p id="q1-OBA.1.11" class="usx-q1" >but you were as bad as those foreigners,</p>
-<p id="q2-OBA.1.11" class="usx-q2" >because you just stood there <span id="add-OBA.1.11" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">and did not help the Israelis</span>.</p>
+<p id="q2-OBA.1.11" class="usx-q2" >because you just stood there <span id="add-OBA.1.11" class="usx-add">and did not help the Israelis</span>.</p>
 <p id="q1-OBA.1.11" class="usx-q1" >
     <a href="#OBA.1.12"><sup id="OBA.1.12" class="usx-v">12</sup></a>
 You should not have ◄gloated/been happy► about the disaster that the Israelis were experiencing.</p>
 <p id="q2-OBA.1.12" class="usx-q2" >You should not have been happy when their towns were ruined.</p>
-<p id="q1-OBA.1.12" class="usx-q1" >You should not have made fun <span id="add-OBA.1.12" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">of them </span> when they were suffering.</p>
+<p id="q1-OBA.1.12" class="usx-q1" >You should not have made fun <span id="add-OBA.1.12" class="usx-add">of them </span> when they were suffering.</p>
 <p id="q1-OBA.1.12" class="usx-q1" >
     <a href="#OBA.1.13"><sup id="OBA.1.13" class="usx-v">13</sup></a>
 They are my people,</p>
-<p id="q2-OBA.1.13" class="usx-q2" >so you should not have entered their <span id="add-OBA.1.13" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">city</span> gates when they were experiencing those disasters</p>
+<p id="q2-OBA.1.13" class="usx-q2" >so you should not have entered their <span id="add-OBA.1.13" class="usx-add">city</span> gates when they were experiencing those disasters</p>
 <p id="q1-OBA.1.13" class="usx-q1" >and you should not have laughed at them.</p>
-<p id="q2-OBA.1.13" class="usx-q2" >And you should not have taken away their <span id="add-OBA.1.13" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">valuable</span> possessions.</p>
+<p id="q2-OBA.1.13" class="usx-q2" >And you should not have taken away their <span id="add-OBA.1.13" class="usx-add">valuable</span> possessions.</p>
 <p id="q1-OBA.1.13" class="usx-q1" >
     <a href="#OBA.1.14"><sup id="OBA.1.14" class="usx-v">14</sup></a>
 You should not have stood at crossroads</p>
-<p id="q2-OBA.1.14" class="usx-q2" >to catch those who were <span id="add-OBA.1.14" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">trying to</span> escape.</p>
-<p id="q1-OBA.1.14" class="usx-q1" >You should not have <span id="add-OBA.1.14" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">captured them and</span> put them into the hands of <span id="add-OBA.1.14" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">their enemies</span></p>
+<p id="q2-OBA.1.14" class="usx-q2" >to catch those who were <span id="add-OBA.1.14" class="usx-add">trying to</span> escape.</p>
+<p id="q1-OBA.1.14" class="usx-q1" >You should not have <span id="add-OBA.1.14" class="usx-add">captured them and</span> put them into the hands of <span id="add-OBA.1.14" class="usx-add">their enemies</span></p>
 <p id="q2-OBA.1.14" class="usx-q2" >when they were experiencing those disasters.”</p>
 <p id="s1-OBA.1.14" class="usx-s1" >God will punish all the nearby nations</p>
 <p id="q1-OBA.1.14" class="usx-q1" >
     <a href="#OBA.1.15"><sup id="OBA.1.15" class="usx-v">15</sup></a>
-“There will soon be the time when I, Yahweh, will judge <span id="add-OBA.1.15" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">and punish</span> all the nations.</p>
-<p id="q2-OBA.1.15" class="usx-q2" >And you <span id="add-OBA.1.15" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">people of Edom</span> will experience the same <span id="add-OBA.1.15" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">disasters</span> that you caused <span id="add-OBA.1.15" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">others to experience</span>.</p>
+“There will soon be the time when I, Yahweh, will judge <span id="add-OBA.1.15" class="usx-add">and punish</span> all the nations.</p>
+<p id="q2-OBA.1.15" class="usx-q2" >And you <span id="add-OBA.1.15" class="usx-add">people of Edom</span> will experience the same <span id="add-OBA.1.15" class="usx-add">disasters</span> that you caused <span id="add-OBA.1.15" class="usx-add">others to experience</span>.</p>
 <p id="q1-OBA.1.15" class="usx-q1" >The same evil things that you have done to others will happen to you.</p>
 <p id="q1-OBA.1.15" class="usx-q1" >
     <a href="#OBA.1.16"><sup id="OBA.1.16" class="usx-v">16</sup></a>
 
-    <span id="add-OBA.1.16" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">My people in Jerusalem have been punished</span></p>
+    <span id="add-OBA.1.16" class="usx-add">My people in Jerusalem have been punished</span></p>
 <p id="q2-OBA.1.16" class="usx-q2" >because I was very angry with them.</p>
 <p id="q2-OBA.1.16" class="usx-q2" >
-    <span id="add-OBA.1.16" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">It is as though</span> [MET] they drank <span id="add-OBA.1.16" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">a cup of very bitter liquid </span> on Zion, my sacred hill.</p>
-<p id="q1-OBA.1.16" class="usx-q1" >But <span id="add-OBA.1.16" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">I</span> will punish [MET] all the other nations even more severely,</p>
+    <span id="add-OBA.1.16" class="usx-add">It is as though</span> [MET] they drank <span id="add-OBA.1.16" class="usx-add">a cup of very bitter liquid </span> on Zion, my sacred hill.</p>
+<p id="q1-OBA.1.16" class="usx-q1" >But <span id="add-OBA.1.16" class="usx-add">I</span> will punish [MET] all the other nations even more severely,</p>
 <p id="q2-OBA.1.16" class="usx-q2" >and cause them to disappear completely.</p>
 <p id="q1-OBA.1.16" class="usx-q1" >
     <a href="#OBA.1.17"><sup id="OBA.1.17" class="usx-v">17</sup></a>
-But some <span id="add-OBA.1.17" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">people in Jerusalem will escape</span>,</p>
+But some <span id="add-OBA.1.17" class="usx-add">people in Jerusalem will escape</span>,</p>
 <p id="q2-OBA.1.17" class="usx-q2" >and Jerusalem will become a very holy/sacred place.</p>
-<p id="q1-OBA.1.17" class="usx-q1" >Then the descendants of Jacob will <span id="add-OBA.1.17" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">conquer and</span> possess again the land that truly belongs to them.</p>
+<p id="q1-OBA.1.17" class="usx-q1" >Then the descendants of Jacob will <span id="add-OBA.1.17" class="usx-add">conquer and</span> possess again the land that truly belongs to them.</p>
 <p id="q1-OBA.1.17" class="usx-q1" >
     <a href="#OBA.1.18"><sup id="OBA.1.18" class="usx-v">18</sup></a>
 The descendants [MTY] of Jacob and his son Joseph will be like [MET] a fire,</p>
 <p id="q2-OBA.1.18" class="usx-q2" >and the people [MTY] of Edom will be like [MET] stubble that will be completely burned in that fire.</p>
 <p id="q2-OBA.1.18" class="usx-q2" >Not one person will remain alive.</p>
 <p id="q1-OBA.1.18" class="usx-q1" >
-    <span id="add-OBA.1.18" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">That will surely happen because</span> I, Yahweh, have said it.”</p>
+    <span id="add-OBA.1.18" class="usx-add">That will surely happen because</span> I, Yahweh, have said it.”</p>
 <p id="b-OBA.1.18" class="usx-b" ></p>
 <p id="q1-OBA.1.18" class="usx-q1" >
     <a href="#OBA.1.19"><sup id="OBA.1.19" class="usx-v">19</sup></a>
-The Israeli people <span id="add-OBA.1.19" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">who live</span> in the southern desert are the ones who will capture Edom.</p>
-<p id="q2-OBA.1.19" class="usx-q2" >And those <span id="add-OBA.1.19" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">who live in</span> the western foothills will capture the Phoenicia <span id="add-OBA.1.19" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">region</span> and the areas of Ephraim and Samaria.</p>
-<p id="q1-OBA.1.19" class="usx-q1" >And people of the tribe of Benjamin will conquer the Gilead <span id="add-OBA.1.19" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">region</span>.</p>
+The Israeli people <span id="add-OBA.1.19" class="usx-add">who live</span> in the southern desert are the ones who will capture Edom.</p>
+<p id="q2-OBA.1.19" class="usx-q2" >And those <span id="add-OBA.1.19" class="usx-add">who live in</span> the western foothills will capture the Phoenicia <span id="add-OBA.1.19" class="usx-add">region</span> and the areas of Ephraim and Samaria.</p>
+<p id="q1-OBA.1.19" class="usx-q1" >And people of the tribe of Benjamin will conquer the Gilead <span id="add-OBA.1.19" class="usx-add">region</span>.</p>
 <p id="q1-OBA.1.19" class="usx-q1" >
     <a href="#OBA.1.20"><sup id="OBA.1.20" class="usx-v">20</sup></a>
-Those who were ◄exiled in/forced to go to► <span id="add-OBA.1.20" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">Babylon</span> will <span id="add-OBA.1.20" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">return to their land</span></p>
+Those who were ◄exiled in/forced to go to► <span id="add-OBA.1.20" class="usx-add">Babylon</span> will <span id="add-OBA.1.20" class="usx-add">return to their land</span></p>
 <p id="q2-OBA.1.20" class="usx-q2" >
-    <span id="add-OBA.1.20" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">and</span> capture the Phoenicia <span id="add-OBA.1.20" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">region</span> as far north as Zarephath <span id="add-OBA.1.20" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">on the coast of the Mediterranean Sea</span>.</p>
-<p id="q1-OBA.1.20" class="usx-q1" >People of Jerusalem who were captured and taken to Sardis, <span id="add-OBA.1.20" class="usx-add" link-data="https://www.blueletterbible.org/lexicon/">the capital city of the Lydia region</span>, will capture the towns in the southern desert.</p>
+    <span id="add-OBA.1.20" class="usx-add">and</span> capture the Phoenicia <span id="add-OBA.1.20" class="usx-add">region</span> as far north as Zarephath <span id="add-OBA.1.20" class="usx-add">on the coast of the Mediterranean Sea</span>.</p>
+<p id="q1-OBA.1.20" class="usx-q1" >People of Jerusalem who were captured and taken to Sardis, <span id="add-OBA.1.20" class="usx-add">the capital city of the Lydia region</span>, will capture the towns in the southern desert.</p>
 <p id="q1-OBA.1.20" class="usx-q1" >
     <a href="#OBA.1.21"><sup id="OBA.1.21" class="usx-v">21</sup></a>
 The army of Jerusalem will attack Edom and conquer it,</p>

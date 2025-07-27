@@ -1,6 +1,7 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
     <title>Bible</title>
     <style>
       /* Remove the default blue underline from URLs */
@@ -53,12 +54,21 @@
       .usx-w:hover::after {
         opacity: 1;
       }
+
+      /* When checkbox is checked, show the ruby text */
+      #toggle-ruby:checked ~ p ruby rt.unihan {
+        display: ruby-text; /* shows the ruby annotation */
+      }
+
+      ruby {
+        font-size: 1em;
+      }
     </style>
   </head>
 
   <body>
 <a href="#กาลาเทีย">#</a> <a href="#กาลาเทีย.1">[1]</a> <a href="#กาลาเทีย.2">[2]</a> <a href="#กาลาเทีย.3">[3]</a> <a href="#กาลาเทีย.4">[4]</a> <a href="#กาลาเทีย.5">[5]</a> <a href="#กาลาเทีย.6">[6]</a>
-<p id="ide-_" class="usx-ide" >UTF-8</p>
+<p id="ide-_" class="usx-ide" hidden>UTF-8</p>
 <a href="#กาลาเทีย"><h2 id="กาลาเทีย" class="usx-h">กาลาเทีย</h2></a>
 <p id="toc1-กาลาเทีย" class="usx-toc1" hidden>ประวัติ​ความเป็นมาของหนังสือ กาลาเทีย</p>
 <p id="toc2-กาลาเทีย" class="usx-toc2" hidden>กาลาเทีย</p>
